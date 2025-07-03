@@ -1,0 +1,176 @@
+.VideoSection {
+  color: #fed3d3;
+  padding: 60px 0;
+}
+
+.VideoHeader {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.VideoHeader h1 {
+  font-size: var(--font-size-h1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.VideoHeader span {
+  font-style: italic;
+}
+
+.VideoCard {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.VideoGif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.VideoText {
+  position: relative;
+  z-index: 1;
+  padding: 3rem;
+}
+
+.VideoText p {
+  font-size: var(--font-size-h3);
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  margin-bottom: 10px;
+}
+
+.VideoText h3 {
+  font-size: var(--font-size-h3);
+  letter-spacing: 0.7px;
+  margin-top: 30px;
+}
+
+.VideoText button {
+  margin-top: 40px;
+}
+
+@media (max-width: 1081px) {
+  .VideoSection {
+    color: #fed3d3;
+    padding: 60px 0;
+  }
+
+  .VideoHeader {
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+
+  .VideoHeader h1 {
+    font-size: var(--font-size-h1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .VideoHeader span {
+    font-style: italic;
+  }
+
+  .VideoCard {
+    height: 40vh;
+  }
+
+  .VideoText {
+    width: 60%;
+    padding: 2rem;
+  }
+
+  .VideoText p {
+    font-size: var(--font-size-p);
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+    margin-bottom: 0;
+  }
+
+  .VideoText h3 {
+    font-size: var(--font-size-h3);
+    letter-spacing: 0.7px;
+    margin-top: 30px;
+  }
+
+  .VideoText button {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 540px ) {
+    .VideoCard {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .VideoSection {
+    color: #fed3d3;
+    padding: 60px 0;
+  }
+
+    .VideoText {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .VideoHeader {
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+
+  .VideoHeader h1 {
+    font-size: var(--font-size-h1);
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+  }
+
+  .VideoHeader span {
+    font-style: italic;
+  }
+
+  .VideoCard {
+    height: 50vh;
+  }
+
+  .VideoText {
+    padding: 2rem;
+  }
+
+  .VideoText p {
+    font-size: var(--font-size-p);
+    line-height: 25px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    margin-bottom: 0;
+  }
+
+  .VideoText h3 {
+    font-size: var(--font-size-h3);
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+  }
+
+  .VideoText a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+  }
+
+  .VideoText button {
+    margin-top: 60px;
+  }
+}

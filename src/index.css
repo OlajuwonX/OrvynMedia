@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  flex: 1;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: #f9f5e6;
+}
+
+:root{
+  --background: #380001;
+  --gradient: linear-gradient(
+    to right,
+    transparent,
+    #a6350938,
+    #a635095c,
+    #a6350977,
+    #a6350982
+  );
+  --text: #380001;
+  --font-size-p: 16px;
+  --font-size-h1: 24px;
+  --font-size-h2: 21px;
+  --font-size-h3: 19px;
+}

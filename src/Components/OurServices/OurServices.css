@@ -1,0 +1,249 @@
+.AccordionContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  gap: 1rem;
+  color: var(--text);
+}
+
+.AccordionHead {
+  margin-bottom: 20px;
+}
+
+.AccordionSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.AccordionItemContainer {
+  min-width: 60%;
+}
+
+.AccordionHead h1 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: var(--font-size-h1);
+}
+
+.AccordionItem {
+  width: 100%;
+  border: 1px solid var(--text);
+  border-radius: 20px;
+  padding: 1rem;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #a6350938,
+    #a635095c,
+    #a6350977,
+    #a6350982
+  );
+  transition: all 0.3s ease;
+  margin: 20px 0;
+}
+
+.AccordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.AccordionHeader .Icon {
+  color: #fed3d3;
+}
+
+.AccordionHeader h3 {
+  font-size: var(--font-size-h3);
+  letter-spacing: 1px;
+}
+
+.AccordionContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.AccordionText {
+  padding: 20px;
+}
+
+.AccordionText .Sub {
+  font-size: var(--font-size-h3);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.AccordionText p {
+  font-size: var(--font-size-p);
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.AccordionBtn {
+  margin-top: 30px;
+}
+
+.AccordionImage img {
+  height: 22rem;
+  width: auto;
+  border: none;
+}
+
+@media (max-width: 1081px) {
+  .AccordionContainer {
+    flex-direction: column;
+    padding: 40px;
+    margin-top: 30px;
+
+    gap: 0.5rem;
+  }
+
+  .AccordionHead {
+    margin-bottom: 0;
+  }
+
+  .AccordionSection {
+    display: flex;
+  }
+
+  .AccordionItemContainer {
+    min-width: 100%;
+  }
+
+  .AccordionHead h1 {
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: var(--font-size-h2);
+  }
+
+  .AccordionItem {
+    border-radius: 20px;
+    width: 90%;
+    padding: 0.8rem;
+    margin: 20px 0;
+  }
+
+  .AccordionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .AccordionHeader .Icon {
+    color: var(--text);
+  }
+
+  .AccordionHeader h3 {
+    font-size: var(--font-size-h3);
+    letter-spacing: 0.5px;
+  }
+
+  .AccordionContent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .AccordionText {
+    padding: 20px 10px;
+  }
+
+  .AccordionText .Sub {
+    font-size: var(--font-size-h3);
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .AccordionText p {
+    font-size: var(--font-size-p);
+    margin-bottom: 10px;
+    line-height: 27px;
+  }
+
+  .AccordionBtn {
+    margin-top: 20px;
+  }
+
+  .AccordionImage img {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .AccordionContainer {
+    flex-direction: column;
+    padding: 30px;
+    gap: 0.3rem;
+    margin-top: 40px;
+  }
+
+  .AccordionHead {
+    margin-bottom: 0;
+  }
+
+  .AccordionSection {
+    display: flex;
+  }
+
+  .AccordionItemContainer {
+    min-width: 100%;
+  }
+
+  .AccordionHead h1 {
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: var(--font-size-h2);
+  }
+
+  .AccordionItem {
+    border-radius: 20px;
+    padding: 0.8rem;
+    margin: 20px 0;
+  }
+
+  .AccordionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .AccordionHeader .Icon {
+    color: var(--text);
+  }
+
+  .AccordionHeader h3 {
+    font-size: var(--font-size-p);
+    letter-spacing: 0.5px;
+  }
+
+  .AccordionContent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .AccordionText {
+    padding: 10px;
+  }
+
+  .AccordionText .Sub {
+    font-size: var(--font-size-p);
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .AccordionText p {
+    font-size: var(--font-size-p);
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+
+  .AccordionBtn {
+    margin-top: 20px;
+  }
+
+  .AccordionImage img {
+    display: none;
+  }
+}

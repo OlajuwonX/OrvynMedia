@@ -1,0 +1,137 @@
+.ChooseContainer {
+  padding: 60px;
+  color: var(--text);
+}
+
+.ChooseHeader h1 {
+  font-size: var(--font-size-h1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 20px 0;
+}
+
+.ChooseCards {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 0 30px;
+}
+
+.ChooseText {
+  background: var(--gradient);
+  border: 1px solid var(--text);
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease-out;
+  text-align: left;
+}
+
+.ChooseText:hover {
+  cursor: pointer;
+  scale: 1.07;
+}
+
+.ChooseText h3 {
+  font-size: var(--font-size-h3);
+  letter-spacing: 0.6px;
+  margin-bottom: 10px;
+}
+
+.ChooseText p {
+  font-size: var(--font-size-p);
+  letter-spacing: 0.4px;
+  line-height: 25px;
+}
+
+@media (max-width: 1081px) {
+  .ChooseContainer {
+    padding: 40px;
+  }
+
+  .ChooseHeader h1 {
+    font-size: var(--font-size-h2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 30px 0;
+  }
+
+  .ChooseCards {
+    gap: 4rem;
+    padding: 0 20px;
+  }
+
+  .ChooseText {
+    border-radius: 8px;
+    padding: 1.2rem;
+    width: 300px;
+  }
+
+  .ChooseText h3 {
+    font-size: var(--font-size-h3);
+    letter-spacing: 0.6px;
+    margin-bottom: 5px;
+  }
+
+  .ChooseText p {
+    font-size: var(--font-size-p);
+    letter-spacing: 0.4px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 540px) {
+  .ChooseCards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ChooseText {
+    width: 300px;
+  }
+
+  .ChooseText p {
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ChooseContainer {
+    padding: 30px;
+    margin-bottom: -30px;
+  }
+
+  .ChooseHeader h1 {
+    font-size: var(--font-size-h2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 20px 0;
+  }
+
+  .ChooseCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .ChooseText {
+    border-radius: 8px;
+    padding: 1rem;
+    width: 260px;
+  }
+
+  .ChooseText h3 {
+    font-size: var(--font-size-p);
+    letter-spacing: 0.6px;
+    margin-bottom: 5px;
+  }
+
+  .ChooseText p {
+    font-size: var(--font-size-p);
+    letter-spacing: 0.4px;
+    line-height: 20px;
+  }
+}

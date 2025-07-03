@@ -1,0 +1,222 @@
+.AboutUs {
+  padding: 60px;
+  color: var(--text);
+}
+
+.AboutUsHead {
+  margin-bottom: 30px;
+}
+
+.AboutUsHead h1 {
+  font-size: var(--font-size-h1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.AboutUsContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 30px;
+  z-index: 1;
+}
+
+.AboutUsContainer::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("/logoImg.png") no-repeat center center;
+  background-size: contain;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.AboutUsHeader h2 {
+  font-size: var(--font-size-h2);
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+}
+
+.AboutUsFirst {
+  display: flex;
+  flex-direction: row;
+}
+
+.AboutUsFirst p {
+  font-size: var(--font-size-p);
+  letter-spacing: 0.8px;
+  line-height: 27px;
+  width: 100%;
+}
+
+.AboutImgContainer {
+  margin-right: 30px;
+}
+
+.AboutImgContainer img {
+  height: 110px;
+  width: 130px;
+  border-radius: 6px;
+}
+
+.AboutImgContainer p {
+  font-size: var(--font-size-p);
+  padding-left: 30px;
+}
+
+.SecondText {
+  margin-bottom: 15px;
+}
+
+.ThirdText {
+  margin-bottom: 15px;
+}
+
+.ForthText {
+  margin-bottom: 15px;
+}
+
+.AboutUsTexts p {
+  font-size: var(--font-size-p);
+  letter-spacing: 0.5px;
+  line-height: 27px;
+}
+
+@media (max-width: 1081px) {
+  .AboutUs {
+    padding: 30px;
+  }
+
+  .AboutUsContainer {
+    gap: 10px;
+    padding: 0;
+  }
+
+  .AboutUsHead {
+    margin-bottom: 10px;
+  }
+
+  .AboutUsHead h1 {
+    font-size: var(--font-size-h1);
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+  }
+
+  .AboutUsHeader h2 {
+    font-size: var(--font-size-h3);
+    letter-spacing: 0.4px;
+    padding-bottom: 10px;
+  }
+
+  .AboutImgContainer {
+    margin-right: 20px;
+  }
+
+  .AboutUsFirst p {
+    font-size: var(--font-size-p);
+    letter-spacing: 0.6px;
+    line-height: 27px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .AboutUs {
+    padding: 40px 20px;
+  }
+
+  .AboutUsHead {
+    margin-bottom: 10px;
+  }
+
+  .AboutUsHead h1 {
+    font-size: var(--font-size-h2);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+
+  .AboutUsContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    z-index: 1;
+  }
+
+  .AboutUsContainer::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("/logoImg.png") no-repeat center center;
+    background-size: contain;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .AboutUsHeader h2 {
+    font-size: var(--font-size-p);
+    letter-spacing: 0.4px;
+    padding-bottom: 10px;
+  }
+
+  .AboutUsFirst {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .AboutUsFirst p {
+    font-size: var(--font-size-p);
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    width: auto;
+  }
+
+  .AboutImgContainer {
+    margin-right: 15px;
+  }
+
+  .AboutImgContainer img {
+    height: 100px;
+    width: 100px;
+    border-radius: 6px;
+  }
+
+  .AboutImgContainer p {
+    font-size: var(--font-size-p);
+    padding-left: 0;
+  }
+
+  .SecondText {
+    margin-bottom: 15px;
+  }
+
+  .ThirdText {
+    margin-bottom: 15px;
+  }
+
+  .ForthText {
+    margin-bottom: 15px;
+  }
+
+  .AboutUsTexts p {
+    font-size: var(--font-size-p);
+    letter-spacing: 0.5;
+    line-height: 18px;
+  }
+
+  .AboutUs h3 {
+    font-size: var(--font-size-p);
+  }
+}

@@ -1,0 +1,447 @@
+.FooterContainer {
+  margin-top: auto;
+  font-family: "Urbanist", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  color: #fed3d3;
+  gap: 30px;
+  padding: 3rem 5rem;
+  padding-bottom: 0;
+}
+
+.FooterContainer .Button:hover {
+  padding: 0;
+}
+
+.FooterSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 0;
+  gap: 6rem;
+}
+
+.FooterSection h2 {
+  font-size: var(--font-size-h3);
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.Footer1,
+.Footer2 {
+  display: flex;
+  flex-direction: row;
+  gap: 9rem;
+}
+
+.FooterBrand img {
+  height: 50px;
+}
+
+.FooterCompany {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FooterMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.FooterMenuItems {
+  color: var(--text);
+  cursor: pointer;
+  list-style: none;
+}
+
+.FooterMenuLinks {
+  color: #fed3d3;
+  background: inherit;
+  font-size: var(--font-size-p);
+  font-weight: 200;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.FooterMenuLinks:hover {
+  color: #d8b788;
+  scale: 1.1;
+}
+
+.FooterContact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FooterContactLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.FooterContactLinks .ContactBtn {
+  color: #fed3d3;
+  background: inherit;
+  font-size: var(--font-size-p);
+  font-weight: 200;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  border: none;
+}
+
+.FooterContactLinks .ContactBtn:hover {
+  color: #d8b788;
+}
+
+.FooterContactLinks span {
+  margin-left: 5px;
+}
+
+.FooterQuickLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.FooterQuickLinks .Button {
+  font-size: var(--font-size-p);
+  padding: 0;
+  font-weight: 200;
+  margin-top: 10px;
+  background: inherit;
+}
+
+.FooterQuickLinks .Button:hover {
+  background: none;
+}
+
+.FooterQuickLinks .Button:hover {
+  scale: 1;
+}
+
+.FooterCopyright {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.FooterCopyright h2 {
+  font-size: var(--font-size-h3);
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.FooterSocials h2 {
+  margin-bottom: 10px;
+}
+
+.FooterSocialsLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ContactIcons {
+  font-size: var(--font-size-p);
+  font-weight: 200;
+}
+
+.SocialBtn {
+  background: inherit;
+  border: none;
+  color: #fed3d3;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.SocialBtn:hover {
+  scale: 1.1;
+}
+
+.FooterDivider {
+  border: none;
+  height: 1px;
+  background: #fed3d3;
+  opacity: 0.9;
+}
+
+@media (max-width: 1081px) {
+  .FooterContainer {
+    gap: 20px;
+    padding: 2rem 3rem;
+  }
+
+  .FooterSection {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    gap: 1rem;
+  }
+
+  .FooterSection h2 {
+    font-size: var(--font-size-p);
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .Footer1,
+  .Footer2 {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .FooterBrand img {
+    height: 40px;
+  }
+
+  .FooterCompany {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .FooterMenuLinks {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+  }
+
+  .FooterContact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .FooterContactLinks {
+    gap: 10px;
+  }
+
+  .FooterContactLinks .ContactBtn {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+  }
+
+  .FooterQuickLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .FooterQuickLinks .Button {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 200;
+  }
+
+  .FooterCopyright h2 {
+    font-size: var(--font-size-p);
+  }
+
+  .ContactIcons {
+    font-size: 14px;
+    font-weight: 200;
+  }
+
+  .FooterDivider {
+    border: none;
+    height: 0.7px;
+    background: #fed3d3;
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 640px) {
+  .FooterContainer {
+    top: 0;
+    gap: 20px;
+    padding: 30px 60px;
+  }
+
+  .FooterSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .Footer1,
+  .Footer2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 13rem;
+  }
+
+  .Footer1 {
+    gap: 15rem;
+  }
+
+  .FooterBrand img {
+    height: 46px;
+  }
+
+  .FooterContact {
+    display: flex;
+    gap: 10px;
+  }
+
+  .FooterMenuLinks {
+    font-size: var(--font-size-p);
+  }
+
+  .FooterContactLinks .ContactBtn {
+    font-size: var(--font-size-p);
+  }
+
+  .FooterQuickLinks .Button {
+    font-size: var(--font-size-p);
+  }
+
+  .ContactIcons {
+    font-size: var(--font-size-p);
+  }
+
+  .FooterSection h2 {
+    font-size: var(--font-size-h3);
+    font-weight: 200;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+  }
+
+  .FooterContactLinks .ContactBtn {
+    font-weight: 100;
+    margin-top: -10px;
+  }
+
+  .FooterContactLinks span {
+    margin-left: 6px;
+  }
+
+  .FooterQuickLinks .Button {
+    font-weight: 200;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .FooterCopyright h2 {
+    font-size: var(--font-size-p);
+    font-weight: 200;
+    letter-spacing: 0.6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .FooterContainer {
+    gap: 20px;
+    padding: 20px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .FooterSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2.4rem;
+  }
+
+  .Footer1,
+  .Footer2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7rem;
+    justify-content: space-between;
+  }
+
+  .Footer2 {
+    gap: 5rem;
+  }
+
+  .FooterBrand img {
+    height: 45px;
+  }
+
+  .FooterContact {
+    display: flex;
+    gap: 10px;
+  }
+
+  .FooterSection h2 {
+    font-size: var(--font-size-h3);
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .FooterContactLinks {
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .FooterContactLinks .ContactBtn {
+    font-weight: 200;
+    margin-top: -15px;
+    font-size: 15px;
+  }
+
+  .FooterContactLinks span {
+    margin-left: 0;
+  }
+
+  .FooterQuickLinks {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .FooterQuickLinks .Button {
+    font-weight: 200;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .FooterSocialsHead {
+    display: flex;
+  }
+
+  .FooterSocialsLinks {
+    gap: 5px;
+  }
+  .FooterSocialsLinks .SocialBtn {
+    color: #fed3d3;
+  }
+
+  .FooterDivider {
+    border: none;
+    height: 1px;
+    background: #fed3d3;
+    opacity: 0.9;
+  }
+
+  .FooterCopyright {
+    background: inherit;
+  }
+
+  .FooterCopyright h2 {
+    color: #fed3d3;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 0.6px;
+  }
+}

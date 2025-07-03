@@ -1,0 +1,130 @@
+.ServiceContainer {
+  height: auto;
+  padding: 60px;
+  color: var(--text);
+}
+
+.PricingCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.PricingHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.PricingHeader span {
+  font-style: italic;
+  color: #a63509;
+}
+
+.PricingHeader h1 {
+  font-size: var(--font-size-h1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.PricingHeader h3 {
+  font-size: var(--font-size-h3);
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.PricingTab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: auto;
+}
+
+.TabButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 12px;
+  border: 0.7px solid;
+  border-radius: 26px;
+  gap: 2rem;
+}
+
+.TabButtons .Button {
+  background: none;
+  color: var(--text);
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 16px;
+}
+
+.TabButtons .Button:hover {
+  background: inherit;
+  color: #a63509;
+}
+
+.TabButtons .Button.active {
+  background: linear-gradient(
+    to left,
+    #3800018e,
+    #380001ba,
+    #380001cf,
+    #380001d5,
+    #380001dc,
+    #380001f5
+  );
+  color: #fed3d3;
+}
+
+@media (max-width: 1081px) {
+  .ServiceContainer {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ServiceContainer {
+    padding: 40px 20px;
+  }
+
+  .PricingCard {
+    gap: 2rem;
+  }
+
+  .PricingHeader {
+    gap: 0.5rem;
+  }
+
+  .PricingHeader h1 {
+    font-size: var(--font-size-h3);
+    letter-spacing: 0.6px;
+  }
+
+  .PricingHeader h3 {
+    font-size: var(--font-size-p);
+    letter-spacing: 0.6px;
+  }
+
+  .PricingTab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+  }
+
+  .TabButtons {
+    padding: 5px 9px;
+    border: 0.7px solid;
+    border-radius: 23px;
+    gap: 10px;
+  }
+
+  .TabButtons .Button {
+    text-transform: capitalize;
+  }
+}

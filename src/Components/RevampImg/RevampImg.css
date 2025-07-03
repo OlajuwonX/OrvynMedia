@@ -1,0 +1,228 @@
+.RevampSection {
+  padding: 0 60px;
+  /* background: var(--gradient); */
+  width: 100%;
+  overflow: hidden;
+}
+
+.RevampImgText {
+  margin-bottom: 2rem;
+}
+
+.RevampImgText h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: var(--font-size-h1);
+  color: #380001;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.RevampSliderWrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.RevampSliderContainer {
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.RevampSliderContainer::before,
+.RevampSliderContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.RevampSliderContainer::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.26),
+    rgba(255, 255, 255, 0.007)
+  );
+}
+
+.RevampSliderContainer::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(197, 142, 142, 0.331),
+    rgba(81, 53, 53, 0.016)
+  );
+}
+
+.RevampSliderTrack {
+  display: flex;
+  width: max-content;
+  gap: 1.1rem;
+}
+
+.RevampSliderImage {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 200px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.RevampSliderImage img {
+  width: 160px;
+  height: 180px;
+  display: block;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 1081px) {
+  .RevampSection {
+    padding: 0 30px;
+  }
+
+  .RevampImgText {
+    margin-bottom: 1.5rem;
+  }
+
+  .RevampImgText h1 {
+    letter-spacing: 0.5px;
+    font-size: var(--font-size-h2);
+    line-height: 1;
+  }
+
+  .RevampSliderWrapper {
+    width: 100%;
+  }
+
+  .RevampSliderContainer {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .RevampSliderContainer::before,
+  .RevampSliderContainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .RevampSliderContainer::before {
+    left: 0;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.26),
+      rgba(255, 255, 255, 0.007)
+    );
+  }
+
+  .RevampSliderContainer::after {
+    right: 0;
+    background: linear-gradient(
+      to left,
+      rgba(197, 142, 142, 0.331),
+      rgba(81, 53, 53, 0.016)
+    );
+  }
+
+  .RevampSliderTrack {
+    gap: 1rem;
+  }
+
+  .RevampSliderImage {
+    width: 150px;
+    height: 180px;
+    border-radius: 8px;
+  }
+
+  .RevampSliderImage img {
+    width: 160px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .RevampSection {
+    padding: 0 30px;
+  }
+
+  .RevampImgText {
+    margin-bottom: 1.5rem;
+  }
+
+  .RevampImgText h1 {
+    letter-spacing: 0.5px;
+    font-size: var(--font-size-h2);
+    line-height: 1;
+  }
+
+  .RevampSliderWrapper {
+    width: 100%;
+  }
+
+  .RevampSliderContainer {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .RevampSliderContainer::before,
+  .RevampSliderContainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .RevampSliderContainer::before {
+    left: 0;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.26),
+      rgba(255, 255, 255, 0.007)
+    );
+  }
+
+  .RevampSliderContainer::after {
+    right: 0;
+    background: linear-gradient(
+      to left,
+      rgba(197, 142, 142, 0.331),
+      rgba(81, 53, 53, 0.016)
+    );
+  }
+
+  .RevampSliderTrack {
+    gap: 1rem;
+  }
+
+  .RevampSliderImage {
+    width: 150px;
+    height: 180px;
+    border-radius: 8px;
+  }
+
+  .RevampSliderImage img {
+    width: 160px;
+    height: 180px;
+  }
+}

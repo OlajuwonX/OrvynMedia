@@ -1,0 +1,164 @@
+.ContactFormContainer h1 {
+  font-size: var(--font-size-h1);
+  color: var(--text);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.ContactForm {
+  width: 380px;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid var(--background);
+  border-radius: 12px;
+  background: var(--gradient);
+}
+
+.ContactForm input {
+  background: none;
+  font-size: var(--font-size-p);
+  outline: none;
+  color: var(--text);
+  padding: 0 0 10px 0;
+  border: none;
+  border-bottom: 1px solid var(--background);
+}
+
+.FormTextArea {
+  font-size: var(--font-size-p);
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.32);
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  color: #000;
+  resize: vertical;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+.FormTextArea:focus {
+  border-color: var(--background);
+  box-shadow: 0 0 0 1px var(--background);
+}
+
+.FormSelect {
+  background: inherit;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: var(--text);
+  font-size: var(--font-size-p);
+}
+
+.ContactForm .Button {
+  margin: 30px 10px 10px 10px;
+  width: 300px;
+}
+
+@media (max-width: 1081px) {
+  .ContactFormContainer {
+    margin-left: -20%;
+  }
+
+  .ContactFormContainer h1 {
+    font-size: var(--font-size-h1);
+    letter-spacing: 0.7px;
+    margin-bottom: 25px;
+  }
+
+  .ContactForm {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 1.5rem;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 10px;
+  }
+
+  .ContactForm input {
+    padding: 10px;
+  }
+
+  .FormTextArea {
+    font-weight: 100;
+    background: inherit;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .ContactForm .Button {
+    margin: 30px 10px 10px 10px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ContactFormContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: -10px;
+  }
+
+  .ContactFormContainer h1 {
+    font-size: var(--font-size-h3);
+    color: var(--text);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .ContactForm {
+    width: 320px;
+    margin: 0;
+    padding: 1.7rem;
+    display: flex;
+    gap: 10px;
+    border-radius: 8px;
+  }
+
+  .ContactForm input {
+    padding: 9px;
+  }
+
+  .FormLabel {
+    font-size: var(--font-size-p);
+    font-weight: 200;
+    color: var(--text);
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+    padding: 10px 0 0 5px;
+  }
+
+  .FormTextArea {
+    font-size: var(--font-size-p);
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.32);
+    border-radius: 7px;
+    margin: 10px 0;
+  }
+
+  .FormSelect {
+    background: inherit;
+    border: none;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: var(--text);
+    font-size: var(--font-size-p);
+  }
+
+  .ContactForm .Button {
+    margin: 10px;
+    width: 200px;
+  }
+}

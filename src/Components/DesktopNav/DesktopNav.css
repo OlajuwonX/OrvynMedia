@@ -1,0 +1,56 @@
+.MobileNav {
+  display: none;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background);
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.Nav .logoImg {
+  height: 37px;
+  width: 120px;
+}
+
+.NavMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+  color: #fed3d3;
+  padding: 6px 0;
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+
+.NavMenu li {
+  transition: all 0.3s ease-in-out;
+}
+
+.NavMenu li:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.NavMenu li.active {
+  background:var(--gradient);
+  padding: 6px 8px;
+  border: 0.7px solid #fed3d3;
+  border-radius: 7px;
+}
+
+.NavMenu .NavLinks {
+  text-decoration: none;
+  color: inherit;
+  font-size: var(--font-size-p);
+  font-weight: 500;
+}
+
+

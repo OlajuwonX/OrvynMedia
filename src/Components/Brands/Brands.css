@@ -1,0 +1,107 @@
+.BrandsSection {
+  padding: 60px;
+}
+
+.BrandsHeader {
+  margin-bottom: 30px;
+}
+
+.BrandsHeader h1 {
+  color: var(--text);
+  font-size: var(--font-size-h1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.BrandsImgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.BrandsImg img {
+  height: 4.6rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.BrandsImg img:hover {
+  cursor: pointer;
+  scale: 1.07;
+  border: 2px solid var(--background);
+}
+
+@media (max-width: 1081px) {
+  .BrandsSection {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  .BrandsHeader {
+    margin-bottom: 20px;
+  }
+
+  .BrandsHeader h1 {
+    color: var(--text);
+    font-size: var(--font-size-h2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .BrandsImgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .BrandsImg img {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .BrandsImg img:hover {
+    cursor: pointer;
+    scale: 1.07;
+    border: 2px solid var(--background);
+  }
+}
+
+@media (max-width: 480px) {
+  .BrandsSection {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  .BrandsHeader {
+    margin-bottom: 20px;
+  }
+
+  .BrandsHeader h1 {
+    color: var(--text);
+    font-size: var(--font-size-h2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .BrandsImgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .BrandsImg img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .BrandsImg img:hover {
+    cursor: pointer;
+    scale: 1.07;
+    border: 2px solid var(--background);
+  }
+}

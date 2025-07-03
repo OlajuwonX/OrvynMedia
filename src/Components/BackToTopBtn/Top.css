@@ -1,0 +1,25 @@
+.BackToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  background-color: var(--background);
+  color: #fed3d3;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  font-size: var(--h3);
+}
+
+.BackToTopBtn:hover {
+  background: var(--gradient);
+  color: #1a1a1a;
+  transform: scale(1.05);
+}

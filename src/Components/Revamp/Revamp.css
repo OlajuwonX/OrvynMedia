@@ -1,0 +1,190 @@
+.Revamp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 60px;
+  color: #380001;
+}
+
+.RevampItem {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.RevampHeader h1 {
+  font-size: var(--font-size-h1);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.RevampHeader span {
+  font-style: italic;
+}
+
+.RevampContent {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.RevampImg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1.5;
+  gap: 40px;
+  padding-right: 20px;
+}
+
+.RevampImg img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.RevampImg img:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.RevampImg p {
+  margin-top: 0.5rem;
+  font-size: 16px;
+  text-align: center;
+}
+
+.RevampTextCard {
+  flex: 2;
+  font-size: 16px;
+  margin-right: 30px;
+  line-height: 32px;
+}
+
+.RevampTextCard .Button {
+  margin-top: 50px;
+}
+
+@media (max-width: 1081px) {
+  .Revamp {
+    gap: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+  }
+
+  .RevampItem {
+    gap: 1rem;
+  }
+
+  .RevampHeader h1 {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .RevampContent {
+    gap: 2rem;
+  }
+
+  .RevampImg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1.5;
+    gap: 20px;
+    padding-right: 0;
+  }
+
+  .RevampImg img {
+    max-width: 7rem;
+    height: auto;
+    border-radius: 7px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .RevampImg img:hover {
+    scale: 1.05;
+    cursor: pointer;
+  }
+
+  .RevampImg p {
+    margin-top: 0.5rem;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .RevampTextCard {
+    flex: 2;
+    font-size: 16px;
+    margin-right: 0;
+    line-height: 25px;
+  }
+
+  .RevampTextCard .Button {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Revamp {
+    gap: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+  }
+
+  .RevampItem {
+    gap: 1rem;
+  }
+
+  .RevampHeader h1 {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .RevampContent {
+    gap: 2rem;
+  }
+
+  .RevampImg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1.5;
+    gap: 30px;
+    padding-left: 0;
+  }
+
+  .RevampImg img {
+    max-width: 8rem;
+    height: auto;
+    border-radius: 7px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .RevampImg img:hover {
+    scale: 1.05;
+    cursor: pointer;
+  }
+
+  .RevampImg p {
+    margin-top: 0.5rem;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .RevampTextCard {
+    flex: 2;
+    font-size: 16px;
+    margin-right: 0;
+    line-height: 25px;
+  }
+
+  .RevampTextCard .Button {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,100 @@
+.PrivacyContainer {
+  padding: 60px;
+  color: var(--text);
+}
+
+.PrivacyWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.PrivacyHeader h1 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.PrivacyCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.PrivacyCard h3 {
+  font-weight: normal;
+  font-size: var(--font-size-p);
+  line-height: 27px;
+}
+
+.PrivacyContent {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.PrivacyContent h3 {
+  font-weight: 700;
+}
+
+.PrivacyContent li {
+  list-style: none;
+  padding-left: 10px;
+  line-height: 27px;
+  font-size: var(--font-size-p);
+}
+
+.PrivacyButton {
+  margin-left: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.PrivacyButton button {
+  border: none;
+  font-size: var(--font-size-p);
+  text-decoration: underline;
+  color: var(--text);
+  cursor: pointer;
+  background: inherit;
+  transition: all 0.3s ease;
+}
+
+.PrivacyButton button:hover {
+  scale: 1.05;
+  background: inherit;
+  color: rgb(180, 142, 96);
+}
+
+@media (min-width: 540px) {
+  .PrivacyContainer {
+    padding: 40px;
+    color: var(--text);
+  }
+  .PrivacyWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .PrivacyHeader h1 {
+    font-size: var(--font-size-h1);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 480px) {
+  .PrivacyContainer {
+    padding: 30px;
+    color: var(--text);
+  }
+  .PrivacyWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .PrivacyHeader h1 {
+    font-size: var(--font-size-h1);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}

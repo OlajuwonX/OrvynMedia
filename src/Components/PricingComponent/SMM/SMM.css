@@ -1,0 +1,187 @@
+.TabDataContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.TabDataHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TabDataHeader h2 {
+  font-size: var(--font-size-h2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.TabDataWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.TabDataBack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(
+    to left,
+    #3800018e,
+    #380001ba,
+    #380001cf,
+    #380001d5,
+    #380001dc,
+    #380001f5
+  );
+  color: #fed3d3;
+  padding: 14px;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.TabDataBack p {
+  font-size: var(--font-size-p);
+  font-weight: 400;
+}
+
+.TabDataGridOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #a799991c 1px, transparent 1px),
+    linear-gradient(to bottom, #99929223 1px, transparent 1px);
+  background-size: 14px 24px;
+  pointer-events: none;
+}
+
+.TabDataPack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 350px;
+  border-radius: 15px;
+  box-shadow: 4px 2px 15px#a635094d;
+}
+
+.TabDataPack button {
+  background: none;
+  color: var(--text);
+  border: 0.7px solid var(--background);
+  margin-bottom: 20px;
+}
+
+.TabDataTagLine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.TabDataDeliverables li {
+  list-style: none;
+  line-height: 25px;
+  padding: 0 10px;
+}
+
+@media (max-width: 1081px) {
+  .TabDataHeader h2 {
+    letter-spacing: 0.6px;
+  }
+
+  .TabDataWrapper {
+    gap: 4rem;
+    margin-top: 1rem;
+  }
+
+  .TabDataBack {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .TabDataBack p {
+    font-weight: 300;
+  }
+
+  .TabDataPack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    max-width: 320px;
+    border-radius: 12px;
+  }
+
+  .TabDataPack button {
+    background: none;
+    color: var(--text);
+    border: 0.7px solid var(--background);
+  }
+
+  .TabDataTagLine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .TabDataDeliverables li {
+    list-style: none;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .TabDataHeader h2 {
+    font-size: var(--font-size-h3);
+    letter-spacing: 0.5px;
+  }
+
+  .TabDataWrapper {
+    gap: 3rem;
+    margin-top: 0.5rem;
+  }
+
+  .TabDataBack {
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+
+  .TabDataBack p {
+    font-size: var(--font-size-p);
+    font-weight: 400;
+  }
+
+  .TabDataPack {
+    gap: 1rem;
+    max-width: 320px;
+    border-radius: 12px;
+  }
+
+  .TabDataPack button {
+    background: none;
+    color: var(--text);
+    border: 0.7px solid var(--background);
+  }
+
+  .TabDataTagLine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .TabDataDeliverables li {
+    list-style: none;
+    line-height: 25px;
+  }
+}
