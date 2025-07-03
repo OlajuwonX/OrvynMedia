@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Components/Pages/Home/Home.jsx";
 import Service from "./Components/Pages/Services/Service.jsx";
 import About from "./Components/Pages/AboutUs/About.jsx";
-import Nav from "./Components/Nav/nav.jsx";
+import Nav from "./Components/Nav/Nav.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import Contact from "./Components/Pages/Contact/Contact.jsx";
 import Terms from "./Components/Pages/Terms/Terms.jsx";
