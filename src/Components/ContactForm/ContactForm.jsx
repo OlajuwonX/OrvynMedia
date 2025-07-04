@@ -5,7 +5,6 @@ const ContactForm = () => {
   const [selectedService, setSelectedService] = useState("");
   const [description, setDescription] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,27 +19,17 @@ const ContactForm = () => {
       description,
     };
 
-    try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+    window.location.href = "https://orvynmedia.com/thank-you";
 
-      if (response.ok) {
-        setSubmitMessage("Message sent successfully!");
-        window.location.href = "https://orvynmedia.com/thank-you";
-      } else {
-        setSubmitMessage("Failed to send message. Please try again.");
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      setSubmitMessage("An error occurred. Please try again later.");
-    } finally {
-      setIsSubmitting(false);
-    }
+    fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    }).catch((err) => {
+      console.error("Background email send failed:", err);
+    });
+
+    setIsSubmitting(false);
   };
 
   return (
@@ -50,10 +39,12 @@ const ContactForm = () => {
       </div>
       <form onSubmit={handleSubmit} className="ContactForm">
         <p>Fill in your details and we'll reach out as soon as possible.</p>
+
         <input type="text" name="name" placeholder="Full Name:" required />
         <input type="email" name="email" placeholder="Email Address:" required />
         <input type="tel" name="phone" placeholder="Phone Number:" required />
         <input type="text" name="location" placeholder="Location:" required />
+
         <select
           id="selectedService"
           name="selectedService"
@@ -66,9 +57,7 @@ const ContactForm = () => {
             Select a service
           </option>
           <option value="Ads Management">Ads Management</option>
-          <option value="Social Media Management">
-            Social Media Management
-          </option>
+          <option value="Social Media Management">Social Media Management</option>
           <option value="Content Creation">Content Creation</option>
           <option value="Website Development">Web Development</option>
           <option value="Graphics Design">Brand Strategy</option>
@@ -86,7 +75,6 @@ const ContactForm = () => {
         <button className="Button" type="submit" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Submit"}
         </button>
-        {submitMessage && <p>{submitMessage}</p>}
       </form>
     </div>
   );

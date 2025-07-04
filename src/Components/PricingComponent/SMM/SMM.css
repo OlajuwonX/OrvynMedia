@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 4rem;
 }
 
 .TabDataHeader {
@@ -141,6 +142,10 @@
 }
 
 @media (max-width: 480px) {
+  .TabDataContainer {
+    gap: 3rem;
+  }
+
   .TabDataHeader h2 {
     font-size: var(--font-size-h3);
     letter-spacing: 0.5px;

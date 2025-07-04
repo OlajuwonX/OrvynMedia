@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import "./Content.css";
 import { PricingData } from "../../../../data";
+import "./Content.css";
 
 const Content = () => {
   const navigate = useNavigate();

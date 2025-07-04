@@ -359,12 +359,12 @@
   .Footer2 {
     display: flex;
     flex-wrap: wrap;
-    gap: 7rem;
+    gap: 4.5rem;
     justify-content: space-between;
   }
 
   .Footer2 {
-    gap: 5rem;
+    gap: 4rem;
   }
 
   .FooterBrand img {
