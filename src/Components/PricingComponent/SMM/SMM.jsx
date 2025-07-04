@@ -1,15 +1,18 @@
+import { useNavigate } from "react-router-dom";
 import { PricingData } from "../../../../data";
 import "./SMM.css";
 
 const SMM = () => {
-  const smmCategory = PricingData.find((item) => item.id === 1);
+  const Category = PricingData.find((item) => item.id === 1);
+  const navigate = useNavigate();
+
   return (
     <div className="TabDataContainer">
       <div className="TabDataHeader">
-        <h2>{smmCategory?.category}</h2>
+        <h2>{Category?.category}</h2>
       </div>
       <div className="TabDataWrapper">
-        {smmCategory?.packages.map((pack, index) => (
+        {Category?.packages.map((pack, index) => (
           <div className="TabDataPack" key={index}>
             <div className="TabDataBack">
               <div className="TabDataGridOverlay"></div>
@@ -22,9 +25,12 @@ const SMM = () => {
                 <li key={i}>✔ {item}</li>
               ))}
             </ul>
-            <a href={pack.buttonLink}>
-              <button className="Button">{pack.buttonLabel}</button>
-            </a>
+            <button
+              className="Button"
+              onClick={() => navigate(pack.buttonLink)}
+            >
+              {pack.buttonLabel}
+            </button>
           </div>
         ))}
       </div>

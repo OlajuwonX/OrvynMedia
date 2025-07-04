@@ -7,8 +7,10 @@
 
 .TabDataHeader {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 
 .TabDataHeader h2 {
@@ -58,7 +60,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to right, #a799991c 1px, transparent 1px),
+  background-image:
+    linear-gradient(to right, #a799991c 1px, transparent 1px),
     linear-gradient(to bottom, #99929223 1px, transparent 1px);
   background-size: 14px 24px;
   pointer-events: none;
@@ -75,8 +78,6 @@
 }
 
 .TabDataPack button {
-  background: none;
-  color: var(--text);
   border: 0.7px solid var(--background);
   margin-bottom: 20px;
 }
@@ -97,6 +98,7 @@
 @media (max-width: 1081px) {
   .TabDataHeader h2 {
     letter-spacing: 0.6px;
+    gap: 15px;
   }
 
   .TabDataWrapper {
@@ -122,8 +124,6 @@
   }
 
   .TabDataPack button {
-    background: none;
-    color: var(--text);
     border: 0.7px solid var(--background);
   }
 
@@ -144,6 +144,7 @@
   .TabDataHeader h2 {
     font-size: var(--font-size-h3);
     letter-spacing: 0.5px;
+    gap: 10px;
   }
 
   .TabDataWrapper {
@@ -168,8 +169,6 @@
   }
 
   .TabDataPack button {
-    background: none;
-    color: var(--text);
     border: 0.7px solid var(--background);
   }
 

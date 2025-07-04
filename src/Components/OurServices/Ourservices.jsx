@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Accordion } from "../../../data";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 import "./OurServices.css";
 
@@ -9,6 +10,8 @@ const Ourservices = () => {
   const toggleAccordion = (id) => {
     setOpenId((prevId) => (prevId === id ? null : id));
   };
+
+  const navigate = useNavigate();
 
   return (
     <div className="AccordionContainer">
@@ -26,7 +29,7 @@ const Ourservices = () => {
               close,
               buttonText,
               buttonClass,
-              buttonLink,
+              buttonLink
             }) => (
               <div key={id} className="AccordionItem">
                 <div
@@ -44,15 +47,9 @@ const Ourservices = () => {
                       <h4 className="Sub">{subTitle}</h4>
                       <p>{description}</p>
                       <h4>{close}</h4>
-                      <a
-                        href={buttonLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <button className={`AccordionBtn ${buttonClass}`}>
+                        <button className={`AccordionBtn ${buttonClass}`} onClick={() => navigate(buttonLink)}>
                           {buttonText}
                         </button>
-                      </a>
                     </div>
                   </div>
                 )}

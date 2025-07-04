@@ -245,7 +245,7 @@ export const PricingData = [
         category: "Social Media Management",
         packages: [
             {
-                tier: "🌱 Basic",
+                tier: "Basic",
                 tagline: "Stay active and consistent, perfect for building a steady presence.",
                 prepTime: "1 - 2 weeks",
                 deliverables: [
@@ -262,7 +262,7 @@ export const PricingData = [
                 buttonLink: "/contact",
             },
             {
-                tier: "🚀 Beta",
+                tier: "Beta",
                 tagline: "For growing brands ready to amplify their voice",
                 prepTime: "1 - 2 weeks",
                 deliverables: [
@@ -281,7 +281,7 @@ export const PricingData = [
                 buttonLink: "/contact",
             },
             {
-                tier: "💎 Premium",
+                tier: "Premium",
                 tagline: "Our full-service management built for brands that want expert support, clarity, and growth.",
                 prepTime: "3 weeks",
                 deliverables: [
@@ -343,49 +343,41 @@ export const PricingData = [
         id: 3,
         category: [
             {
-                categoryTitle: "ORVYN MEDIA MOBILE & CAMERA CONTENT CREATION RATES",
+                categoryTitle: "ORVYN MEDIA MOBILE CONTENT CREATION RATES",
                 subhead: "Moments that matter captured beautifully,",
                 subHeadSpan: "Clean visuals  Premium edits.",
                 packages: [
                     {
-                        tier: "🎯 UGC Style Video",
-                        description: "Authentic, review-style clean and professional video featuring your product or service.",
+                        tier: "UGC Style Video",
+                        description:
+                            "Authentic, review-style clean and professional video featuring your product or service.",
                         mobile: "With mobile - ",
-                        mobileSpan: "₦40,000",
-                        camera: "With camera - ",
-                        cameraSpan: "₦60,000",
+                        mobileSpan: "₦50,000",
                         includes: "Includes:",
-                        deliverables: [
-                            "1 edited video + 1 revision"
-                        ],
+                        deliverables: ["1 edited video + 1 revision"],
                         addOn: "Add-on",
                         addOnText: "Scriptwriting - ",
                         addOnSpan: "₦10,000",
                         buttonLabel: "Get Started",
                         buttonLink: "/contact",
-                        close: "",
                     },
                     {
-                        tier: "🎥 Creative Brand Shoots",
+                        tier: "Creative Brand Shoots",
                         description: "Ideal for fashion, beauty, lifestyle & birthdays.",
                         prepTime: "(up to 3hrs)",
                         mobile: "With mobile - ",
                         mobileSpan: "₦100,000",
-                        camera: "With camera - ",
-                        cameraSpan: "₦150,000",
                         includes: "Includes:",
                         deliverables: [
                             "Edited videos based on outfits captured within the session",
-                            "5 free premium photos"
                         ],
                         addOn: "",
                         addOnText: "",
                         addOnSpan: "",
                         buttonLabel: "Get Started",
                         buttonLink: "/contact",
-                        close: "",
-                    }
-                ]
+                    },
+                ],
             },
             {
                 categoryTitle: "Event Content Creation",
@@ -398,19 +390,13 @@ export const PricingData = [
                         prepTime: "",
                         mobile: "With mobile - ",
                         mobileSpan: "₦120,000",
-                        camera: "With camera - ",
-                        cameraSpan: "₦180,000",
                         includes: "Includes:",
-                        deliverables: [
-                            "1-2 edited videos",
-                            "5 free premium photos"
-                        ],
+                        deliverables: ["1 edited videos"],
                         addOn: "",
                         addOnText: "",
                         addOnSpan: "",
                         buttonLabel: "Get Started",
                         buttonLink: "/contact",
-                        close: "Ideal for events: Parties, Corporate, Graduation, Intimate Ceremonies",
                     },
                     {
                         tier: "",
@@ -421,16 +407,14 @@ export const PricingData = [
                         camera: "With camera - ",
                         cameraSpan: "₦250,000",
                         includes: "Includes:",
-                        deliverables: [
-                            "2-3 edited videos",
-                            "10 free premium photos"
-                        ],
+                        deliverables: ["2-3 edited videos", "10 free premium photos"],
                         addOn: "",
                         addOnText: "",
                         addOnSpan: "",
                         buttonLabel: "Get Started",
                         buttonLink: "/contact",
-                        close: "Ideal for events: Parties, Corporate, Graduation, Intimate Ceremonies",
+                        close:
+                            "Ideal for events: Parties, Corporate, Graduation, Intimate Ceremonies",
                     },
                     {
                         tier: "",
@@ -441,13 +425,14 @@ export const PricingData = [
                         camera: "With camera - ",
                         cameraSpan: "₦150,000",
                         includes: "",
-                        deliverables: "",
+                        deliverables: [],
                         addOn: "",
                         addOnText: "",
                         addOnSpan: "",
                         buttonLabel: "Get Started",
                         buttonLink: "/contact",
-                        close: "Ideal for events: business spaces, real estate, food content",
+                        close:
+                            "Ideal for events: business spaces, real estate, food content",
                     },
                     {
                         tier: "",
@@ -458,13 +443,14 @@ export const PricingData = [
                         camera: "With camera - ",
                         cameraSpan: "₦250,000",
                         includes: "",
-                        deliverables: "",
+                        deliverables: [],
                         addOn: "",
                         addOnText: "",
                         addOnSpan: "",
                         buttonLabel: "Get Started",
                         buttonLink: "/contact",
-                        close: "Covers prep moments:bride, groom, bridal & groom party, couple together.",
+                        close:
+                            "Covers prep moments:bride, groom, bridal & groom party, couple together.",
                     },
                     {
                         tier: "",
@@ -475,16 +461,17 @@ export const PricingData = [
                         camera: "With camera - ",
                         cameraSpan: "₦250,000",
                         includes: "",
-                        deliverables: "",
+                        deliverables: [],
                         addOn: "",
                         addOnText: "",
                         addOnSpan: "",
                         buttonLabel: "Get Started",
                         buttonLink: "/contact",
-                        close: "Covers prep moments:bride, groom, bridal & groom party, couple together.",
+                        close:
+                            "Covers prep moments:bride, groom, bridal & groom party, couple together.",
                     },
                     {
-                        tier: "🏨 Property Content",
+                        tier: "Property Content",
                         description: "Polished visuals to showcase your brand space",
                         prepTime: "",
                         mobile: "Hotels / Shortlet Apartments — ",
@@ -492,15 +479,14 @@ export const PricingData = [
                         camera: "",
                         cameraSpan: "",
                         includes: "",
-                        deliverables: "",
+                        deliverables: [],
                         addOn: "",
                         addOnText: "",
                         addOnSpan: "",
                         buttonLabel: "Get Started",
                         buttonLink: "/contact",
-                        close: "",
-                    }
-                ]
+                    },
+                ],
             },
             {
                 categoryTitle: "Monthly Brand Content Plan",
@@ -509,7 +495,8 @@ export const PricingData = [
                 packages: [
                     {
                         tier: "",
-                        description: "Designed for business owners who want consistent, quality content every month",
+                        description:
+                            "Designed for business owners who want consistent, quality content every month",
                         prepTime: "",
                         mobile: "",
                         mobileSpan: "₦250,000/month",
@@ -528,12 +515,12 @@ export const PricingData = [
                         addOnSpan: "",
                         buttonLabel: "Get Started",
                         buttonLink: "/contact",
-                        close: "",
                     },
-                ]
+                ],
             },
         ],
-    }, {
+    }
+    , {
         id: 4,
         category: "Graphics Design",
         description: "Clean, consistent, and professional designs that reflect your brand across platforms. From logos to packaging, we create clean, branded visuals that bring your ideas to life whether for digital or print.",
