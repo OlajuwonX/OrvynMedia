@@ -46,7 +46,7 @@
   }
 
   .MobileNavLink {
-    color: #efc0b9;
+    color: #fed3d3;
     font-size: var(--font-size-h3);
     font-weight: 300;
     letter-spacing: 0.8px;
@@ -57,7 +57,7 @@
 
   .MobileNavLink:hover,
   .active .MobileNavLink {
-    color: #d6c281;
+    color: #fbc5c5;
     scale: 1.05;
   }
 

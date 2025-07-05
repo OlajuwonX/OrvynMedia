@@ -47,8 +47,8 @@ export const Accordion = [
     {
         id: 1,
         title: 'Ads Management',
-        subTitle: 'Get More Than Just Likes—Get Results.',
-        description: "At Orvyn Media, we don't just run ads. We build smart, targeted campaigns that actually drive sales, boost visibility, and grow your audience. From Instagram to Facebook to TikTok, we handle everything—from setup to strategy to live optimization—so you can focus on running your business while we handle the results.",
+        subTitle: 'Get More Than Just Likes, Get Results.',
+        description: "At Orvyn Media, we don't just run ads. We build smart, targeted campaigns that actually drive sales, boost visibility, and grow your audience. From Instagram to Facebook to TikTok, we handle everything from setup to strategy to live optimization, so you can focus on running your business while we handle the results.",
         close: 'Ready to turn views into real growth?',
         buttonText: "Book A Consultation",
         buttonClass: "Button",
@@ -58,7 +58,7 @@ export const Accordion = [
         id: 2,
         title: 'Social Media Management',
         subTitle: '',
-        description: "We don't just post—we position your brand for real impact. From revamping your page to planning your content, writing captions, engaging your community, and tracking results, we handle it all. Our goal is to turn your platforms into a strong, consistent presence that builds trust and drives growth.",
+        description: "We don't just post we position your brand for real impact. From revamping your page to planning your content, writing captions, engaging your community, and tracking results, we handle it all. Our goal is to turn your platforms into a strong, consistent presence that builds trust and drives growth.",
         close: "Let's manage your socials like a pro.",
         buttonText: "Book A Consultation",
         buttonClass: "Button",
@@ -72,7 +72,7 @@ export const Accordion = [
         close: 'Need content that stands out?',
         buttonText: "Explore Pricing",
         buttonClass: "Button",
-        buttonLink: "/services",
+        buttonLink: "/services#Content",
     },
     {
         id: 4,
@@ -82,17 +82,17 @@ export const Accordion = [
         close: "Let's build your dream website.",
         buttonText: "Explore Pricing",
         buttonClass: "Button",
-        buttonLink: "/services",
+        buttonLink: "/services#Web",
     },
     {
         id: 5,
-        title: 'Graphic Design',
+        title: 'Graphics Design',
         subTitle: '',
         description: "From flyers to brand kits, we design clean, professional visuals that leave a strong impression. Whether it's for print or digital use business cards, decks, templates, or banners we create designs that align with your brand and communicate clearly.",
         close: 'Need clean, premium visuals?',
         buttonText: "Explore Pricing",
         buttonClass: "Button",
-        buttonLink: "/services",
+        buttonLink: "/services#Graphics",
     },
 ]
 
@@ -282,7 +282,7 @@ export const PricingData = [
             },
             {
                 tier: "Premium",
-                tagline: "Our full-service management built for brands that want expert support, clarity, and growth.",
+                tagline: "Our Full-service management built for brands that want expert support, clarity, and growth.",
                 prepTime: "3 weeks",
                 deliverables: [
                     "2 platform management (Instagram + TikTok)",
@@ -329,7 +329,7 @@ export const PricingData = [
                 description: "We come to you and shoot one strong, scroll-stopping ad asset for the campaign.",
                 deliverables: [
                     "1 standard video shoot for your ad",
-                    "1 platform {instagram,Facebook ,Or TikTok)",
+                    "1 platform {instagram, Facebook Or TikTok)",
                     "ad copy (caption) + campaign strategy",
                     "Setup, launch & optimization",
                     "Performance summary at the end",
@@ -341,186 +341,92 @@ export const PricingData = [
     },
     {
         id: 3,
-        category: [
+        category: "ORVYN MEDIA MOBILE VIDEOGRAPHY RATES",
+        packages: [
             {
-                categoryTitle: "ORVYN MEDIA MOBILE CONTENT CREATION RATES",
-                subhead: "Moments that matter captured beautifully,",
-                subHeadSpan: "Clean visuals  Premium edits.",
-                packages: [
+                type: "",
+                typeText: "",
+                tier: [
                     {
-                        tier: "UGC Style Video",
+                        tierPack: "UGC Style Video",
                         description:
                             "Authentic, review-style clean and professional video featuring your product or service.",
-                        mobile: "With mobile - ",
-                        mobileSpan: "₦50,000",
-                        includes: "Includes:",
-                        deliverables: ["1 edited video + 1 revision"],
-                        addOn: "Add-on",
-                        addOnText: "Scriptwriting - ",
-                        addOnSpan: "₦10,000",
+                        price: "₦55,000",
+                        prepTime: "",
+                        deliverables: [
+                            "1 edited video (15 - 45 secs)",
+                            "1 revision"],
+                        buttonLabel: "Get Started",
+                        buttonLink: "/contact",
+                    }
+                ],
+
+            },
+            {
+                type: "Signature Content Shoot",
+                typeText: "For events, brands, products, or lifestyle content, a polished shoot experience with premium edits.",
+                tier: [
+                    {
+                        tierPack: "Half-Day Package",
+                        description: "",
+                        price: "₦180,000",
+                        prepTime: "Up to 4 Hours",
+                        deliverables: [
+                            "2 Edited Videos (1 highlight + 1 trend/reel-style)",
+                            "Selected raw clips on request",
+                        ],
                         buttonLabel: "Get Started",
                         buttonLink: "/contact",
                     },
                     {
-                        tier: "Creative Brand Shoots",
-                        description: "Ideal for fashion, beauty, lifestyle & birthdays.",
-                        prepTime: "(up to 3hrs)",
-                        mobile: "With mobile - ",
-                        mobileSpan: "₦100,000",
-                        includes: "Includes:",
+                        tierPack: "Full Day Package",
+                        description: "",
+                        price: "₦250,000",
+                        prepTime: "Up to 8 Hours",
                         deliverables: [
-                            "Edited videos based on outfits captured within the session",
+                            "3 – 4 Edited Videos (1 highlight + 2 – 3 trend/reel-style) content",
+                            "Selected raw clips on request",
                         ],
-                        addOn: "",
-                        addOnText: "",
-                        addOnSpan: "",
                         buttonLabel: "Get Started",
                         buttonLink: "/contact",
-                    },
+                    }
                 ],
             },
             {
-                categoryTitle: "Event Content Creation",
-                subhead: "",
-                subHeadSpan: "",
-                packages: [
+                type: "Wedding Content Shoot",
+                typeText: "",
+                tier: [
                     {
-                        tier: "Standard Event Coverage",
-                        description: "Half Day (up to 4hrs)",
-                        prepTime: "",
-                        mobile: "With mobile - ",
-                        mobileSpan: "₦120,000",
-                        includes: "Includes:",
-                        deliverables: ["1 edited videos"],
-                        addOn: "",
-                        addOnText: "",
-                        addOnSpan: "",
-                        buttonLabel: "Get Started",
-                        buttonLink: "/contact",
-                    },
-                    {
-                        tier: "",
-                        description: "Full Day (up to 8hrs)",
-                        prepTime: "",
-                        mobile: "With mobile - ",
-                        mobileSpan: "₦180,000",
-                        camera: "With camera - ",
-                        cameraSpan: "₦250,000",
-                        includes: "Includes:",
-                        deliverables: ["2-3 edited videos", "10 free premium photos"],
-                        addOn: "",
-                        addOnText: "",
-                        addOnSpan: "",
-                        buttonLabel: "Get Started",
-                        buttonLink: "/contact",
-                        close:
-                            "Ideal for events: Parties, Corporate, Graduation, Intimate Ceremonies",
-                    },
-                    {
-                        tier: "",
-                        description: "Product & Business Spaces",
-                        prepTime: "",
-                        mobile: "With mobile - ",
-                        mobileSpan: "₦90,000",
-                        camera: "With camera - ",
-                        cameraSpan: "₦150,000",
-                        includes: "",
-                        deliverables: [],
-                        addOn: "",
-                        addOnText: "",
-                        addOnSpan: "",
-                        buttonLabel: "Get Started",
-                        buttonLink: "/contact",
-                        close:
-                            "Ideal for events: business spaces, real estate, food content",
-                    },
-                    {
-                        tier: "",
-                        description: "Wedding morning Coverage (up to 5hrs)",
-                        prepTime: "",
-                        mobile: "With mobile - ",
-                        mobileSpan: "₦180,000",
-                        camera: "With camera - ",
-                        cameraSpan: "₦250,000",
-                        includes: "",
-                        deliverables: [],
-                        addOn: "",
-                        addOnText: "",
-                        addOnSpan: "",
-                        buttonLabel: "Get Started",
-                        buttonLink: "/contact",
-                        close:
-                            "Covers prep moments:bride, groom, bridal & groom party, couple together.",
-                    },
-                    {
-                        tier: "",
-                        description: "Full Day Wedding Coverage (up to 12hrs)",
-                        prepTime: "",
-                        mobile: "With mobile - ",
-                        mobileSpan: "₦180,000",
-                        camera: "With camera - ",
-                        cameraSpan: "₦250,000",
-                        includes: "",
-                        deliverables: [],
-                        addOn: "",
-                        addOnText: "",
-                        addOnSpan: "",
-                        buttonLabel: "Get Started",
-                        buttonLink: "/contact",
-                        close:
-                            "Covers prep moments:bride, groom, bridal & groom party, couple together.",
-                    },
-                    {
-                        tier: "Property Content",
-                        description: "Polished visuals to showcase your brand space",
-                        prepTime: "",
-                        mobile: "Hotels / Shortlet Apartments — ",
-                        mobileSpan: "₦150,000",
-                        camera: "",
-                        cameraSpan: "",
-                        includes: "",
-                        deliverables: [],
-                        addOn: "",
-                        addOnText: "",
-                        addOnSpan: "",
-                        buttonLabel: "Get Started",
-                        buttonLink: "/contact",
-                    },
-                ],
-            },
-            {
-                categoryTitle: "Monthly Brand Content Plan",
-                subhead: "",
-                subHeadSpan: "",
-                packages: [
-                    {
-                        tier: "",
-                        description:
-                            "Designed for business owners who want consistent, quality content every month",
-                        prepTime: "",
-                        mobile: "",
-                        mobileSpan: "₦250,000/month",
-                        camera: "",
-                        cameraSpan: "",
-                        includes: "What's Included:",
+                        tierPack: "Half-Day Package",
+                        description: "",
+                        price: "₦200,000",
+                        prepTime: "Up to 5 Hours",
                         deliverables: [
-                            "1 Physical Shoot/Month (at your location )",
-                            "15 Edited short form Reels – tailored for social media, includes 1 revision per video",
-                            "10 Premium Photos – clean, professional images of your brand, team, or products",
-                            "Content Guide – with ideas to maximize your shoot",
-                            "Unlimited raw videos & photos captured during the session",
+                            "Bride prep + Bride maids content",
+                            "Groom prep + Groomsmen content",
+                            "couple together content",
                         ],
-                        addOn: "",
-                        addOnText: "",
-                        addOnSpan: "",
                         buttonLabel: "Get Started",
                         buttonLink: "/contact",
                     },
+                    {
+                        tierPack: "Full Day Package",
+                        description: "",
+                        price: "₦350,000",
+                        prepTime: "Up to 9 Hours",
+                        deliverables: [
+                            "Everything from Half-Day",
+                            "Event highlight",
+                            "After party",
+                        ],
+                        buttonLabel: "Get Started",
+                        buttonLink: "/contact",
+                    }
                 ],
             },
         ],
-    }
-    , {
+    },
+    {
         id: 4,
         category: "Graphics Design",
         description: "Clean, consistent, and professional designs that reflect your brand across platforms. From logos to packaging, we create clean, branded visuals that bring your ideas to life whether for digital or print.",
@@ -563,7 +469,7 @@ export const PricingData = [
                 text: "Branded slides for client pitches, webinars, and reports."
             },
         ],
-        buttonLabel: "Request a Design →",
+        buttonLabel: "Request a Design",
         buttonLink: "/contact",
     },
     {
@@ -602,7 +508,7 @@ export const PricingData = [
             },
             {
                 title: "Sales Funnels & Lead Capture Pages",
-                text: "Pages crafted to guide users toward actions—like purchases or email signups.",
+                text: "Pages crafted to guide users toward actions like purchases or email signups.",
             },
             {
                 title: "SEO Optimization",
@@ -779,58 +685,69 @@ export const privacyData = {
 
 export const frequentData = [
     {
+        id: 1,
         question: "What platforms do you manage for social media?",
         answer:
             "We mainly manage Instagram and TikTok, but we can also cross-post to Facebook so your content reaches a wider audience effortlessly.",
     },
     {
+        id: 2,
         question: "Do I need to provide anything for my social media management?",
         answer:
             "Yes, you'll need to provide the photos or videos you'd like us to use. We handle everything else from captions and strategy to posting and reporting.",
     },
     {
+        id: 3,
         question: "Can I combine different services?",
         answer:
             "Of course! Many of our clients mix and match services like content creation, social media management, and ads. Just let us know what you need, and we'll build a custom solution for you.",
     },
     {
+        id: 4,
         question: "Can I upgrade my social media package later?",
         answer:
             "Absolutely. You can start with a basic package and upgrade anytime as your needs grow. We'll guide you on the best plan for your goals.",
     },
     {
+        id: 5,
         question: "How long does it take to receive content after a shoot?",
         answer:
             "We deliver your edited content within 72 hours after the shoot. If you'd like it sooner, you can request express delivery for a small additional fee.",
     },
     {
+        id: 6,
         question: "What if I need my content faster than 72 hours?",
         answer:
             "No problem. We offer express delivery within 48 hours as an add-on. Just let us know when booking, and we'll prioritize your edit.",
     },
     {
+        id: 7,
         question: "Do you include photos in your content creation packages?",
         answer:
             "Yes! For most content sessions, we include a set of free premium photos along with your videos. These are edited and perfect for sharing online or saving special moments.",
     },
     {
+        id: 8,
         question: "Can I book both mobile and camera coverage?",
         answer:
             "Yes, depending on your preference and budget, you can choose mobile, camera, or both. Camera shoots offer even higher image quality and are ideal for premium content.",
     },
     {
+        id: 9,
         question: "Is there a limit to the number of outfits or looks per shoot?",
         answer:
             "Yes, but we don't cap it strictly. The number of edited videos depends on how many looks or moments we can cover within the booked hours. You can always extend your time with an extra hour add-on.",
     },
     {
+        id: 10,
         question: "Do you offer support after delivering a website?",
         answer:
             "Yes, we offer after-launch support as an optional service to keep your site running smoothly. We'll also show you how to make basic updates if you prefer.",
     },
     {
+        id: 11,
         question: "Who is the Business Owner Content Bundle for?",
         answer:
-            "It's strictly for business owners who need regular branded content for marketing—not for personal shoots or events.",
+            "It's strictly for business owners who need regular branded content for marketing, not for personal shoots or events.",
     },
 ];

@@ -3,6 +3,10 @@
   color: var(--text);
 }
 
+.AboutUsSmall {
+  display: none;
+}
+
 .AboutUsHead {
   margin-bottom: 30px;
 }
@@ -30,7 +34,7 @@
   transform: translate(-50%, -50%);
   background: url("/logoImg.png") no-repeat center center;
   background-size: contain;
-  opacity: 0.4;
+  opacity: 0.2;
   width: 100%;
   height: 100%;
   pointer-events: none;
@@ -60,7 +64,7 @@
 }
 
 .AboutImgContainer img {
-  height: 110px;
+  height: 120px;
   width: 130px;
   border-radius: 6px;
 }
@@ -94,8 +98,18 @@
   }
 
   .AboutUsContainer {
-    gap: 10px;
+    gap: 6px;
     padding: 0;
+  }
+
+  .AboutImgContainer img {
+    height: 100px;
+    width: 120px;
+    border-radius: 6px;
+  }
+
+  .AboutUsSmall {
+    display: none;
   }
 
   .AboutUsHead {
@@ -118,11 +132,35 @@
     margin-right: 20px;
   }
 
+  .AboutImgContainer img {
+    margin-top: 5px;
+  }
+
   .AboutUsFirst p {
     font-size: var(--font-size-p);
     letter-spacing: 0.6px;
-    line-height: 27px;
+    line-height: 24px;
     width: 100%;
+  }
+
+  .AboutUsTexts p {
+    line-height: 24px;
+  }
+
+  .SecondText {
+    margin-bottom: 10px;
+  }
+
+  .ThirdText {
+    margin-bottom: 10px;
+  }
+
+  .ForthText {
+    margin-bottom: 10px;
+  }
+
+  .AboutUsTexts h3 {
+    margin-top: 20px;
   }
 }
 
@@ -168,55 +206,79 @@
   .AboutUsHeader h2 {
     font-size: var(--font-size-p);
     letter-spacing: 0.4px;
+    font-weight: 500;
     padding-bottom: 10px;
   }
 
   .AboutUsFirst {
+    display: none;
+  }
+
+  .AboutUsSmall {
+    display: flex;
+    flex-direction: row;
+    margin-top: -10px;
+  }
+
+  .SmallImgContainer {
     display: flex;
     flex-direction: row;
   }
 
-  .AboutUsFirst p {
-    font-size: var(--font-size-p);
-    letter-spacing: 0.2px;
-    line-height: 18px;
-    width: auto;
-  }
-
-  .AboutImgContainer {
-    margin-right: 15px;
-  }
-
-  .AboutImgContainer img {
+  .SmallImgContainer img {
     height: 100px;
     width: 100px;
     border-radius: 6px;
   }
 
-  .AboutImgContainer p {
-    font-size: var(--font-size-p);
+  .SmallImgContainer p {
+    font-size: 15px;
+  }
+
+  .SmallText2 {
+    margin-top: 5px;
+  }
+
+  .AboutUsSmall p {
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    width: auto;
+  }
+
+  .SmallImg {
+    margin-right: 13px;
+    margin-top: 5px;
+  }
+
+  .SmallImg p {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
     padding-left: 0;
   }
 
   .SecondText {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .ThirdText {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .ForthText {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .AboutUsTexts p {
-    font-size: var(--font-size-p);
+    font-size: 15px;
     letter-spacing: 0.5;
     line-height: 18px;
   }
 
   .AboutUs h3 {
     font-size: var(--font-size-p);
+    margin-top: 15px;
+    font-weight: 500;
   }
 }

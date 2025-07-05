@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  margin-bottom: 2rem;
 }
 
 .TabDataHeader {
@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  margin-bottom: 10px;
 }
 
 .TabDataHeader h2 {
@@ -34,9 +34,9 @@
   gap: 10px;
   background: linear-gradient(
     to left,
-    #3800018e,
-    #380001ba,
     #380001cf,
+    #380001e0,
+    #380001d8,
     #380001d5,
     #380001dc,
     #380001f5
@@ -75,11 +75,10 @@
   gap: 1rem;
   max-width: 350px;
   border-radius: 15px;
-  box-shadow: 4px 2px 15px#a635093c;
+  box-shadow: 4px 2px 15px#a6350918;
 }
 
 .TabDataPack button {
-  border: 0.7px solid var(--background);
   margin-bottom: 20px;
 }
 
@@ -120,12 +119,8 @@
     flex-direction: column;
     align-items: center;
     gap: 0.7rem;
-    max-width: 320px;
+    max-width: 310px;
     border-radius: 12px;
-  }
-
-  .TabDataPack button {
-    border: 0.7px solid var(--background);
   }
 
   .TabDataTagLine {
@@ -142,10 +137,6 @@
 }
 
 @media (max-width: 480px) {
-  .TabDataContainer {
-    gap: 3rem;
-  }
-
   .TabDataHeader h2 {
     font-size: var(--font-size-h3);
     letter-spacing: 0.5px;
@@ -159,7 +150,7 @@
 
   .TabDataBack {
     gap: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .TabDataBack p {
@@ -169,12 +160,8 @@
 
   .TabDataPack {
     gap: 1rem;
-    max-width: 320px;
+    max-width: 300px;
     border-radius: 12px;
-  }
-
-  .TabDataPack button {
-    border: 0.7px solid var(--background);
   }
 
   .TabDataTagLine {
@@ -187,5 +174,6 @@
   .TabDataDeliverables li {
     list-style: none;
     line-height: 25px;
+    font-size: 15px;
   }
 }

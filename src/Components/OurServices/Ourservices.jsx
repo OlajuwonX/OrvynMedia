@@ -29,7 +29,7 @@ const Ourservices = () => {
               close,
               buttonText,
               buttonClass,
-              buttonLink
+              buttonLink,
             }) => (
               <div key={id} className="AccordionItem">
                 <div
@@ -47,9 +47,14 @@ const Ourservices = () => {
                       <h4 className="Sub">{subTitle}</h4>
                       <p>{description}</p>
                       <h4>{close}</h4>
-                        <button className={`AccordionBtn ${buttonClass}`} onClick={() => navigate(buttonLink)}>
+                      <div className="AccordionBtnContainer">
+                        <button
+                          className={`AccordionBtn ${buttonClass}`}
+                          onClick={() => navigate(buttonLink)}
+                        >
                           {buttonText}
                         </button>
+                      </div>
                     </div>
                   </div>
                 )}

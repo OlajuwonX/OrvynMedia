@@ -1,12 +1,10 @@
-import React, { useState } from "react";
 import Web from "../../PricingComponent/Web/Web";
 import Graphics from "../../PricingComponent/Graphics/Graphics";
+import "./Others.css";
 
-const Others = () => {
-  const [activeTab, setActiveTab] = useState("SMM");
-
-  const otherContent = () => {
-    switch (activeTab) {
+const Others = ({ currentSubTab, setCurrentSubTab }) => {
+  const renderContent = () => {
+    switch (currentSubTab) {
       case "Web":
         return <Web />;
       case "Graphics":
@@ -15,28 +13,25 @@ const Others = () => {
         return null;
     }
   };
+
   return (
-    <div className="ServiceContainer">
-      <div className="PricingCard">
-        <div className="PricingHeader">
-          <h1>I</h1>
-          <h3>Done</h3>
-        </div>
-        <div className="TabButtons">
+    <div className="OthersContainer">
+      <div className="OthersCard">
+        <div className="OthersButtons">
           <button
-            className={`TabButton ${activeTab === "Web" ? "active" : ""}`}
-            onClick={() => setActiveTab("Web")}
+            className={`TabButton ${currentSubTab === "Web" ? "active" : ""}`}
+            onClick={() => setCurrentSubTab("Web")}
           >
-             Web
+            Web
           </button>
           <button
-            className={`TabButton ${activeTab === "Graphics" ? "active" : ""}`}
-            onClick={() => setActiveTab("Graphics")}
+            className={`TabButton ${currentSubTab === "Graphics" ? "active" : ""}`}
+            onClick={() => setCurrentSubTab("Graphics")}
           >
             Graphics
           </button>
         </div>
-        <div className="PricingContent">{otherContent()}</div>
+        <div className="PricingContent">{renderContent()}</div>
       </div>
     </div>
   );

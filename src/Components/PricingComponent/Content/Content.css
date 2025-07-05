@@ -1,0 +1,289 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"); */
+
+.ContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.ContentHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ContentHeader h2 {
+  font-size: var(--font-size-h2);
+  letter-spacing: 1px;
+}
+
+.ContentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.ContentCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ContentType {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.ContentType h3 {
+  font-size: var(--font-size-h3);
+  text-transform: uppercase;
+  font-weight: 600;
+  /* font-family: "Italiana", sans-serif; */
+}
+
+.ContentType p {
+  font-size: 18px;
+}
+
+.ContentPack {
+  width: 320px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.ContentPackageCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.ContentBack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+   background: linear-gradient(
+    to left,
+    #380001cf,
+    #380001e0,
+    #380001d8,
+    #380001d5,
+    #380001dc,
+    #380001f5
+  );
+  color: #fed3d3;
+  padding: 14px;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.ContentPrice {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.ContentDeliverables {
+  list-style: none;
+  padding: 0 10px;
+  line-height: 25px;
+}
+
+.ContentButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContentPack button {
+  max-width: 40%;
+  cursor: pointer;
+}
+
+.ContentClose {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 1081px) {
+  .ContentContainer {
+    margin-bottom: 2rem;
+  }
+
+  .ContentHeader {
+    margin-bottom: 10px;
+  }
+
+  .ContentHeader h2 {
+    font-size: var(--font-size-h2);
+    letter-spacing: 0.6px;
+  }
+
+  .ContentWrapper {
+    gap: 3rem;
+  }
+
+  .ContentCard {
+    gap: 0.7rem;
+  }
+
+  .ContentType {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .ContentType h3 {
+    font-weight: 500;
+  }
+
+  .ContentType p {
+    font-size: 16px;
+  }
+
+  .ContentPack {
+    gap: 0.7rem;
+  }
+
+  .ContentPackageCards {
+    gap: 3rem;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .ContentBack {
+    gap: 10px;
+  }
+
+  .ContentPrice {
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .ContentDeliverables {
+    list-style: none;
+    padding: 0 10px;
+    line-height: 23px;
+  }
+
+  .ContentClose {
+    margin-top: 40px;
+  }
+
+  .ContentClose h2 {
+    font-size: var(--font-size-h2);
+  }
+}
+
+@media (max-width: 767px) {
+  .ContentPackageCards {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .ContentClose {
+    margin-top: 30px;
+  }
+
+  .ContentClose h2 {
+    font-size: var(--font-size-h3);
+  }
+}
+
+@media (max-width: 480px) {
+  .ContentContainer {
+    margin-bottom: 2rem;
+    padding: 0 8px;
+  }
+
+  .ContentHeader {
+    margin-bottom: 0;
+  }
+
+  .ContentHeader h2 {
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+
+  .ContentWrapper {
+    gap: 3rem;
+  }
+
+  .ContentCard {
+    gap: 0.7rem;
+  }
+
+  .ContentType {
+    margin-bottom: 1rem;
+  }
+
+  .ContentType h3 {
+    font-size: var(--font-size-h3);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .ContentType p {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .ContentPack {
+    width: 310px;
+    gap: 1rem;
+  }
+
+  .ContentPackageCards {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .ContentBack {
+    padding: 14px;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 10px;
+  }
+
+  .ContentPrice {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .ContentDeliverables {
+    padding: 0 10px;
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+   .ContentClose {
+    margin-top: 40px;
+  }
+
+  .ContentClose h2 {
+    font-size: var(--font-size-h3);
+  }
+}

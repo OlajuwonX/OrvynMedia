@@ -1,0 +1,127 @@
+.OtherDataContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 10px;
+}
+
+.OtherDataContainer h2 {
+  font-size: var(--font-size-h2);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.OtherDataCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 330px;
+  border-radius: 15px;
+  box-shadow: 4px 2px 15px#a6350918;
+  cursor: pointer;
+}
+
+.OtherDataBack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+   background: linear-gradient(
+    to left,
+    #380001cf,
+    #380001e0,
+    #380001d8,
+    #380001d5,
+    #380001dc,
+    #380001f5
+  );
+  color: #fed3d3;
+  padding: 14px;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.OtherDataDeliverables {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  line-height: 20px;
+}
+
+.OtherDataDeliverables h3 {
+  font-size: var(--font-size-p);
+  font-weight: 600;
+}
+
+.OtherDataButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+@media (max-width: 1081px) {
+  .OtherDataContainer h2 {
+    font-size: var(--font-size-h2);
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+
+  .OtherDataCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 15px;
+    box-shadow: 4px 2px 15px#a6350918;
+  }
+
+  .OtherDataBack {
+    margin-bottom: 10px;
+  }
+
+  .OtherDataDeliverables p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .OtherDataContainer h2 {
+    font-size: var(--font-size-h3);
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+
+  .OtherDataCard {
+    max-width: 300px;
+  }
+
+  .OtherDataBack {
+    margin-bottom: 0;
+  }
+
+  .OtherDataDeliverables h3 {
+    font-size: var(--font-size-p);
+    font-weight: 600;
+  }
+
+  .OtherDataDeliverables p {
+    font-size: 15px;
+  }
+
+  .OtherDataButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+}

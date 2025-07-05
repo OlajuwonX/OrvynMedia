@@ -25,7 +25,7 @@ const ADS = () => {
             <p className="TabDataDescription">{pack.description}</p>
             <ul className="TabDataDeliverables">
               {pack.deliverables.map((item, i) => (
-                <li key={i}>✔ {item}</li>
+                <li key={i}>{item}</li>
               ))}
             </ul>
             <button

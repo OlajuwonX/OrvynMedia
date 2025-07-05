@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 .HeroContainer {
   display: flex;
   margin-bottom: 40px;
@@ -47,6 +49,7 @@
 
 .HeroSubheader span {
   color: #a63509;
+  font-family: "Italiana", sans-serif;
 }
 
 .HeroButton {
@@ -130,7 +133,7 @@
   }
 
   .HeroContainer::before {
-    min-height: 70vh;
+    min-height: 60vh;
   }
 
   .HeroText {
@@ -166,7 +169,7 @@
   }
 
   .HeroButton {
-    margin-top: 35%;
+    margin-top: 25%;
     margin-right: 50px;
   }
 }

@@ -37,7 +37,7 @@
 }
 
 .FooterBrand img {
-  height: 50px;
+  height: 40px;
 }
 
 .FooterCompany {
@@ -286,7 +286,7 @@
   }
 
   .FooterBrand img {
-    height: 46px;
+    height: 35px;
   }
 
   .FooterContact {
@@ -359,16 +359,16 @@
   .Footer2 {
     display: flex;
     flex-wrap: wrap;
-    gap: 4.5rem;
+    gap: 7rem;
     justify-content: space-between;
   }
 
   .Footer2 {
-    gap: 4rem;
+    gap: 5rem;
   }
 
   .FooterBrand img {
-    height: 45px;
+    height: 35px;
   }
 
   .FooterContact {
@@ -443,5 +443,16 @@
     font-size: 16px;
     font-weight: 100;
     letter-spacing: 0.6px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Footer1,
+  .Footer2 {
+    gap: 4.7rem;
+  }
+
+  .Footer2 {
+    gap: 4.7rem;
   }
 }

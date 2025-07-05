@@ -10,7 +10,7 @@ import Privacy from "./Components/Pages/Privacy/Privacy.jsx";
 
 import "./App.css";
 import TopBtn from "./Components/BackToTopBtn/Top.jsx";
-import ThankYou from "./Components/ThankYouPage/ThankYou.jsx";
+import ThankYou from "./Components/Pages/ThankYouPage/ThankYou.jsx";
 
 function App() {
   return (

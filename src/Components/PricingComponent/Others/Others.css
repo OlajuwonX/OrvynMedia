@@ -1,0 +1,26 @@
+.OthersCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.OthersButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.OthersButtons button {
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  background: inherit;
+}
+
+.OthersButtons button.active {
+  border-bottom: 1px solid;
+  font-weight: 600;
+  color: #a63509;
+}

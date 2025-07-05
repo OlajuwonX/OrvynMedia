@@ -7,7 +7,7 @@ const Content = () => {
 
   const Category = PricingData.find((item) => item.id === 3);
 
-  if (!Category || !Array.isArray(Category.category)) {
+  if (!Category || !Array.isArray(Category.packages)) {
     return (
       <div className="TabDataContainer">
         <h2>Content Not Available</h2>
@@ -17,66 +17,73 @@ const Content = () => {
   }
 
   return (
-    <div className="TabDataContainer">
-      {Category.category.map((section, sectionIdx) => (
-        <div key={sectionIdx}>
-          <div className="TabDataHeader">
-            <h2>{section.categoryTitle}</h2>
-            {(section.subhead || section.subHeadSpan) && (
-              <h3>
-                {section.subhead}
-                {section.subHeadSpan && <span> {section.subHeadSpan}</span>}
-              </h3>
-            )}
-          </div>
+    <div className="ContentContainer">
+      <div className="ContentHeader">
+        <h2>{Category.category}</h2>
+      </div>
 
-          <div className="TabDataWrapper">
-            {section.packages.map((pack, packIdx) => (
-              <div className="TabDataPack" key={packIdx}>
-                <div className="TabDataBack">
-                  <div className="TabDataGridOverlay" />
-                  <h3>{pack.tier || "Standard"}</h3>
-                  <p className="TabDataDescription">{pack.description}</p>
+      <div className="ContentWrapper">
+        {Category.packages.map((group, groupIdx) => (
+          <div key={groupIdx} className="ContentCard">
+            <div className="ContentType">
+              {group.type && <h3 className="ContentTypeHead">{group.type}</h3>}
+              {group.typeText && (
+                <p className="ContentDescription">{group.typeText}</p>
+              )}
+            </div>
 
-                  {pack.mobileSpan && (
-                    <p className="TabDataPrice">
-                      {pack.mobile && <span>{pack.mobile}</span>}
-                      {pack.mobileSpan}
-                    </p>
-                  )}
+            <div className="ContentPackageCards">
+              {group.tier.map((pack, packIdx) => (
+                <div className="ContentPack" key={packIdx}>
+                  <div className="ContentBack">
+                    <div className="TabDataGridOverlay" />
+                    <h3>{pack.tierPack}</h3>
+                    {pack.description && (
+                      <p className="ContentDescription">{pack.description}</p>
+                    )}
+                    {pack.prepTime && <p>{pack.prepTime}</p>}
+                    {pack.price && (
+                      <p className="ContentPrice">
+                        <span>{pack.price}</span>
+                      </p>
+                    )}
+                  </div>
+
+                  {Array.isArray(pack.deliverables) &&
+                    pack.deliverables.length > 0 && (
+                      <ul className="ContentDeliverables">
+                        {pack.deliverables.map((item, i) => (
+                          <li key={i}>{item}</li>
+                        ))}
+                      </ul>
+                    )}
+                  <div className="ContentButton">
+                    <button
+                      className="Button"
+                      onClick={() => navigate(pack.buttonLink || "/contact")}
+                    >
+                      {pack.buttonLabel || "Get Started"}
+                    </button>
+                  </div>
                 </div>
-
-                {pack.includes && <p>{pack.includes}</p>}
-
-                {Array.isArray(pack.deliverables) && pack.deliverables.length > 0 && (
-                  <ul className="TabDataDeliverables">
-                    {pack.deliverables.map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
-                )}
-
-                {(pack.addOn || pack.addOnText || pack.addOnSpan) && (
-                  <p>
-                    {pack.addOn} {pack.addOnText} {pack.addOnSpan}
-                  </p>
-                )}
-
-                {pack.close && (
-                  <p className="TabDataClose">{pack.close}</p>
-                )}
-
-                <button
-                  className="Button"
-                  onClick={() => navigate(pack.buttonLink || "/contact")}
-                >
-                  {pack.buttonLabel || "Get Started"}
-                </button>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
+        ))}
+      </div>
+
+      <div className="ContentClose">
+        <h2>Want Something More Specific?</h2>
+        <p>
+          If you have specific deliverables or expectations, we can tailor a
+          plan that fits your needs.
+        </p>
+        <div className="ContentButton">
+          <button className="Button" onClick={() => navigate("/contact")}>
+            Get Started
+          </button>
         </div>
-      ))}
+      </div>
     </div>
   );
 };

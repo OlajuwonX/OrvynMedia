@@ -19,7 +19,6 @@ const Footer = () => {
           <img src="/logoImg.png" alt="Logo" />
         </div>
 
-        {/* Left Side - Company & Legal */}
         <div className="Footer1">
           {/* Company Nav */}
           <div className="FooterCompany">

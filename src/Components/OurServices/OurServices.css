@@ -1,23 +1,26 @@
 .AccordionContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 60px;
   gap: 1rem;
   color: var(--text);
 }
 
 .AccordionHead {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .AccordionSection {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
 
 .AccordionItemContainer {
-  min-width: 60%;
+  min-width: 65%;
 }
 
 .AccordionHead h1 {
@@ -31,14 +34,7 @@
   border: 1px solid var(--text);
   border-radius: 20px;
   padding: 1rem;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #a6350938,
-    #a635095c,
-    #a6350977,
-    #a6350982
-  );
+  background: var(--gradient);
   transition: all 0.3s ease;
   margin: 20px 0;
 }
@@ -65,23 +61,29 @@
 }
 
 .AccordionText {
-  padding: 20px;
+  padding: 10px;
 }
 
 .AccordionText .Sub {
   font-size: var(--font-size-h3);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   letter-spacing: 0.5px;
 }
 
 .AccordionText p {
   font-size: var(--font-size-p);
-  margin-bottom: 20px;
-  line-height: 30px;
+  margin-bottom: 10px;
+  line-height: 25px;
 }
 
 .AccordionBtn {
   margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.AccordionBtn:hover {
+  scale: 1.05;
 }
 
 .AccordionImage img {
@@ -92,11 +94,9 @@
 
 @media (max-width: 1081px) {
   .AccordionContainer {
-    flex-direction: column;
     padding: 40px;
-    margin-top: 30px;
-
-    gap: 0.5rem;
+    gap: 0.7rem;
+    color: var(--text);
   }
 
   .AccordionHead {
@@ -104,53 +104,43 @@
   }
 
   .AccordionSection {
-    display: flex;
+    width: 100%;
   }
 
   .AccordionItemContainer {
-    min-width: 100%;
+    min-width: 55%;
   }
 
   .AccordionHead h1 {
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    font-size: var(--font-size-h2);
+    letter-spacing: 0.6px;
+    font-size: var(--font-size-h1);
   }
 
   .AccordionItem {
+    width: 100%;
+    border: 1px solid var(--text);
     border-radius: 20px;
-    width: 90%;
-    padding: 0.8rem;
+    padding: 0.7rem;
+    background: var(--gradient);
+    transition: all 0.3s ease;
     margin: 20px 0;
   }
 
-  .AccordionHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-  }
-
   .AccordionHeader .Icon {
-    color: var(--text);
+    color: #fed3d3;
   }
 
   .AccordionHeader h3 {
     font-size: var(--font-size-h3);
-    letter-spacing: 0.5px;
-  }
-
-  .AccordionContent {
-    display: flex;
-    justify-content: space-between;
+    letter-spacing: 0.7px;
   }
 
   .AccordionText {
-    padding: 20px 10px;
+    padding: 10px 5px;
   }
 
   .AccordionText .Sub {
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-p);
     margin-bottom: 10px;
     letter-spacing: 0.5px;
   }
@@ -158,7 +148,7 @@
   .AccordionText p {
     font-size: var(--font-size-p);
     margin-bottom: 10px;
-    line-height: 27px;
+    line-height: 20px;
   }
 
   .AccordionBtn {
@@ -166,24 +156,25 @@
   }
 
   .AccordionImage img {
-    display: none;
+    height: 17rem;
+    width: 20rem;
+    border: none;
+    margin-top: 2rem;
+    background: inherit;
   }
 }
 
 @media (max-width: 480px) {
   .AccordionContainer {
-    flex-direction: column;
-    padding: 30px;
-    gap: 0.3rem;
-    margin-top: 40px;
-  }
-
-  .AccordionHead {
-    margin-bottom: 0;
+    padding: 40px 30px;
+    gap: 0.4rem;
   }
 
   .AccordionSection {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .AccordionItemContainer {
@@ -191,59 +182,57 @@
   }
 
   .AccordionHead h1 {
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    font-size: var(--font-size-h2);
+    letter-spacing: 0.4px;
+    font-size: 24px;
   }
 
   .AccordionItem {
-    border-radius: 20px;
-    padding: 0.8rem;
+    width: 100%;
+    border-radius: 15px;
+    padding: 0.7rem;
     margin: 20px 0;
   }
 
-  .AccordionHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-  }
-
   .AccordionHeader .Icon {
-    color: var(--text);
+    color: #fed3d3;
   }
 
   .AccordionHeader h3 {
-    font-size: var(--font-size-p);
-    letter-spacing: 0.5px;
-  }
-
-  .AccordionContent {
-    display: flex;
-    justify-content: space-between;
+    letter-spacing: 0.4px;
   }
 
   .AccordionText {
-    padding: 10px;
+    padding: 3px;
   }
 
   .AccordionText .Sub {
     font-size: var(--font-size-p);
-    margin-bottom: 10px;
+    font-weight: 600;
+    margin-bottom: 5px;
     letter-spacing: 0.5px;
   }
 
+  .AccordionText h4 {
+    font-weight: 600;
+  }
+
   .AccordionText p {
-    font-size: var(--font-size-p);
-    margin-bottom: 10px;
-    line-height: 25px;
+    font-size: 15px;
+    margin: 10px 0;
+    line-height: 20px;
   }
 
   .AccordionBtn {
-    margin-top: 20px;
+    margin: 20px 0;
   }
 
   .AccordionImage img {
     display: none;
+  }
+
+  .AccordionBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

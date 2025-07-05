@@ -1,4 +1,8 @@
-.TabDataPrice span{
-    font-style: italic;
-    font-weight: 500;
+.TabDataPrice span {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.TabDataDescription {
+  padding: 0 10px;
 }
