@@ -49,7 +49,7 @@
 
 .HeroSubheader span {
   color: #a63509;
-  font-family: "Italiana", sans-serif;
+  font-family: "Italiana";
 }
 
 .HeroButton {
@@ -137,7 +137,7 @@
   }
 
   .HeroText {
-    margin: 6rem 0;
+    margin: 4.5rem 0;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -169,7 +169,7 @@
   }
 
   .HeroButton {
-    margin-top: 25%;
+    margin-top: 15%;
     margin-right: 50px;
   }
 }

@@ -19,7 +19,7 @@ const ContactForm = () => {
       description,
     };
 
-    window.location.href = "https://orvynmedia.com/thank-you";
+    window.location.href = "https://www.orvynmedia.com/thank-you";
 
     fetch("/api/send-email", {
       method: "POST",
