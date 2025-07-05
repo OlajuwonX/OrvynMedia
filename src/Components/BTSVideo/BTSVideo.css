@@ -108,9 +108,14 @@
   }
 }
 
-@media (min-width: 540px ) {
-    .VideoCard {
-    height: 70vh;
+@media (max-width: 640px) {
+  .VideoCard {
+    height: 60vh;
+  }
+
+  .VideoText {
+    width: 80%;
+    padding: 1rem;
   }
 }
 
@@ -120,9 +125,9 @@
     padding: 60px 0;
   }
 
-    .VideoText {
+  .VideoText {
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .VideoHeader {
@@ -131,7 +136,7 @@
   }
 
   .VideoHeader h1 {
-    font-size: var(--font-size-h1);
+    font-size: var(--font-size-h2);
     text-transform: capitalize;
     letter-spacing: 0.5px;
   }
@@ -141,7 +146,7 @@
   }
 
   .VideoCard {
-    height: 50vh;
+    height: 45vh;
   }
 
   .VideoText {
@@ -151,7 +156,7 @@
   .VideoText p {
     font-size: var(--font-size-p);
     line-height: 25px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.4px;
     margin-bottom: 0;
   }
@@ -159,7 +164,8 @@
   .VideoText h3 {
     font-size: var(--font-size-h3);
     letter-spacing: 0.5px;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-weight: 500;
   }
 
   .VideoText a {
@@ -167,10 +173,9 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    
   }
 
   .VideoText button {
-    margin-top: 60px;
+    margin-top: 30px;
   }
 }

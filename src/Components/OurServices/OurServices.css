@@ -164,6 +164,22 @@
   }
 }
 
+@media (max-width: 640px) {
+  .AccordionContainer {
+    padding: 30px;
+    gap: 0.7rem;
+    color: var(--text);
+  }
+
+  .AccordionImage img {
+    display: none;
+  }
+
+  .AccordionItemContainer {
+    min-width: 90%;
+  }
+}
+
 @media (max-width: 480px) {
   .AccordionContainer {
     padding: 40px 30px;

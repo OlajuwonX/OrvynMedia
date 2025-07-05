@@ -15,9 +15,9 @@ const About = () => {
           <h1>Who we are</h1>
         </div>
         <div className="AboutText">
-            <div className="AboutIntro">
-              <h2>{AboutUs.header}</h2>
-            </div>
+          <div className="AboutIntro">
+            <h2>{AboutUs.header}</h2>
+          </div>
           <div className="AboutSubheader">
             <p>
               Founded by Raphael or Dami, a digital storyteller and social media
@@ -26,9 +26,11 @@ const About = () => {
               delivered real results. Over time, that passion grew into a
               creative agency focused
             </p>
-            <button className="Button" onClick={goToAbout}>
-              Read More
-            </button>
+            <div className="AboutBtn">
+              <button className="Button" onClick={goToAbout}>
+                Read More
+              </button>
+            </div>
           </div>
         </div>
       </div>

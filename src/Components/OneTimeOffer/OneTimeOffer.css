@@ -1,0 +1,76 @@
+.HomeOfferContainer {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+}
+
+.HomeOfferSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 6rem;
+  align-items: center;
+}
+
+.HomeOfferWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.HomeOfferCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 430px;
+  height: auto;
+}
+
+.HomeOfferBack {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 12px 12px 0 0;
+  gap: 5px;
+}
+
+.HomeOfferBack h3 {
+font-size: var(--font-size-h3);
+font-weight: 500;
+}
+
+.HomeOfferBack p {
+  font-weight: 600;
+}
+
+.HomeOfferPrice {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.HomeOfferItem {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  gap: 10px;
+}
+
+.HomeOfferItem li {
+  list-style: none;
+}
+
+.HomeOfferBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

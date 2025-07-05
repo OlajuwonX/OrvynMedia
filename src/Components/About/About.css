@@ -14,14 +14,19 @@
   background: url("/logoImg.png") no-repeat center center;
   background-size: contain;
   opacity: 0.1;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: auto;
   pointer-events: none;
   z-index: 0;
 }
 
 .About {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
   z-index: 1;
   padding: 60px;
   color: var(--text);
@@ -43,6 +48,7 @@
 
 .AboutIntro h2 {
   font-size: var(--font-size-h2);
+  font-weight: 600;
 }
 
 .AboutSubheader {
@@ -55,61 +61,54 @@
   font-size: var(--font-size-p);
 }
 
-.AboutSubheader button {
+.AboutBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutBtn button {
   margin-top: 25px;
+  padding: 10px 30px;
+  font-size: var(--font-size-h3);
+  border-radius: 15px;
 }
 
 @media (max-width: 1081px) {
+  .AboutContainer::before {
+    opacity: 0.1;
+    width: 90%;
+  }
+
   .About {
-    padding:0 40px;
-    margin-top: 3.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    z-index: 1;
+    padding: 40px;
+    color: var(--text);
   }
 
   .AboutHeader {
-    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+  }
+
+  .AboutHeader h1 {
+    font-size: var(--font-size-h1);
   }
 
   .AboutIntro {
-    margin-top: 10px;
-    line-height: 33px;
+    margin-top: 15px;
+    line-height: 30px;
   }
 
   .AboutIntro h2 {
-    font-size: var(--font-size-h3);
-  }
-
-  .AboutSubheader {
-    margin-top: 10px;
-    line-height: 28px;
-    letter-spacing: 0.5px;
-  }
-
-  .AboutSubheader p {
-    font-size: var(--font-size-p);
-  }
-
-  .AboutSubheader button {
-    margin-top: 35px;
-  }
-}
-
-@media (max-width: 480px) {
-  .About {
-    padding:0 30px;
-    margin-top: 0;
-  }
-
-  .AboutHeader {
-    letter-spacing: 0.5px;
-  }
-
-  .AboutIntro {
-    margin-top: 10px;
-    line-height: 27px;
-  }
-
-  .AboutIntro h2 {
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-h2);
+    font-weight: 600;
   }
 
   .AboutSubheader {
@@ -118,11 +117,71 @@
     letter-spacing: 0.5px;
   }
 
-  .AboutSubheader p {
-    font-size: var(--font-size-p);
+  .AboutBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .AboutSubheader button {
-    margin-top: 35px;
+  .AboutBtn button {
+    margin-top: 15px;
+    padding: 10px 30px;
+    font-size: var(--font-size-h3);
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .AboutContainer::before {
+    opacity: 0.1;
+    width: 95%;
+  }
+
+  .About {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .AboutHeader {
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+  }
+
+  .AboutHeader h1 {
+    font-size: 24px;
+  }
+
+  .AboutIntro {
+    margin-top: 10px;
+    line-height: 25px;
+  }
+
+  .AboutIntro h2 {
+    font-size: var(--font-size-p);
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .AboutSubheader {
+    margin-top: 10px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+  }
+
+  .AboutSubheader p {
+    font-size: 15px;
+  }
+
+  .AboutBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .AboutBtn button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: var(--font-size-p);
+    border-radius: 13px;
   }
 }

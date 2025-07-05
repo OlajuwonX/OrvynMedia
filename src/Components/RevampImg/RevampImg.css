@@ -1,8 +1,11 @@
 .RevampSection {
   padding: 0 60px;
-  /* background: var(--gradient); */
   width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .RevampImgText {
@@ -96,8 +99,7 @@
 
   .RevampImgText h1 {
     letter-spacing: 0.5px;
-    font-size: var(--font-size-h2);
-    line-height: 1;
+    font-size: 1.6rem;
   }
 
   .RevampSliderWrapper {

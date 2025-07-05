@@ -23,7 +23,7 @@ const RevampImg = () => {
   return (
     <section className="RevampSection">
       <div className="RevampImgText">
-        <h1>pages we have revamped:</h1>
+        <h1>pages we have revamped</h1>
       </div>
 
       <Motion.div

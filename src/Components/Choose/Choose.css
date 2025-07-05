@@ -1,4 +1,8 @@
 .ChooseContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 60px;
   color: var(--text);
 }
@@ -51,7 +55,7 @@
   }
 
   .ChooseHeader h1 {
-    font-size: var(--font-size-h2);
+    font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 30px 0;

@@ -1,9 +1,15 @@
 .BrandsSection {
   padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .BrandsHeader {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .BrandsHeader h1 {
@@ -13,20 +19,40 @@
   letter-spacing: 1px;
 }
 
-.BrandsImgContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.BrandsSliderWrapper {
+  width: 100%;
+  overflow: hidden;
 }
 
-.BrandsImg img {
-  height: 4.6rem;
-  width: 4.5rem;
+.BrandsSliderContainer {
+  width: fit-content;
+  display: flex;
+}
+
+
+.BrandsSliderTrack {
+  display: flex;
+  gap: 1rem;
+}
+
+.BrandsSliderImage {
+  flex: 0 0 auto;
+  width: 120px;
+  height: 130px;
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BrandsSliderImage img {
+  height: 100px;
+  width: 110px;
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
 }
 
-.BrandsImg img:hover {
+.BrandsSliderImage img:hover {
   cursor: pointer;
   scale: 1.07;
   border: 2px solid var(--background);
@@ -34,7 +60,8 @@
 
 @media (max-width: 1081px) {
   .BrandsSection {
-    padding: 30px;
+    padding: 40px;
+    display: flex;
     margin-bottom: 30px;
   }
 
@@ -44,28 +71,28 @@
 
   .BrandsHeader h1 {
     color: var(--text);
-    font-size: var(--font-size-h2);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    font-size: 1.6rem;
+    letter-spacing: 0.7px;
   }
 
-  .BrandsImgContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  .BrandsSliderTrack {
+    gap: 0.7rem;
   }
 
-  .BrandsImg img {
-    height: 4.5rem;
-    width: 4.5rem;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
+  .BrandsSliderImage {
+    width: 100px;
+    height: 120px;
+    margin: 0 0.7rem;
   }
 
-  .BrandsImg img:hover {
+  .BrandsSliderImage img {
+    height: 90px;
+    width: 100px;
     cursor: pointer;
-    scale: 1.07;
-    border: 2px solid var(--background);
+  }
+
+  .BrandsSliderImage img:hover {
+    scale: 1.05;
   }
 }
 
@@ -76,32 +103,32 @@
   }
 
   .BrandsHeader {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .BrandsHeader h1 {
     color: var(--text);
     font-size: var(--font-size-h2);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
   }
 
-  .BrandsImgContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+  .BrandsSliderTrack {
+    gap: 0.5rem;
   }
 
-  .BrandsImg img {
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
+  .BrandsSliderImage {
+    width: 100px;
+    height: 100px;
+    margin: 0 0.4rem;
   }
 
-  .BrandsImg img:hover {
+  .BrandsSliderImage img {
+    height: 80px;
+    width: 90px;
     cursor: pointer;
-    scale: 1.07;
-    border: 2px solid var(--background);
+  }
+
+  .BrandsSliderImage img:hover {
+    scale: 1.05;
   }
 }

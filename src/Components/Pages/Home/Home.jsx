@@ -7,6 +7,8 @@ import RevampImg from "../../RevampImg/RevampImg";
 import Choose from "../../Choose/Choose";
 import BTSVideo from "../../BTSVideo/BTSVideo";
 import Brands from "../../Brands/Brands"
+import OneTimeOffer from "../../OneTimeOffer/OneTimeOffer";
+
 
 const Home = () => {
   return (
@@ -18,6 +20,7 @@ const Home = () => {
       <RevampImg />
       <Choose />
       <BTSVideo />
+      <OneTimeOffer />
       <Brands />
     </div>
   );

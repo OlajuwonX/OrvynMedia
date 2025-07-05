@@ -1,7 +1,9 @@
 .Revamp {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   padding: 60px;
   color: #380001;
 }
@@ -9,7 +11,7 @@
 .RevampItem {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .RevampHeader h1 {
@@ -25,7 +27,7 @@
 .RevampContent {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  gap: 3rem;
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 30px;
@@ -60,34 +62,35 @@
 
 .RevampTextCard {
   flex: 2;
-  font-size: 16px;
+  font-size: var(--font-size-h3);
   margin-right: 30px;
+  margin-top: 10px;
   line-height: 32px;
 }
 
 .RevampTextCard .Button {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 @media (max-width: 1081px) {
   .Revamp {
-    gap: 10px;
+    gap: 0;
     padding: 30px;
     margin-bottom: 40px;
   }
 
   .RevampItem {
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .RevampHeader h1 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     letter-spacing: 0.5px;
     text-transform: uppercase;
   }
 
   .RevampContent {
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .RevampImg {
@@ -131,13 +134,13 @@
 
 @media (max-width: 480px) {
   .Revamp {
-    gap: 10px;
+    gap: 0;
     padding: 30px;
     margin-bottom: 40px;
   }
 
   .RevampItem {
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .RevampHeader h1 {
@@ -147,7 +150,7 @@
   }
 
   .RevampContent {
-    gap: 2rem;
+    gap: 0.6rem;
   }
 
   .RevampImg {
@@ -179,9 +182,16 @@
 
   .RevampTextCard {
     flex: 2;
-    font-size: 16px;
+    font-size: 15px;
     margin-right: 0;
     line-height: 25px;
+    padding: 0 15px;
+  }
+
+  .RevampBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .RevampTextCard .Button {
