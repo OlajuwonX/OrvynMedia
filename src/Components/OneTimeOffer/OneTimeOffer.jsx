@@ -38,7 +38,9 @@ const OneTimeOffer = () => {
                   <div className="HomeOfferItem">
                     {deliverables.map((item, index) => (
                       <ul key={index}>
-                        <li>{item}</li>
+                        <li>
+                          <span className="Check">✔</span> {item}
+                        </li>
                       </ul>
                     ))}
                     <div className="HomeOfferBtn">

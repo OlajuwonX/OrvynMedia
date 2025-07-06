@@ -22,7 +22,7 @@ const SMM = () => {
             </div>
             <ul className="TabDataDeliverables">
               {pack.deliverables.map((item, i) => (
-                <li key={i}>{item}</li>
+                <li key={i}><span className="Check">✔</span>{" "}{item}</li>
               ))}
             </ul>
             <button

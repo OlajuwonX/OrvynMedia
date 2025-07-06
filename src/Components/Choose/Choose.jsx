@@ -9,7 +9,7 @@ const Choose = () => {
       </div>
       <div className="ChooseCards">
         {ChooseData.map(({ id, header, text, img }) => (
-          <div className="ChooseText">
+          <div className="ChooseWrap">
             <div className="ChooseImg" key={id}>
               <img src={img} alt="" />
             </div>

@@ -18,7 +18,9 @@ const Web = () => {
         <div className="OtherDataWrap">
           {Category.deliverables.map((item, index) => (
             <div className="OtherDataDeliverables" key={index}>
-              <h3>{item.title}</h3>
+              <h3>
+                <span className="Check">✔</span> {item.title}
+              </h3>
               <p>{item.text}</p>
             </div>
           ))}

@@ -77,7 +77,7 @@
 }
 
 .HomeOfferBack p {
-    font-size: var(--font-size-p);
+  font-size: var(--font-size-p);
   font-weight: 600;
 }
 
@@ -99,12 +99,17 @@
 
 .HomeOfferItem li {
   list-style: none;
+  font-weight: 300;
 }
 
 .HomeOfferBtn {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+}
+
+.Check {
+  color: var(--text);
 }
 
 @media (max-width: 1081px) {

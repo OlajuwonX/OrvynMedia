@@ -192,6 +192,10 @@
     line-height: 23px;
   }
 
+  .ContentButton {
+    margin-bottom: 20px;
+  }
+
   .ContentClose {
     margin-top: 40px;
   }
@@ -213,6 +217,10 @@
 
   .ContentClose h2 {
     font-size: var(--font-size-h3);
+  }
+
+  .ContentButton {
+    margin-bottom: 20px;
   }
 }
 
@@ -287,5 +295,9 @@
 
   .ContentClose h2 {
     font-size: var(--font-size-h3);
+  }
+
+  .ContentButton {
+    margin-bottom: 20px;
   }
 }

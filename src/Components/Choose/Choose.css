@@ -11,48 +11,48 @@
   font-size: var(--font-size-h1);
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin: 20px 0;
+  margin-top: 40px;
 }
 
 .ChooseCards {
   display: flex;
-  gap: 3rem;
-  flex-wrap: wrap;
-  padding: 0 30px;
+  gap: 5rem;
+  flex-direction: row;
+  padding: 0;
 }
 
-.ChooseText {
-  
+.ChooseWrap {
+  display: flex;
+  flex-direction: column;
+  width: auto;
 }
 
 .ChooseTextCard {
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 0;
   width: 100%;
-  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease-out;
   text-align: left;
 }
 
-.ChooseText:hover {
-  cursor: pointer;
-  scale: 1.07;
-}
-
 .ChooseTextCard h3 {
-  font-size: var(--font-size-h3);
+  font-size: var(--font-size-h2);
+  font-weight: 700;
   letter-spacing: 0.6px;
   margin-bottom: 10px;
 }
 
 .ChooseTextCard p {
   font-size: var(--font-size-p);
+  font-weight: 300;
   letter-spacing: 0.4px;
   line-height: 25px;
 }
 
 .ChooseImg {
   display: flex;
+  justify-content: flex-start;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 
 .ChooseImg img {
@@ -62,91 +62,116 @@
 
 @media (max-width: 1081px) {
   .ChooseContainer {
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    color: var(--text);
   }
 
   .ChooseHeader h1 {
-    font-size: 1.6rem;
+    font-size: var(--font-size-h1);
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin: 30px 0;
+    margin-top: 20px;
   }
 
   .ChooseCards {
-    gap: 4rem;
-    padding: 0 20px;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 90%;
   }
 
-  .ChooseText {
-    border-radius: 8px;
-    padding: 1.2rem;
-    width: 300px;
+  .ChooseWrap {
+    display: flex;
+    flex-direction: column;
+    width: auto;
   }
 
-  .ChooseText h3 {
-    font-size: var(--font-size-h3);
+  .ChooseTextCard h3 {
+    font-size: var(--font-size-h2);
+    font-weight: 700;
     letter-spacing: 0.6px;
-    margin-bottom: 5px;
-  }
-
-  .ChooseText p {
-    font-size: var(--font-size-p);
-    letter-spacing: 0.4px;
-    line-height: 25px;
+    margin-bottom: 10px;
   }
 }
 
-@media (min-width: 540px) {
+@media (max-width: 540px) {
+  .ChooseContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: var(--text);
+  }
+
+  .ChooseHeader h1 {
+    font-size: var(--font-size-h1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+
   .ChooseCards {
     display: flex;
-    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 90%;
   }
 
-  .ChooseText {
-    width: 300px;
+  .ChooseWrap {
+    display: flex;
+    flex-direction: column;
+    width: auto;
   }
 
-  .ChooseText p {
-    line-height: 25px;
+  .ChooseTextCard h3 {
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .ChooseContainer {
-    padding: 30px;
-    margin-bottom: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 30px;
+    color: var(--text);
   }
 
   .ChooseHeader h1 {
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-h1);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin: 20px 0;
+    margin-top: 20px;
   }
 
   .ChooseCards {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
     padding: 0;
+    width: 100%;
   }
 
-  .ChooseText {
-    border-radius: 8px;
-    padding: 1rem;
-    width: 260px;
-  }
-
-  .ChooseText h3 {
-    font-size: var(--font-size-p);
+  .ChooseTextCard h3 {
+    font-size: var(--font-size-h2);
+    font-weight: 600;
     letter-spacing: 0.6px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
-  .ChooseText p {
-    font-size: var(--font-size-p);
-    letter-spacing: 0.4px;
-    line-height: 20px;
-  }
+  .ChooseImg img {
+  width: 170px;
+  height: 170px;
+}
 }
