@@ -9,60 +9,92 @@
 
 .HomeOfferSection {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 6rem;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .HomeOfferWrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
 }
 
+.HomeOfferWrap h2 {
+  text-align: center;
+  font-size: var(--font-size-h2);
+  text-transform: uppercase;
+}
+
 .HomeOfferCard {
+  position: relative;
+  width: 430px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 430px;
-  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.HomeOfferImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.HomeOfferImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+  /* filter: blur(0.05px); */
+}
+
+.HomeOfferText {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(1px);
 }
 
 .HomeOfferBack {
+  padding: 15px;
+  border: 1px solid var(--text);
+  border-radius: 12px 12px 0 0;
+  background-color: inherit;
+  gap: 10px;
   display: flex;
   flex-direction: column;
-  padding: 15px;
-  border: 1px solid;
-  border-radius: 12px 12px 0 0;
-  gap: 5px;
 }
 
 .HomeOfferBack h3 {
   font-size: var(--font-size-h3);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .HomeOfferBack p {
+    font-size: var(--font-size-p);
   font-weight: 600;
 }
 
 .HomeOfferPrice {
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .HomeOfferItem {
-  display: flex;
-  flex-direction: column;
   padding: 15px;
-  border: 1px solid;
+  border: 1px solid var(--text);
   border-top: none;
   border-radius: 0 0 12px 12px;
-  gap: 10px;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .HomeOfferItem li {
@@ -72,8 +104,88 @@
 .HomeOfferBtn {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 10px 0;
+  margin-top: 10px;
+}
+
+@media (max-width: 1081px) {
+  .HomeOfferContainer {
+    padding: 40px;
+  }
+
+  .HomeOfferSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .HomeOfferWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .HomeOfferWrap h2 {
+    font-size: 20px;
+  }
+
+  .HomeOfferCard {
+    width: 400px;
+    height: auto;
+  }
+
+  .HomeOfferBack {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 12px 12px 0 0;
+    gap: 5px;
+  }
+
+  .HomeOfferBack h3 {
+    font-size: var(--font-size-p);
+    font-weight: 500;
+  }
+
+  .HomeOfferBack p {
+    font-size: var(--font-size-p);
+    font-weight: 600;
+  }
+
+  .HomeOfferPrice {
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .HomeOfferItem {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    gap: 5px;
+  }
+
+  .HomeOfferItem li {
+    list-style: none;
+    font-size: var(--font-size-p);
+  }
+
+  .HomeOfferBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .HomeOfferBtn .Button {
+    font-size: var(--font-size-p);
+  }
 }
 
 @media (max-width: 640px) {

@@ -55,7 +55,12 @@ const ContactForm = () => {
         <p>Fill in your details and we'll reach out as soon as possible.</p>
 
         <input type="text" name="name" placeholder="Full Name:" required />
-        <input type="email" name="email" placeholder="Email Address:" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address:"
+          required
+        />
         <input type="tel" name="phone" placeholder="Phone Number:" required />
         <input type="text" name="location" placeholder="Location:" required />
 
@@ -71,10 +76,12 @@ const ContactForm = () => {
             Select a service
           </option>
           <option value="Ads Management">Ads Management</option>
-          <option value="Social Media Management">Social Media Management</option>
+          <option value="Social Media Management">
+            Social Media Management
+          </option>
           <option value="Content Creation">Content Creation</option>
           <option value="Website Development">Web Development</option>
-          <option value="Graphics Design">Brand Strategy</option>
+          <option value="Graphics Design">Graphics Design</option>
         </select>
 
         <textarea
