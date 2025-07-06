@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-   background: linear-gradient(
+  background: linear-gradient(
     to left,
     #380001cf,
     #380001e0,
@@ -58,6 +58,11 @@
 .OtherDataDeliverables h3 {
   font-size: var(--font-size-p);
   font-weight: 600;
+}
+
+.OtherDataDeliverables p {
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .OtherDataButton {

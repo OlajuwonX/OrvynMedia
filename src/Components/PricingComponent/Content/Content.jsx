@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { PricingData } from "../../../../data";
 import "./Content.css";
+import { FaCheck } from "react-icons/fa6";
 
 const Content = () => {
   const navigate = useNavigate();
@@ -54,7 +55,10 @@ const Content = () => {
                       <ul className="ContentDeliverables">
                         {pack.deliverables.map((item, i) => (
                           <li key={i}>
-                            <span className="Check">✔</span> {item}
+                            <span className="Check">
+                              <FaCheck />
+                            </span>{" "}
+                            {item}
                           </li>
                         ))}
                       </ul>

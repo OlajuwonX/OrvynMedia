@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .BrandsHeader {
@@ -22,13 +22,13 @@
 .BrandsSliderWrapper {
   width: 100%;
   overflow: hidden;
+  border-radius: 12px;
 }
 
 .BrandsSliderContainer {
   width: fit-content;
   display: flex;
 }
-
 
 .BrandsSliderTrack {
   display: flex;

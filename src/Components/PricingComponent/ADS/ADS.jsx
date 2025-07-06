@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { PricingData } from "../../../../data";
 import "./ADS.css";
+import { FaCheck } from "react-icons/fa6";
 
 const ADS = () => {
   const Category = PricingData.find((item) => item.id === 2);
@@ -26,16 +27,21 @@ const ADS = () => {
             <ul className="TabDataDeliverables">
               {pack.deliverables.map((item, i) => (
                 <li key={i}>
-                  <span className="Check">✔</span> {item}
+                  <span className="Check">
+                    <FaCheck />
+                  </span>{" "}
+                  {item}
                 </li>
               ))}
             </ul>
-            <button
-              className="Button"
-              onClick={() => navigate(pack.buttonLink)}
-            >
-              {pack.buttonLabel}
-            </button>
+            <div className="TagDataBtn">
+              <button
+                className="Button"
+                onClick={() => navigate(pack.buttonLink)}
+              >
+                {pack.buttonLabel}
+              </button>
+            </div>
           </div>
         ))}
       </div>

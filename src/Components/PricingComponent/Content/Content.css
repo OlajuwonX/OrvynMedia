@@ -107,8 +107,10 @@
 
 .ContentDeliverables {
   list-style: none;
-  padding: 0 10px;
+  padding: 0 5px;
   line-height: 25px;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .ContentButton {
@@ -129,7 +131,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
+}
+
+.ContentClose p {
+  font-size: 15px;
+  font-weight: 300;
 }
 
 @media (max-width: 1081px) {
@@ -188,7 +195,7 @@
 
   .ContentDeliverables {
     list-style: none;
-    padding: 0 10px;
+    padding: 0 5px;
     line-height: 23px;
   }
 
@@ -284,7 +291,7 @@
   }
 
   .ContentDeliverables {
-    padding: 0 10px;
+    padding: 0 5px;
     line-height: 20px;
     font-size: 15px;
   }

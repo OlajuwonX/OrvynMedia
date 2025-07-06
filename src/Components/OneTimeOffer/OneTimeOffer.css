@@ -58,7 +58,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(2.5px);
 }
 
 .HomeOfferBack {
@@ -72,18 +72,18 @@
 }
 
 .HomeOfferBack h3 {
-  font-size: var(--font-size-h3);
-  font-weight: 600;
+  font-size: var(--font-size-h2);
+  font-weight: 500;
 }
 
 .HomeOfferBack p {
   font-size: var(--font-size-p);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .HomeOfferPrice {
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .HomeOfferItem {
@@ -152,13 +152,13 @@
   }
 
   .HomeOfferBack h3 {
-    font-size: var(--font-size-p);
+    font-size: 18px;
     font-weight: 500;
   }
 
   .HomeOfferBack p {
     font-size: var(--font-size-p);
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .HomeOfferPrice {
@@ -231,13 +231,13 @@
   }
 
   .HomeOfferBack h3 {
-    font-size: var(--font-size-h3);
+    font-size: 18px;
     font-weight: 500;
   }
 
   .HomeOfferBack p {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .HomeOfferItem {
@@ -298,7 +298,7 @@
 
   .HomeOfferBack p {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .HomeOfferItem {

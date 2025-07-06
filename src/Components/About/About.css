@@ -41,24 +41,29 @@
   font-size: var(--font-size-h1);
 }
 
+.AboutText {
+  width: 95%;
+}
+
 .AboutIntro {
   margin-top: 20px;
-  line-height: 38px;
+  line-height: 30px;
 }
 
 .AboutIntro h2 {
   font-size: var(--font-size-h2);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .AboutSubheader {
   margin-top: 20px;
-  line-height: 30px;
+  line-height: 25px;
   letter-spacing: 0.5px;
 }
 
 .AboutSubheader p {
   font-size: var(--font-size-p);
+  font-weight: 300;
 }
 
 .AboutBtn {
@@ -101,19 +106,23 @@
     font-size: var(--font-size-h1);
   }
 
+  .AboutText {
+    width: 95%;
+  }
+
   .AboutIntro {
     margin-top: 15px;
-    line-height: 30px;
+    line-height: 25px;
   }
 
   .AboutIntro h2 {
     font-size: var(--font-size-h2);
-    font-weight: 600;
+    font-weight: 400;
   }
 
   .AboutSubheader {
     margin-top: 10px;
-    line-height: 25px;
+    line-height: 20px;
     letter-spacing: 0.5px;
   }
 
@@ -158,8 +167,8 @@
 
   .AboutIntro h2 {
     font-size: var(--font-size-p);
-    font-weight: 600;
-    line-height: 22px;
+    font-weight: 400;
+    line-height: 20px;
   }
 
   .AboutSubheader {

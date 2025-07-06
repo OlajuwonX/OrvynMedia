@@ -1,6 +1,7 @@
 import { HomeOfferData } from "../../../data";
 import { useNavigate } from "react-router-dom";
 import "./OneTimeOffer.css";
+import { FaCheck } from "react-icons/fa6";
 
 const OneTimeOffer = () => {
   const navigate = useNavigate();
@@ -39,7 +40,10 @@ const OneTimeOffer = () => {
                     {deliverables.map((item, index) => (
                       <ul key={index}>
                         <li>
-                          <span className="Check">✔</span> {item}
+                          <span className="Check">
+                            <FaCheck />
+                          </span>{" "}
+                          {item}
                         </li>
                       </ul>
                     ))}

@@ -2,6 +2,7 @@ import { PricingData } from "../../../../data";
 import { useNavigate } from "react-router-dom";
 
 import "./Graphics.css";
+import { FaCheck } from "react-icons/fa6";
 
 const Graphics = () => {
   const Category = PricingData.find((item) => item.id === 4);
@@ -20,7 +21,10 @@ const Graphics = () => {
           {Category.deliverables.map((item, index) => (
             <div className="OtherDataDeliverables" key={index}>
               <h3>
-                <span className="Check">✔</span> {item.title}
+                <span className="Check">
+                  <FaCheck />
+                </span>{" "}
+                {item.title}
               </h3>
               <p>{item.text}</p>
             </div>

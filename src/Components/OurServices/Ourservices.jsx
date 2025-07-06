@@ -46,7 +46,7 @@ const Ourservices = () => {
                     <div className="AccordionText">
                       <h4 className="Sub">{subTitle}</h4>
                       <p>{description}</p>
-                      <h4>{close}</h4>
+                      <h4 className="AccordionClose">{close}</h4>
                       <div className="AccordionBtnContainer">
                         <button
                           className={`AccordionBtn ${buttonClass}`}
