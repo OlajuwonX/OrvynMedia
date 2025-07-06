@@ -15,6 +15,7 @@ const OneTimeOffer = () => {
             price,
             description,
             includes,
+            img,
             deliverables,
             buttonLabel,
             buttonLink,
@@ -24,7 +25,7 @@ const OneTimeOffer = () => {
               <h2>{type}</h2>
               <div className="HomeOfferCard">
                 <div className="HomeOfferImg">
-                  <img src="/backimg.jpg" alt="offer-bg" />
+                  <img src={img} alt="offer-bg" />
                 </div>
 
                 <div className="HomeOfferText">

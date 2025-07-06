@@ -8,10 +8,15 @@ const Choose = () => {
         <h1>Why Choose Us</h1>
       </div>
       <div className="ChooseCards">
-        {ChooseData.map(({ id, header, text }) => (
-          <div key={id} className="ChooseText">
-            <h3>{header}</h3>
-            <p>{text}</p>
+        {ChooseData.map(({ id, header, text, img }) => (
+          <div className="ChooseText">
+            <div className="ChooseImg" key={id}>
+              <img src={img} alt="" />
+            </div>
+            <div key={id} className="ChooseTextCard">
+              <h3>{header}</h3>
+              <p>{text}</p>
+            </div>
           </div>
         ))}
       </div>

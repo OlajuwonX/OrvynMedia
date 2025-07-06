@@ -22,11 +22,13 @@
 }
 
 .ChooseText {
-  background: var(--gradient);
-  border: 1px solid var(--text);
+  
+}
+
+.ChooseTextCard {
   border-radius: 10px;
   padding: 1.5rem;
-  width: 300px;
+  width: 100%;
   box-shadow: 0 8px 14px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease-out;
   text-align: left;
@@ -37,16 +39,25 @@
   scale: 1.07;
 }
 
-.ChooseText h3 {
+.ChooseTextCard h3 {
   font-size: var(--font-size-h3);
   letter-spacing: 0.6px;
   margin-bottom: 10px;
 }
 
-.ChooseText p {
+.ChooseTextCard p {
   font-size: var(--font-size-p);
   letter-spacing: 0.4px;
   line-height: 25px;
+}
+
+.ChooseImg {
+  display: flex;
+}
+
+.ChooseImg img {
+  width: 200px;
+  height: 200px;
 }
 
 @media (max-width: 1081px) {
