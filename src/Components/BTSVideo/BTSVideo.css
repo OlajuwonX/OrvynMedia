@@ -189,6 +189,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    margin-left: 0;
   }
 
   .VideoText button {
