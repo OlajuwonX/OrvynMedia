@@ -757,7 +757,7 @@ export const HomeOfferData = [
     {
         id: 1,
         type: "Orvyn Business Starter Bundle",
-        price: "₦150,000 – One-Time",
+        price: "₦150,000/One-Time",
         description: "Everything you need to launch or refresh your brand online in one powerful package.",
         includes: "Includes:",
         deliverables: [

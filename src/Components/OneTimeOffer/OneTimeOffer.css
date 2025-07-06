@@ -42,8 +42,8 @@
 }
 
 .HomeOfferBack h3 {
-font-size: var(--font-size-h3);
-font-weight: 500;
+  font-size: var(--font-size-h3);
+  font-weight: 500;
 }
 
 .HomeOfferBack p {
@@ -73,4 +73,127 @@ font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px 0;
+}
+
+@media (max-width: 640px) {
+  .HomeOfferContainer {
+    padding: 30px;
+  }
+
+  .HomeOfferSection {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .HomeOfferWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .HomeOfferWrap h2 {
+    font-size: var(--font-size-h2);
+  }
+
+  .HomeOfferCard {
+    width: 360px;
+    height: auto;
+  }
+
+  .HomeOfferBack {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 12px 12px 0 0;
+    gap: 5px;
+  }
+
+  .HomeOfferBack h3 {
+    font-size: var(--font-size-h3);
+    font-weight: 500;
+  }
+
+  .HomeOfferBack p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .HomeOfferItem {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .HomeOfferItem li {
+    font-size: 16px;
+  }
+
+  .HomeOfferBtn .Button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .HomeOfferContainer {
+    padding: 30px;
+  }
+
+  .HomeOfferSection {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .HomeOfferWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .HomeOfferWrap h2 {
+    font-size: var(--font-size-h3);
+  }
+
+  .HomeOfferCard {
+    width: 310px;
+    height: auto;
+  }
+
+  .HomeOfferBack {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 12px 12px 0 0;
+    gap: 5px;
+  }
+
+  .HomeOfferBack h3 {
+    font-size: var(--font-size-p);
+    font-weight: 500;
+  }
+
+  .HomeOfferBack p {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .HomeOfferItem {
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .HomeOfferItem li {
+    font-size: 15px;
+  }
+
+  .HomeOfferBtn .Button {
+    font-size: 16px;
+  }
 }
