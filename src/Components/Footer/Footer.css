@@ -109,12 +109,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-weight: 200 !important;
 }
 
 .FooterQuickLinks .Button {
   font-size: var(--font-size-p);
   padding: 0;
-  font-weight: 200;
   margin-top: 10px;
   background: inherit;
 }
@@ -152,7 +152,8 @@
 
 .ContactIcons {
   font-size: var(--font-size-p);
-  font-weight: 200;
+  font-weight: 200 !important;
+  color: #fed3d3 !important;
 }
 
 .SocialBtn {
@@ -443,6 +444,10 @@
     font-size: 16px;
     font-weight: 100;
     letter-spacing: 0.6px;
+  }
+
+  .ContactBtn {
+    font-weight: 200;
   }
 }
 

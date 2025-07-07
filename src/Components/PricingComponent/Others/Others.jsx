@@ -15,7 +15,7 @@ const Others = ({ currentSubTab, setCurrentSubTab }) => {
   };
 
   return (
-    <div className="OthersContainer">
+    <section className="OthersContainer">
       <div className="OthersCard">
         <div className="OthersButtons">
           <button
@@ -33,7 +33,7 @@ const Others = ({ currentSubTab, setCurrentSubTab }) => {
         </div>
         <div className="PricingContent">{renderContent()}</div>
       </div>
-    </div>
+    </section>
   );
 };
 

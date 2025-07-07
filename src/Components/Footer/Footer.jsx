@@ -13,7 +13,7 @@ const Footer = () => {
   const goToPrivacy = () => navigate("/privacy");
 
   return (
-    <div className="FooterContainer">
+    <footer className="FooterContainer">
       <div className="FooterSection">
         <div className="FooterBrand">
           <img src="/logoImg.png" alt="Logo" />
@@ -122,7 +122,7 @@ const Footer = () => {
       <div className="FooterCopyright">
         <h2>© 2025 Orvyn Media. All rights reserved.</h2>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -12,17 +12,43 @@
   margin-bottom: 30px;
 }
 
+.ContactFormCard {
+  width: 380px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ContactFormImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.ContactFormImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+}
+
 .ContactForm {
   width: 380px;
   height: auto;
   margin: 0 auto;
   padding: 2rem;
   display: flex;
-  flex-direction: column;
   gap: 20px;
   border: 1px solid var(--background);
   border-radius: 12px;
-  background: var(--gradient);
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  backdrop-filter: blur(2.5px);
 }
 
 .ContactForm input {
@@ -81,6 +107,11 @@
     margin-bottom: 25px;
   }
 
+  .ContactFormCard {
+    width: 400px;
+    border-radius: 10px;
+  }
+
   .ContactForm {
     width: 400px;
     height: auto;
@@ -96,8 +127,8 @@
   }
 
   .FormTextArea {
-    font-weight: 100;
-    background: inherit;
+    font-weight: 300;
+    background: transparent;
     padding: 10px;
     border-radius: 5px;
   }
@@ -125,10 +156,15 @@
     margin-bottom: 20px;
   }
 
+  .ContactFormCard {
+    width: 280px;
+    border-radius: 8px;
+  }
+
   .ContactForm {
     width: 280px;
     margin: 0;
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     gap: 10px;
     border-radius: 8px;
@@ -151,7 +187,7 @@
   .FormTextArea {
     font-size: var(--font-size-p);
     font-weight: 400;
-    background: rgba(255, 255, 255, 0.32);
+    background: transparent;
     border-radius: 7px;
     margin: 10px 0;
   }

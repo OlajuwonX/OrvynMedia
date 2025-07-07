@@ -19,10 +19,13 @@ const MobileNav = () => {
           className="HamburgerBtn"
           onClick={() => setOpen((prev) => !prev)}
         >
-          {open ? <IoCloseOutline size={20} /> : <RxHamburgerMenu size={20} />}
+          {open ? (
+            <IoCloseOutline size={23} style={{ strokeWidth: 1 }} />
+          ) : (
+            <RxHamburgerMenu size={18} style={{ strokeWidth: 1 }} />
+          )}
         </button>
       </div>
-
 
       <AnimatePresence>
         {open && (

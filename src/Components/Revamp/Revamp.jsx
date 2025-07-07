@@ -4,7 +4,7 @@ import "./Revamp.css";
 
 const Revamp = () => {
   return (
-    <div className="Revamp">
+    <section className="Revamp">
       <div className="RevampHeader">
         <h1>
           Revamp Your Page for <span>₦15,000</span> only!
@@ -34,7 +34,7 @@ const Revamp = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

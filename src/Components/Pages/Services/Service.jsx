@@ -7,6 +7,8 @@ import Others from "../../PricingComponent/Others/Others";
 import { CiCirclePlus, CiCircleMinus } from "react-icons/ci";
 import { frequentData } from "../../../../data";
 import "./Service.css";
+import SEO from "../../SEO/SEO";
+import ScrollReveal from "../../Animations/ScrollReveal";
 
 const Service = () => {
   const location = useLocation();
@@ -57,69 +59,89 @@ const Service = () => {
   };
 
   return (
-    <div className="ServiceContainer">
-      <div className="PricingCard" ref={pricingRef}>
-        <div className="PricingHeader">
-          <h1>
-            Affordable <span>pricing</span> tailored just for you.
-          </h1>
-          <h3>
-            We're only one click away from delivering the best digital services
-            your brand deserves.
-          </h3>
-        </div>
+    <>
+      <SEO
+        title="Orvyn Media | Services"
+        description="Explore tailored digital services designed to amplify your brand, from content creation and social media management to web development and visual storytelling."
+        image="https://www.orvynmedia.com/serviceScreen.png"
+        url="https://www.orvynmedia.com/services"
+      />
 
-        <div className="PricingTab">
-          <div className="TabButtons">
-            {["SMM", "ADS", "Content", "Others"].map((tab) => (
-              <button
-                key={tab}
-                className={`Button ${activeTab === tab ? "active" : ""}`}
-                onClick={() => setActiveTab(tab)}
-              >
-                {tab === "Others" ? "Others+" : tab}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="PricingContent">{renderContent()}</div>
-      </div>
-
-      <div className="FrequentCard">
-        <div className="FrequentWrap">
-          <div className="FrequentIntro">
-            <h1>Frequently Asked Questions</h1>
-            <h2>Some questions you might have</h2>
+      <div className="ServiceContainer">
+        <div className="PricingCard" ref={pricingRef}>
+          <div className="PricingHeader">
+            <ScrollReveal delay={0.1}>
+              <h1>
+                Affordable <span>pricing</span> tailored just for you.
+              </h1>
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <h3>
+                We're only one click away from delivering the best digital
+                services your brand deserves.
+              </h3>
+            </ScrollReveal>
           </div>
 
-          <div className="FrequentContent">
-            {frequentData.map(({ id, question, answer }) => (
-              <div className="FrequentItem" key={id}>
-                <div
-                  className="FrequentQuestion"
-                  onClick={() => toggleAccordion(id)}
-                >
-                  <h3>{question}</h3>
-                  <span>
-                    {openId === id ? (
-                      <CiCircleMinus size={24} />
-                    ) : (
-                      <CiCirclePlus size={24} />
-                    )}
-                  </span>
-                </div>
-                {openId === id && (
-                  <div className="FrequentAnswer">
-                    <p>{answer}</p>
-                  </div>
-                )}
+          <div className="PricingTab">
+            <ScrollReveal delay={0.3}>
+              <div className="TabButtons">
+                {["SMM", "ADS", "Content", "Others"].map((tab) => (
+                  <button
+                    key={tab}
+                    className={`Button ${activeTab === tab ? "active" : ""}`}
+                    onClick={() => setActiveTab(tab)}
+                  >
+                    {tab === "Others" ? "Others+" : tab}
+                  </button>
+                ))}
               </div>
-            ))}
+            </ScrollReveal>
+          </div>
+          <ScrollReveal delay={0.4}>
+            <div className="PricingContent">{renderContent()}</div>
+          </ScrollReveal>
+        </div>
+
+        <div className="FrequentCard">
+          <div className="FrequentWrap">
+            <ScrollReveal delay={0.5}>
+              <div className="FrequentIntro">
+                <h1>Frequently Asked Questions</h1>
+                <h2>Some questions you might have</h2>
+              </div>
+
+              <div className="FrequentContent">
+                {frequentData.map(({ id, question, answer }) => (
+                  <ScrollReveal key={id} delay={0.6 * id * 0.1}>
+                    <div className="FrequentItem" key={id}>
+                      <div
+                        className="FrequentQuestion"
+                        onClick={() => toggleAccordion(id)}
+                      >
+                        <h3>{question}</h3>
+                        <span>
+                          {openId === id ? (
+                            <CiCircleMinus size={24} />
+                          ) : (
+                            <CiCirclePlus size={24} />
+                          )}
+                        </span>
+                      </div>
+                      {openId === id && (
+                        <div className="FrequentAnswer">
+                          <p>{answer}</p>
+                        </div>
+                      )}
+                    </div>
+                  </ScrollReveal>
+                ))}
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

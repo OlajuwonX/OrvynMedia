@@ -14,7 +14,7 @@ const Ourservices = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="AccordionContainer">
+    <section className="AccordionContainer">
       <div className="AccordionHead">
         <h1>Our Services</h1>
       </div>
@@ -66,7 +66,7 @@ const Ourservices = () => {
           <img src="/newoffer.jpg" alt="What We offer" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

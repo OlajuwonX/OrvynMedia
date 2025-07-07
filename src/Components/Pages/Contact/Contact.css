@@ -205,8 +205,8 @@
     font-size: var(--font-size-p);
     text-transform: capitalize;
     letter-spacing: 0.5px;
-    margin: 0 20px;
-    padding: 10px 0 10px 0;
+    margin: 0 10px;
+    padding: 5px 0 5px 0;
     border-bottom: 1px solid #3f1718ad;
   }
 
@@ -217,11 +217,11 @@
   .ContactCardButtons {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-bottom: 25px;
+    gap: 0;
+    margin-bottom: 10px;
   }
 
   .ContactCardButtons .Button {
-    width: 180px;
+    width: 150px;
   }
 }

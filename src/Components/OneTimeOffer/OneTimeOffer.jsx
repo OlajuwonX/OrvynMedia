@@ -7,7 +7,7 @@ const OneTimeOffer = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="HomeOfferContainer">
+    <section className="HomeOfferContainer">
       <div className="HomeOfferSection">
         {HomeOfferData.map(
           ({
@@ -62,7 +62,7 @@ const OneTimeOffer = () => {
           )
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

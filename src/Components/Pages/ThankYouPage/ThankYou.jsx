@@ -21,7 +21,7 @@ const ThankYou = () => {
   }, []);
 
   return (
-    <div className="ThankYouPage">
+    <section className="ThankYouPage">
       <div className="EmojiRain">
         {emojiDrops.map((drop, index) => (
           <Motion.div
@@ -69,7 +69,7 @@ const ThankYou = () => {
       <a href="/" className="Button">
         Go Back Home
       </a>
-    </div>
+    </section>
   );
 };
 
