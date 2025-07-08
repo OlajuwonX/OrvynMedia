@@ -695,80 +695,132 @@ export const frequentData = [
     {
         id: 1,
         question: "What platforms do you manage for social media?",
-        answer:
-            "We mainly manage Instagram and TikTok but we can also cross-post to Facebook so your content reaches a wider audience effortlessly.",
+        answer: [
+            {
+                text: "We mainly manage Instagram and TikTok but we can also cross-post to Facebook so your content reaches a wider audience effortlessly.",
+                highlight: "",
+            }
+        ]
     },
     {
         id: 2,
         question: "Do I need to provide anything for my social media management?",
-        answer:
-            "Yes, you'll need to provide the photos or videos you'd like us to use. We handle everything else from captions and strategy to posting and reporting.",
+        answer: [
+            {
+                text: "Yes, you'll need to provide the photos or videos you'd like us to use. We handle everything else from captions and strategy to posting and reporting.",
+                highlight: "photos or videos",
+            }
+        ]
     },
     {
         id: 3,
         question: "Can I combine different services?",
-        answer:
-            "Of course! Many of our clients mix and match services like content creation, social media management and ads. Just let us know what you need and we'll build a custom solution for you.",
+        answer: [
+            {
+                text: "Of course! Many of our clients mix and match services like content creation, social media management and ads. Just let us know what you need and well build a custom solution for you.",
+                highlight: "",
+            }
+        ]
     },
     {
         id: 4,
         question: "Can I upgrade my social media package later?",
-        answer:
-            "Absolutely. You can start with a basic package and upgrade anytime as your needs grow. We'll guide you on the best plan for your goals.",
+        answer: [
+            {
+                text: "Absolutely. You can start with a basic package and upgrade anytime as your needs grow. We'll guide you on the best plan for your goals.",
+                highlight: "",
+            }
+        ]
     },
     {
         id: 5,
         question: "How long does it take to receive content after a shoot?",
-        answer:
-            "We deliver your edited content within 72 hours after the shoot. If you'd like it sooner, you can request express delivery for a small additional fee.",
+        answer: [
+            {
+                text: "We deliver your edited content within 72 hours after the shoot. If you'd like it sooner, you can request express delivery for a small additional fee.",
+                highlight: "72 hours after the shoot"
+            }
+        ]
     },
     {
         id: 6,
         question: "What if I need my content faster than 72 hours?",
-        answer:
-            "No problem. We offer express delivery within 48 hours as an add-on. Just let us know when booking and we'll prioritize your edit.",
+        answer: [
+            {
+                text: "No problem. We offer express delivery within 48 hours as an add-on. Just let us know when booking and we'll prioritize your edit.",
+                highlight: "express delivery within 48 hours",
+            }
+        ]
     },
     {
         id: 7,
         question: "Do you also do photo-shoots?",
-        answer:
-            "Yes, we offer professional photo-shoots as part of our content creation services. Whether you need lifestyle shots, product images or event photography, we've got you covered. Just let us know what you're looking for.",
+        answer: [
+            {
+                text: "Yes, we offer professional photo-shoots as part of our content creation services. Whether you need lifestyle shots, product images, or event photography, we've got you covered. Just let us know what you're looking for.",
+                highlight: "",
+            }
+        ]
     },
     {
         id: 8,
         question: "Can I book both mobile and camera coverage?",
-        answer:
-            "Yes, depending on your preference and budget, you can choose mobile, camera or both. Camera shoots offer even higher image quality and are ideal for premium content.",
+        answer: [
+            {
+                text: "Yes, depending on your preference and budget, you can choose mobile, camera or both. Camera shoots offer even higher image quality and are ideal for premium content.",
+                highlight: "mobile, camera or both",
+            }
+        ]
     },
     {
         id: 9,
-        question: "s there a limit to the number of outfits or looks for a fashion shoot?",
-        answer:
-            "Yes, but we don't cap it strictly. The number of edited videos depends on how many looks or moments we can cover within the booked hours. You can always extend your time with an extra hour add-on.",
+        question: "Is there a limit to the number of outfits or looks for a fashion shoot?",
+        answer: [
+            {
+                text: "Yes but we don't cap it strictly. The number of edited videos depends on how many looks or moments we can cover within the booked hours. You can always extend your time with an extra hour add-on.",
+                highlight: "within the booked hours",
+            }
+        ]
     },
     {
         id: 10,
         question: "Do you offer support after delivering a website?",
-        answer:
-            "Yes, we offer after-launch support as an optional service to keep your site running smoothly. We'll also show you how to make basic updates if you prefer.",
+        answer: [
+            {
+                text: "Yes, we offer after-launch support as an optional service to keep your site running smoothly. We'll also show you how to make basic updates if you prefer.",
+                highlight: "after-launch support",
+            }
+        ]
     },
     {
         id: 11,
         question: "Who is the Business Owner Content Bundle for?",
-        answer:
-            "It's strictly for business owners who need regular branded content for marketing, not for personal shoots or events.",
+        answer: [
+            {
+                text: "It's strictly for business owners who need regular branded content for marketing not for personal shoots or events.",
+                highlight: "",
+            }
+        ]
     },
     {
         id: 12,
         question: "Can I customize the shoot based on my needs?",
-        answer:
-            "Absolutely! If you have specific deliverables or expectations, just let us know. We're happy to create a custom package that fits your timeline and goals.",
+        answer: [
+            {
+                text: "Absolutely! If you have specific deliverables or expectations, just let us know. We're happy to create a custom package that fits your timeline and goals.",
+                highlight: "",
+            }
+        ]
     },
     {
         id: 13,
         question: "Do you travel outside Lagos for shoots?",
-        answer:
-            "Yes, we're available to travel! For locations outside Lagos or distant parts within, the client is responsible for covering transportation and logistics costs. We'll provide an estimate based on your shoot location when you book.",
+        answer: [
+            {
+                text: "Yes, we're available to travel! For locations outside Lagos or distant parts within, the client is responsible for covering transportation and logistics costs. We'll provide an estimate based on your shoot location when you book.",
+                highlight: "client is responsible for covering transportation and logistics costs",
+            }
+        ]
     }
 ];
 

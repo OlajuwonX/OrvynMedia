@@ -109,16 +109,21 @@
   color: #a63509;
 }
 
+.Highlight {
+  color: #a63509;
+}
+
 .FrequentIntro h2 {
   font-size: var(--font-size-h1);
   letter-spacing: 1px;
   text-transform: capitalize;
+  margin-bottom: 20px;
 }
 
 .FrequentContent {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 10px;
   width: 55%;
   scroll-behavior: smooth;
 }
@@ -141,8 +146,10 @@
 }
 
 .FrequentAnswer {
-  line-height: 20px;
-  padding: 0 10px;
+  line-height: 23px;
+  padding: 0;
+  font-weight: 400;
+  letter-spacing: 0.8px;
 }
 
 @media (max-width: 1081px) {
@@ -166,6 +173,27 @@
   .FrequentIntro h2 {
     font-size: var(--font-size-h1);
     letter-spacing: 0.6px;
+  }
+}
+
+@media (max-width: 640px) {
+  .FrequentCard {
+    margin: 2rem 15px;
+  }
+
+  .FrequentWrap {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .FrequentIntro {
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .FrequentContent {
+    gap: 10px;
+    width: 100%;
   }
 }
 
@@ -232,25 +260,29 @@
 
   .FrequentIntro h2 {
     font-size: var(--font-size-h3);
-    letter-spacing: 0.4px;
+    letter-spacing: 0.6px;
+    margin-bottom: 15px;
   }
 
   .FrequentContent {
-    gap: 1rem;
+    gap: 10px;
     width: 100%;
   }
 
   .FrequentItem {
-    gap: 10px;
+    gap: 8px;
   }
 
   .FrequentQuestion h3 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: var(--font-size-p);
+    letter-spacing: 0.6px;
   }
 
   .FrequentAnswer {
-    line-height: 20px;
-    padding: 0 5px;
+    line-height: 23px;
+    letter-spacing: 0.6px;
+    padding: 0;
+    font-weight: 300;
   }
 }

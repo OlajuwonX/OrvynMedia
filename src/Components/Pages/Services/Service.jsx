@@ -114,7 +114,7 @@ const Service = () => {
               <div className="FrequentContent">
                 {frequentData.map(({ id, question, answer }) => (
                   <ScrollReveal key={id} delay={0.6 * id * 0.1}>
-                    <div className="FrequentItem" key={id}>
+                    <div className="FrequentItem">
                       <div
                         className="FrequentQuestion"
                         onClick={() => toggleAccordion(id)}
@@ -128,9 +128,22 @@ const Service = () => {
                           )}
                         </span>
                       </div>
+
                       {openId === id && (
                         <div className="FrequentAnswer">
-                          <p>{answer}</p>
+                          {answer.map(({ text, highlight }, i) => {
+                            if (highlight && text.includes(highlight)) {
+                              const [before, after] = text.split(highlight);
+                              return (
+                                <p key={i}>
+                                  {before}
+                                  <span className="Highlight">{highlight}</span>
+                                  {after}
+                                </p>
+                              );
+                            }
+                            return <p key={i}>{text}</p>;
+                          })}
                         </div>
                       )}
                     </div>

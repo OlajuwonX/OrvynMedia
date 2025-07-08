@@ -153,9 +153,11 @@ const Footer = () => {
 
       {/* Divider + Copyright */}
       <ScrollReveal delay={2}>
-        <hr className="FooterDivider" />
-        <div className="FooterCopyright">
-          <h2>© 2025 Orvyn Media. All rights reserved.</h2>
+        <div className="FooterEnd">
+          <hr className="FooterDivider" />
+          <div className="FooterCopyright">
+            <h2>© 2025 Orvyn Media. All rights reserved.</h2>
+          </div>
         </div>
       </ScrollReveal>
     </footer>
