@@ -7,7 +7,7 @@
   color: #fed3d3;
   gap: 30px;
   padding: 3rem 5rem;
-  padding-bottom: 0;
+  padding-bottom: 15px;
 }
 
 .FooterContainer .Button:hover {
@@ -109,11 +109,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-weight: 200 !important;
 }
 
 .FooterQuickLinks .Button {
   font-size: var(--font-size-p);
+  font-weight: 200 !important;
+  color: #fed3d3 !important;
   padding: 0;
   margin-top: 10px;
   background: inherit;
@@ -135,7 +136,7 @@
 }
 
 .FooterCopyright h2 {
-  font-size: var(--font-size-h3);
+  font-size: var(--font-size-p);
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -173,6 +174,7 @@
   height: 1px;
   background: #fed3d3;
   opacity: 0.9;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 1081px) {
@@ -258,6 +260,7 @@
     height: 0.7px;
     background: #fed3d3;
     opacity: 0.9;
+    margin-bottom: 20px;
   }
 }
 
@@ -422,7 +425,7 @@
   }
 
   .FooterSocialsLinks {
-    gap: 5px;
+    gap: 6px;
   }
   .FooterSocialsLinks .SocialBtn {
     color: #fed3d3;
@@ -430,7 +433,7 @@
 
   .FooterDivider {
     border: none;
-    height: 1px;
+    height: 0.6px;
     background: #fed3d3;
     opacity: 0.9;
   }
@@ -441,7 +444,7 @@
 
   .FooterCopyright h2 {
     color: #fed3d3;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 100;
     letter-spacing: 0.6px;
   }

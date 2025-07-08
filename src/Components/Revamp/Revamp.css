@@ -146,7 +146,7 @@
 
   .RevampHeader h1 {
     font-size: 1.2rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
   }
 
@@ -179,6 +179,7 @@
     margin-top: 0.5rem;
     font-size: 16px;
     text-align: center;
+    letter-spacing: 0.8px;
   }
 
   .RevampTextCard {
@@ -187,6 +188,7 @@
     margin-right: 0;
     line-height: 25px;
     padding: 0 15px;
+    letter-spacing: 0.8px;
   }
 
   .RevampBtn {

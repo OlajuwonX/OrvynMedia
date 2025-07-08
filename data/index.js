@@ -29,13 +29,13 @@ export const navData = [
 
 export const AboutUs =
 {
-    header: "Orvyn Media was born from a simple desire  to help brands and individuals show up online with clarity, confidence, and strategy.",
+    header: "Orvyn Media was born from a simple desire to help brands and individuals show up online with clarity, confidence, and strategy.",
 
-    firstText: "Founded by Raphaelor Dami, a digital storyteller and social media strategist, Orvyn began as a personal journey of sharing content, inspiring others to grow, and managing social media pages that delivered real results. Over time, that passion grew into a creative agency focused on helping people build their digital presence and turn visibility into real growth.",
+    firstText: "Founded by Raphael or Dami, a digital storyteller and social media strategist, Orvyn began as a personal journey of sharing content, inspiring others to grow and managing social media pages that delivered real results. Over time, that passion grew into a creative agency focused on helping people build their digital presence and turn visibility into real growth.",
 
-    secondText: "We believe every brand and story matters. Our job is to bring that story to life in a way that feels intentional, impactful, and true to you. Whether it's creating content that connects, managing platforms with purpose, or building websites that offer a full experience, we focus on strategy, clean execution, and authenticity.",
+    secondText: "We believe every brand and story matters. Our job is to bring that story to life in a way that feels intentional, impactful and true to you. Whether it's creating content that connects, managing platforms with purpose or building websites that offer a full experience, we focus on strategy, clean execution and authenticity.",
 
-    thirdText: "Today, Orvyn Media offers services including content creation, social media management, and  website development. Our content creation service is a standout designed for both businesses and individuals. From lifestyle shoots and events to product launches and campaigns, we help you capture quality visuals that tell your story and leave a lasting impression.",
+    thirdText: "Today, Orvyn Media offers services including content creation, social media management and website development. Our content creation service is a standout designed for both businesses and individuals. From lifestyle shoots and events to product launches and campaigns, we help you capture quality visuals that tell your story and leave a lasting impression.",
 
     forthText: "We're not just here to post. We're here to position. Not just to create. But to connect.",
 
@@ -48,7 +48,7 @@ export const Accordion = [
         id: 1,
         title: 'Ads Management',
         subTitle: 'Get More Than Just Likes, Get Results.',
-        description: "At Orvyn Media, we don't just run ads. We build smart, targeted campaigns that actually drive sales, boost visibility, and grow your audience. From Instagram to Facebook to TikTok, we handle everything from setup to strategy to live optimization, so you can focus on running your business while we handle the results.",
+        description: "At Orvyn Media, we don't just run ads. We build smart, targeted campaigns that actually drive sales, boost visibility and grow your audience. From Instagram to Facebook to TikTok, we handle everything from setup to strategy to live optimization, so you can focus on running your business while we handle the results.",
         close: 'Ready to turn views into real growth?',
         buttonText: "View Packages",
         buttonClass: "Button",
@@ -58,7 +58,7 @@ export const Accordion = [
         id: 2,
         title: 'Social Media Management',
         subTitle: '',
-        description: "We don't just post we position your brand for real impact. From revamping your page to planning your content, writing captions, engaging your community, and tracking results, we handle it all. Our goal is to turn your platforms into a strong, consistent presence that builds trust and drives growth.",
+        description: "We don't just post we position your brand for real impact. From revamping your page to planning your content, writing captions, engaging your community and tracking results, we handle it all. Our goal is to turn your platforms into a strong, consistent presence that builds trust and drives growth.",
         close: "Let's manage your socials like a pro.",
         buttonText: "View Packages",
         buttonClass: "Button",
@@ -78,7 +78,7 @@ export const Accordion = [
         id: 4,
         title: 'Website Design & Development',
         subTitle: '',
-        description: "We build websites that do more than look good. Whether you need a portfolio, landing page or full e-commerce site, we design each one to match your brand, engage your audience, and drive results. Every site is fast, mobile-friendly, and built with purpose from start to finish.",
+        description: "We build websites that do more than look good. Whether you need a portfolio, landing page or full e-commerce site, we design each one to match your brand, engage your audience and drive results. Every site is fast, mobile-friendly and built with purpose from start to finish.",
         close: "Let's build your dream website.",
         buttonText: "Book a Consultation",
         buttonClass: "Button",
@@ -88,7 +88,7 @@ export const Accordion = [
         id: 5,
         title: 'Graphics Design',
         subTitle: '',
-        description: "From flyers to brand kits, we design clean, professional visuals that leave a strong impression. Whether it's for print or digital use business cards, decks, templates, or banners we create designs that align with your brand and communicate clearly.",
+        description: "From flyers to brand kits, we design clean, professional visuals that leave a strong impression. Whether it's for print or digital use business cards, decks, templates or banners we create designs that align with your brand and communicate clearly.",
         close: 'Need clean, premium visuals?',
         buttonText: "Get Started",
         buttonClass: "Button",
@@ -111,7 +111,7 @@ export const RevampData = [
         description: "After",
     },
     {
-        text: "Give your page a clean, professional upgrade. We'll optimize your bio, highlights, and layout to match your brand and attract the right audience.",
+        text: "Give your page a clean, professional upgrade. We'll optimize your bio, highlights and layout to match your brand and attract the right audience.",
     },
 ]
 
@@ -167,19 +167,19 @@ export const ChooseData = [
         id: 1,
         img: "/strategy-new.png",
         header: "Strategy Comes First",
-        text: "We don't just create. We plan. Every service we offer is rooted in intentional strategy that aligns with your brand's goals and helps you grow with purpose.",
+        text: "We don't just create, we plan. Every service we offer is rooted in intentional strategy that aligns with your brand's goals and helps you grow with purpose.",
     },
     {
         id: 2,
         img: "/content-new.png",
         header: "Content That Connects",
-        text: "Our visuals don't just look good. They resonate. From social content to event coverage, we focus on clarity, emotion, and results that move your audience.",
+        text: "Our visuals don't just look good. They resonate. From social content to event coverage, we focus on clarity, emotion and results that move your audience.",
     },
     {
         id: 3,
         img: "/human-new.png",
         header: "Flexible, Human Approach",
-        text: "We meet you where you are. Whether you're just starting out or scaling up, we make the creative process simple, personal, and tailored to your needs.",
+        text: "We meet you where you are. Whether you're just starting out or scaling up, we make the creative process simple, personal and tailored to your needs.",
     },
 ]
 
@@ -285,7 +285,7 @@ export const PricingData = [
             },
             {
                 tier: "Premium",
-                tagline: "Our Full-service management built for brands that want expert support, clarity, and growth.",
+                tagline: "Our Full-service management built for brands that want expert support, clarity and growth.",
                 prepTime: "3 weeks",
                 deliverables: [
                     "2 platform management (Instagram + TikTok)",
@@ -317,9 +317,9 @@ export const PricingData = [
                 description: "We create and manage a full ad campaign from start to finish.",
                 deliverables: [
                     "1 platform {instagram,Facebook ,Or TikTok)",
-                    "ad copy (caption) + creative direction,",
+                    "Ad copy (caption) + creative direction,",
                     "Campaign setup + monitoring",
-                    "1 ad creative (client-provided or repurposed)",
+                    "1 Ad creative (client-provided or repurposed)",
                     "Performance summary at the end",
                 ],
                 buttonLabel: "Get Started",
@@ -333,7 +333,7 @@ export const PricingData = [
                 deliverables: [
                     "1 standard video shoot for your ad",
                     "1 platform {instagram, Facebook Or TikTok)",
-                    "ad copy (caption) + campaign strategy",
+                    "Ad copy (caption) + campaign strategy",
                     "Setup, launch & optimization",
                     "Performance summary at the end",
                 ],
@@ -367,7 +367,7 @@ export const PricingData = [
             },
             {
                 type: "Signature Content Shoot",
-                typeText: "For events, brands, products, or lifestyle content, a polished shoot experience with premium edits.",
+                typeText: "For events, brands, products or lifestyle content, a polished shoot experience with premium edits.",
                 tier: [
                     {
                         tierPack: "Half-Day Package",
@@ -407,7 +407,7 @@ export const PricingData = [
                         deliverables: [
                             "Bride prep + Bride maids content",
                             "Groom prep + Groomsmen content",
-                            "couple together content",
+                            "Couple together content",
                         ],
                         buttonLabel: "Get Started",
                         buttonLink: "/contact",
@@ -432,7 +432,7 @@ export const PricingData = [
     {
         id: 4,
         category: "Graphics Design",
-        description: "Clean, consistent, and professional designs that reflect your brand across platforms. From logos to packaging, we create clean, branded visuals that bring your ideas to life whether for digital or print.",
+        description: "Clean, consistent and professional designs that reflect your brand across platforms. From logos to packaging, we create clean, branded visuals that bring your ideas to life whether for digital or print.",
         includes: "What we offer:",
         deliverables: [
             {
@@ -453,11 +453,11 @@ export const PricingData = [
             },
             {
                 title: "Roll-Up Banner Design",
-                text: "Informative and attractive designs to showcase your services."
+                text: "Bold vertical banners for events, shops and campaigns."
             },
             {
                 title: "Product Packaging Design",
-                text: "Branded packaging that turns heads and builds trust."
+                text: "Branded packaging that turn heads and builds trust."
             },
             {
                 title: "Social Media Templates",
@@ -469,7 +469,7 @@ export const PricingData = [
             },
             {
                 title: "Presentation Decks",
-                text: "Branded slides for client pitches, webinars, and reports."
+                text: "Branded slides for client pitches, webinars and reports."
             },
         ],
         buttonLabel: "Request a Design",
@@ -478,7 +478,7 @@ export const PricingData = [
     {
         id: 5,
         category: "Website Design & Development",
-        description: "Premium websites tailored to your brand, goals, and user experience.",
+        description: "Premium websites tailored to your brand, goals and user experience.",
         includes: "What We Offer:",
         deliverables: [
             {
@@ -487,7 +487,7 @@ export const PricingData = [
             },
             {
                 title: "Portfolio Websites",
-                text: "Ideal for creatives, professionals, and agencies to showcase work with clarity.",
+                text: "Ideal for creatives, professionals and agencies to showcase work with clarity.",
             },
             {
                 title: "E-commerce Stores",
@@ -495,11 +495,11 @@ export const PricingData = [
             },
             {
                 title: "Landing Pages",
-                text: "Conversion-optimized single pages for campaigns, launches, or service promos.",
+                text: "Conversion-optimized single pages for campaigns, launches or service promos.",
             },
             {
                 title: "Business/Service Websites",
-                text: "Clean, structured websites for consultants, startups, SMEs, and agencies.",
+                text: "Clean, structured websites for consultants, startups, SMEs and agencies.",
             },
             {
                 title: "Booking-Enabled Sites",
@@ -507,11 +507,11 @@ export const PricingData = [
             },
             {
                 title: "Blog & Content Sites",
-                text: "For content creators, writers, and brands looking to build authority.",
+                text: "For content creators, writers and brands looking to build authority.",
             },
             {
                 title: "Sales Funnels & Lead Capture Pages",
-                text: "Pages crafted to guide users toward actions like purchases or email signups.",
+                text: "Pages crafted to guide users toward actions like purchases or email sign-ups.",
             },
             {
                 title: "SEO Optimization",
@@ -539,7 +539,7 @@ export const termsData = {
             title: "1. General Use",
             content: [
                 "These terms apply to all services provided by Orvyn Media.",
-                "By using our services, booking a consultation, or making a payment, you agree to be legally bound by these terms.",
+                "By using our services, booking a consultation or making a payment, you agree to be legally bound by these terms.",
                 "We reserve the right to modify these terms at any time. Continued use of our services implies acceptance of any changes.",
             ],
         },
@@ -554,14 +554,14 @@ export const termsData = {
             title: "3. Service Delivery",
             content: [
                 "Deliverables vary per package and are clearly stated before project commencement.",
-                "Timelines for completion may be adjusted depending on client responsiveness, revisions, or project scope changes.",
+                "Timelines for completion may be adjusted depending on client responsiveness, revisions or project scope changes.",
                 "Express delivery is available at an added cost, subject to scheduling availability.",
             ],
         },
         {
             title: "4. Client Responsibilities",
             content: [
-                "Clients are required to provide all necessary content, files, access, and approvals on time to avoid delays.",
+                "Clients are required to provide all necessary content, files, access and approvals on time to avoid delays.",
                 "All media submitted must be owned or licensed by the client.",
                 "Revisions are limited to the number specified in the package; additional revisions may incur extra charges.",
             ],
@@ -577,7 +577,7 @@ export const termsData = {
         {
             title: "6. Intellectual Property",
             content: [
-                "Orvyn Media retains rights to creative drafts, strategies, and internal tools.",
+                "Orvyn Media retains rights to creative drafts, strategies and internal tools.",
                 "Final deliverables become the client's property upon full payment unless otherwise stated.",
                 "We reserve the right to showcase completed work for promotional purposes unless explicitly requested otherwise in writing.",
             ],
@@ -592,8 +592,8 @@ export const termsData = {
         {
             title: "8. Liability",
             content: [
-                "Orvyn Media will not be liable for any indirect or consequential loss, data loss, or reputational damage caused by delays, third-party tools, or circumstances beyond our control.",
-                "We commit to providing professional services but do not guarantee specific results (e.g., viral content or ad conversions), as outcomes may vary.",
+                "Orvyn Media will not be liable for any indirect or consequential loss, data loss, or reputational damage caused by delays, third-party tools or circumstances beyond our control.",
+                "We commit to providing professional services but do not guarantee specific results (e.g. viral content or ad conversions) as outcomes may vary.",
             ],
         },
         {
@@ -625,16 +625,18 @@ export const privacyData = {
     sections: [
         {
             title: "1. What We Collect",
+            sub: "When you work with us or visit our website, we may collect:",
             content: [
-                "Your name, email, and phone number",
+                "Your name, email and phone number",
                 "Business details like social handles or brand info",
-                "Files you share with us (photos, videos, logos, etc.)",
+                "Files you share with us (photos, videos, logos etc.)",
                 "Site activity (via tools like Google Analytics or Meta Ads)",
             ],
             close: "",
         },
         {
             title: "2. How We Use Your Information",
+            sub: "We use your information to:",
             content: [
                 "Manage and deliver our services to you",
                 "Communicate project updates and support",
@@ -645,6 +647,7 @@ export const privacyData = {
         },
         {
             title: "3. How We Protect Your Data",
+            sub: "We keep your information safe through:",
             content: [
                 "Secure platforms and encrypted tools",
                 "Limited access to authorized team members only",
@@ -654,6 +657,7 @@ export const privacyData = {
         },
         {
             title: "4. Your Rights",
+            sub: "You're in control of your data. You can:",
             content: [
                 "Request to update or delete your information",
                 "Opt out of promotional emails at any time",
@@ -663,6 +667,7 @@ export const privacyData = {
         },
         {
             title: "5. Third-Party Services",
+            sub: "We may use trusted tools such as:",
             content: [
                 "Paystack (for payments)",
                 "Calendly (for bookings)",
@@ -691,7 +696,7 @@ export const frequentData = [
         id: 1,
         question: "What platforms do you manage for social media?",
         answer:
-            "We mainly manage Instagram and TikTok, but we can also cross-post to Facebook so your content reaches a wider audience effortlessly.",
+            "We mainly manage Instagram and TikTok but we can also cross-post to Facebook so your content reaches a wider audience effortlessly.",
     },
     {
         id: 2,
@@ -703,7 +708,7 @@ export const frequentData = [
         id: 3,
         question: "Can I combine different services?",
         answer:
-            "Of course! Many of our clients mix and match services like content creation, social media management, and ads. Just let us know what you need, and we'll build a custom solution for you.",
+            "Of course! Many of our clients mix and match services like content creation, social media management and ads. Just let us know what you need and we'll build a custom solution for you.",
     },
     {
         id: 4,
@@ -721,23 +726,23 @@ export const frequentData = [
         id: 6,
         question: "What if I need my content faster than 72 hours?",
         answer:
-            "No problem. We offer express delivery within 48 hours as an add-on. Just let us know when booking, and we'll prioritize your edit.",
+            "No problem. We offer express delivery within 48 hours as an add-on. Just let us know when booking and we'll prioritize your edit.",
     },
     {
         id: 7,
-        question: "Do you include photos in your content creation packages?",
+        question: "Do you also do photo-shoots?",
         answer:
-            "Yes! For most content sessions, we include a set of free premium photos along with your videos. These are edited and perfect for sharing online or saving special moments.",
+            "Yes, we offer professional photo-shoots as part of our content creation services. Whether you need lifestyle shots, product images or event photography, we've got you covered. Just let us know what you're looking for.",
     },
     {
         id: 8,
         question: "Can I book both mobile and camera coverage?",
         answer:
-            "Yes, depending on your preference and budget, you can choose mobile, camera, or both. Camera shoots offer even higher image quality and are ideal for premium content.",
+            "Yes, depending on your preference and budget, you can choose mobile, camera or both. Camera shoots offer even higher image quality and are ideal for premium content.",
     },
     {
         id: 9,
-        question: "Is there a limit to the number of outfits or looks per shoot?",
+        question: "s there a limit to the number of outfits or looks for a fashion shoot?",
         answer:
             "Yes, but we don't cap it strictly. The number of edited videos depends on how many looks or moments we can cover within the booked hours. You can always extend your time with an extra hour add-on.",
     },
@@ -753,6 +758,18 @@ export const frequentData = [
         answer:
             "It's strictly for business owners who need regular branded content for marketing, not for personal shoots or events.",
     },
+    {
+        id: 12,
+        question: "Can I customize the shoot based on my needs?",
+        answer:
+            "Absolutely! If you have specific deliverables or expectations, just let us know. We're happy to create a custom package that fits your timeline and goals.",
+    },
+    {
+        id: 13,
+        question: "Do you travel outside Lagos for shoots?",
+        answer:
+            "Yes, we're available to travel! For locations outside Lagos or distant parts within, the client is responsible for covering transportation and logistics costs. We'll provide an estimate based on your shoot location when you book.",
+    }
 ];
 
 

@@ -25,9 +25,7 @@ const OneTimeOffer = () => {
           }) => (
             <ScrollReveal key={id} delay={0.7 * id * 0.1}>
               <div className="HomeOfferWrap" key={id}>
-                <ScrollReveal delay={0.8}>
                   <h2>{type}</h2>
-                </ScrollReveal>
                 <div className="HomeOfferCard">
                   <div className="HomeOfferImg">
                     <img src={img} alt="offer-bg" />

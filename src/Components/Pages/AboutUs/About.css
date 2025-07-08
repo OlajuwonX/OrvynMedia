@@ -27,7 +27,7 @@
   z-index: 1;
 }
 
-.AboutUsContainer p{
+.AboutUsContainer p {
   font-weight: 300;
 }
 
@@ -60,8 +60,8 @@
 
 .AboutUsFirst p {
   font-size: var(--font-size-p);
-  letter-spacing: 0.8px;
-  line-height: 27px;
+  letter-spacing: 1px;
+  line-height: 30px;
   width: 100%;
 }
 
@@ -94,11 +94,11 @@
 
 .AboutUsTexts p {
   font-size: var(--font-size-p);
-  letter-spacing: 0.5px;
-  line-height: 27px;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 
-.AboutUs h3{
+.AboutUs h3 {
   font-weight: 400;
 }
 
@@ -134,7 +134,7 @@
 
   .AboutUsHeader h2 {
     font-size: var(--font-size-h3);
-    letter-spacing: 0.4px;
+    letter-spacing: 0.6px;
     padding-bottom: 10px;
   }
 
@@ -251,8 +251,8 @@
 
   .AboutUsSmall p {
     font-size: 15px;
-    letter-spacing: 0.2px;
-    line-height: 20px;
+    letter-spacing: 0.6px;
+    line-height: 23px;
     width: auto;
   }
 
@@ -282,13 +282,14 @@
 
   .AboutUsTexts p {
     font-size: 15px;
-    letter-spacing: 0.5;
-    line-height: 18px;
+    letter-spacing: 0.6px;
+    line-height: 23px;
   }
 
   .AboutUs h3 {
     font-size: var(--font-size-p);
     margin-top: 15px;
     font-weight: 400;
+    letter-spacing: 0.6px;
   }
 }

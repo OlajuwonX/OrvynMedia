@@ -24,28 +24,28 @@
 .TermsCard h3 {
   font-weight: 300;
   font-size: var(--font-size-p);
-  line-height: 20px;
+  line-height: 23px;
+  letter-spacing: 0.6px;
 }
 
 .TermsContent {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
 .TermsContent h3 {
+  margin-top: 10px;
   font-weight: 500;
 }
 
 .TermsContent li {
   list-style: none;
-  padding-left: 10px;
   line-height: 27px;
   font-size: var(--font-size-p);
 }
 
 .TermsButton {
-  margin-left: 10px;
   display: flex;
   gap: 5px;
 }
@@ -101,8 +101,8 @@
 
   .TermsContent li {
     list-style: none;
-    padding-left: 0;
-    line-height: 20px;
+    line-height: 23px;
+    letter-spacing: 0.6px;
     font-weight: 300;
     font-size: var(--font-size-p);
   }

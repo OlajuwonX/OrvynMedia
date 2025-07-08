@@ -22,6 +22,7 @@
 }
 
 .HomeOfferWrap h2 {
+  letter-spacing: 0.8px;
   text-align: center;
   font-size: var(--font-size-h2);
   text-transform: uppercase;
@@ -73,16 +74,19 @@
 
 .HomeOfferBack h3 {
   font-size: var(--font-size-h2);
+  letter-spacing: 0.8px;
   font-weight: 500;
 }
 
 .HomeOfferBack p {
   font-size: var(--font-size-p);
+  letter-spacing: 0.8px;
   font-weight: 500;
 }
 
 .HomeOfferPrice {
   font-style: italic;
+  letter-spacing: 0.8px;
   font-weight: 500;
 }
 
@@ -98,6 +102,7 @@
 }
 
 .HomeOfferItem li {
+  letter-spacing: 0.8px;
   list-style: none;
   font-weight: 300;
 }
@@ -153,16 +158,19 @@
 
   .HomeOfferBack h3 {
     font-size: 18px;
+    letter-spacing: 0.8px;
     font-weight: 500;
   }
 
   .HomeOfferBack p {
     font-size: var(--font-size-p);
+    letter-spacing: 0.8px;
     font-weight: 500;
   }
 
   .HomeOfferPrice {
     font-style: italic;
+    letter-spacing: 0.8px;
     font-weight: 500;
   }
 
@@ -177,6 +185,7 @@
   }
 
   .HomeOfferItem li {
+    letter-spacing: 0.8px;
     list-style: none;
     font-size: var(--font-size-p);
   }
@@ -232,10 +241,12 @@
 
   .HomeOfferBack h3 {
     font-size: 18px;
+    letter-spacing: 0.8px;
     font-weight: 500;
   }
 
   .HomeOfferBack p {
+    letter-spacing: 0.8px;
     font-size: 18px;
     font-weight: 500;
   }
@@ -246,6 +257,7 @@
   }
 
   .HomeOfferItem li {
+    letter-spacing: 0.8px;
     font-size: 16px;
   }
 
@@ -293,11 +305,13 @@
 
   .HomeOfferBack h3 {
     font-size: var(--font-size-p);
+    letter-spacing: 0.8px;
     font-weight: 500;
   }
 
   .HomeOfferBack p {
     font-size: 15px;
+    letter-spacing: 0.8px;
     font-weight: 500;
   }
 
@@ -308,6 +322,7 @@
 
   .HomeOfferItem li {
     font-size: 15px;
+    letter-spacing: 0.8px;
   }
 
   .HomeOfferBtn .Button {

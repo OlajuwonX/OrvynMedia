@@ -19,9 +19,7 @@ const Contact = () => {
         <ScrollReveal delay={0.1}>
           <div className="ContactContainer">
             <div className="ContactHead">
-              <ScrollReveal delay={0.2}>
-                <h1>Discovery call</h1>
-              </ScrollReveal>
+              <h1>Discovery call</h1>
             </div>
             <div className="ContactCard">
               <div className="ContactImg">

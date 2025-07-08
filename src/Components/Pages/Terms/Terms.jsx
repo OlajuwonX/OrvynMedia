@@ -1,6 +1,7 @@
 import "./Terms.css";
 import { termsData } from "../../../../data";
 import ScrollReveal from "../../Animations/ScrollReveal";
+import { FaCheck } from "react-icons/fa6";
 
 const Terms = () => {
   return (
@@ -19,9 +20,16 @@ const Terms = () => {
               <ScrollReveal key={index} delay={0.2 + index * 0.1}>
                 <div className="TermsContent" key={index}>
                   <h3>{title}</h3>
-                  <ul>
-                    <li>{content}</li>
-                  </ul>
+                  {content.map((item, i) => (
+                    <ul key={i}>
+                      <li>
+                        <span className="Content">
+                          <FaCheck />
+                        </span>{" "}
+                        {item}
+                      </li>
+                    </ul>
+                  ))}
                 </div>
               </ScrollReveal>
             ))}

@@ -99,7 +99,7 @@
 
   .AboutHeader {
     text-transform: uppercase;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.8px;
   }
 
   .AboutHeader h1 {
@@ -122,8 +122,8 @@
 
   .AboutSubheader {
     margin-top: 10px;
-    line-height: 20px;
-    letter-spacing: 0.5px;
+    line-height: 23px;
+    letter-spacing: 0.8px;
   }
 
   .AboutBtn {
@@ -153,7 +153,7 @@
 
   .AboutHeader {
     text-transform: uppercase;
-    letter-spacing: 0.7px;
+    letter-spacing: 1px;
   }
 
   .AboutHeader h1 {
@@ -168,17 +168,19 @@
   .AboutIntro h2 {
     font-size: var(--font-size-p);
     font-weight: 400;
-    line-height: 20px;
+    line-height: 23px;
+    letter-spacing: 0.8px;
   }
 
   .AboutSubheader {
     margin-top: 10px;
-    line-height: 22px;
-    letter-spacing: 0.5px;
+    line-height: 25px;
   }
 
   .AboutSubheader p {
     font-size: 15px;
+    letter-spacing: 0.8px;
+    line-height: 23px;
   }
 
   .AboutBtn {

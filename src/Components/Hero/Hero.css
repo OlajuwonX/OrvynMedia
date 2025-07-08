@@ -74,7 +74,7 @@
   .HeroContainer::before {
     opacity: 0.2;
     width: 100%;
-    min-height: 44vh;
+    min-height: 47vh;
   }
 
   .HeroText {
@@ -88,7 +88,7 @@
 
   .HeroHeaders h2 {
     font-size: 3rem;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.8px;
   }
 
   .HeroSubheader {
@@ -99,6 +99,7 @@
   .HeroSubheader p {
     font-size: var(--font-size-h3);
     line-height: 30px;
+    letter-spacing: 1px;
   }
 
   .HeroSubheader span {
@@ -137,7 +138,7 @@
 
   .HeroHeaders h2 {
     font-size: 2.3rem;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.8px;
   }
 
   .HeroSubheader {
@@ -172,7 +173,7 @@
   .HeroContainer::before {
     opacity: 0.2;
     width: 100%;
-    min-height: 48vh;
+    min-height: 51vh;
   }
 
   .HeroText {
@@ -196,7 +197,8 @@
 
   .HeroSubheader p {
     font-size: var(--font-size-p);
-    line-height: 20px;
+    line-height: 23px;
+    letter-spacing: 0.8px;
   }
 
   .HeroSubheader span {

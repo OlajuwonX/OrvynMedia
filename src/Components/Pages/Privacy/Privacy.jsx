@@ -16,19 +16,26 @@ const Privacy = () => {
         <ScrollReveal delay={0.1}>
           <section className="PrivacyCard">
             <h3>{privacyData.intro}</h3>
-            {privacyData.sections.map(({ title, content }, index) => (
+            {privacyData.sections.map(({ title, content, sub }, index) => (
               <ScrollReveal key={index} delay={0.2 + index * 0.1}>
                 <div className="PrivacyContent" key={index}>
-                  <h3>{title}</h3>
+                  <h3 className="PrivacyContentTitle">{title}</h3>
+                  <p>{sub}</p>
                   {content.map((item, i) => (
                     <ul key={i}>
-                      <li><span className="Content"><FaCheck/></span>{" "}{item}</li>
+                      <li>
+                        <span className="Content">
+                          <FaCheck />
+                        </span>{" "}
+                        {item}
+                      </li>
                     </ul>
                   ))}
                 </div>
               </ScrollReveal>
             ))}
 
+            <p>Need help or have questions?</p>
             <ScrollReveal delay={0.2 + privacyData.sections.length * 0.1}>
               <div className="PrivacyButton">
                 <span>Mail to:</span>

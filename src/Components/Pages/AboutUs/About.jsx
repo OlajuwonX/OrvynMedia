@@ -48,14 +48,14 @@ const About = () => {
                   <p>
                     Founded by Raphael or Dami, a digital storyteller and social
                     media strategist, Orvyn began as a personal journey of
-                    sharing content, inspiring others to grow, and managing
-                    social media
+                    sharing content, inspiring others to grow,
                   </p>
                 </div>
                 <p className="SmallText2">
-                  pages that delivered real results. Over time, that passion
-                  grew into a creative agency focused on helping people build
-                  their digital presence and turn visibility into real growth.
+                  and managing social media pages that delivered real results.
+                  Over time, that passion grew into a creative agency focused on
+                  helping people build their digital presence and turn
+                  visibility into real growth.
                 </p>
               </div>
             </div>
