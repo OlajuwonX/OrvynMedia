@@ -11,11 +11,13 @@ import Privacy from "./Components/Pages/Privacy/Privacy.jsx";
 import "./App.css";
 import TopBtn from "./Components/BackToTopBtn/Top.jsx";
 import ThankYou from "./Components/Pages/ThankYouPage/ThankYou.jsx";
+import NotFound from "./Components/Pages/404/NotFound.jsx";
 
 function App() {
   return (
     <div className="App" style={{ flex: 1 }}>
       <Nav />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Service />} />
@@ -24,6 +26,9 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/thank-you" element={<ThankYou />} />
+
+        {/* Catch All 404 errors */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
       <TopBtn />

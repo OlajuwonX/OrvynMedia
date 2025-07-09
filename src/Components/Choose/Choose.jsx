@@ -12,10 +12,10 @@ const Choose = () => {
         {ChooseData.map(({ id, header, text, img }) => (
           <ScrollReveal key={id} delay={0.5 * id * 0.1}>
             <div className="ChooseWrap">
-              <div className="ChooseImg" key={id}>
-                <img src={img} alt="" />
+              <div className="ChooseImg">
+                <img loading="lazy" src={img} alt={header} />
               </div>
-              <div key={id} className="ChooseTextCard">
+              <div className="ChooseTextCard">
                 <h3>{header}</h3>
                 <p>{text}</p>
               </div>

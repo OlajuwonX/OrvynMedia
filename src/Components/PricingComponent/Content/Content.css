@@ -101,7 +101,7 @@
 }
 
 .ContentPrice {
-  font-style: italic;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -189,8 +189,7 @@
   }
 
   .ContentPrice {
-    font-style: italic;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .ContentDeliverables {
@@ -286,7 +285,6 @@
   }
 
   .ContentPrice {
-    font-style: italic;
     font-weight: 600;
   }
 

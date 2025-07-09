@@ -67,7 +67,7 @@ const Ourservices = () => {
         </div>
         <ScrollReveal delay={0.3}>
           <div className="AccordionImage">
-            <img src="/newoffer.jpg" alt="What We offer" />
+            <img loading="lazy" src="/finalBg.jpg" alt="What We offer" />
           </div>
         </ScrollReveal>
       </div>

@@ -18,7 +18,13 @@ const RevampImg = () => {
     });
   }, [controls]);
 
-  const repeatedImages = [...RevampProjects, ...RevampProjects];
+  const repeatedImages = [
+    ...RevampProjects,
+    ...RevampProjects.map((item, index) => ({
+      ...item,
+      id: `${item.id}-dup${index}`,
+    })),
+  ];
 
   return (
     <section className="RevampSection">
@@ -34,14 +40,14 @@ const RevampImg = () => {
       >
         <div className="RevampSliderContainer">
           <Motion.div className="RevampSliderTrack" animate={controls}>
-            {repeatedImages.map(({ id, img }, index) => (
+            {repeatedImages.map(({ id, img }) => (
               <Motion.div
-                key={index}
+                key={`Revamp ${id}`}
                 className="RevampSliderImage"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <img src={img} alt={`Revamp ${id}`} />
+                <img loading="lazy" src={img} alt={`Revamp ${id}`} draggable="false" />
               </Motion.div>
             ))}
           </Motion.div>

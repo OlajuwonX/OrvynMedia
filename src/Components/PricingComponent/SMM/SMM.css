@@ -91,6 +91,10 @@
   align-items: center;
 }
 
+.AboutList{
+  margin-bottom: 20px;
+}
+
 .TabDataDeliverables li {
   list-style: none;
   line-height: 25px;

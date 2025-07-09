@@ -42,7 +42,6 @@ export const AboutUs =
     ending: "Orvyn Media is for anyone ready to grow online with clarity, confidence, and bold storytelling."
 }
 
-
 export const Accordion = [
     {
         id: 1,
@@ -96,24 +95,24 @@ export const Accordion = [
     },
 ]
 
-export const RevampData = [
-    {
-        title: "Revamp Your Page for ₦15,000 only!",
-    },
-    {
-        id: 1,
-        img: "/before.png",
-        description: "Before",
-    },
-    {
-        id: 2,
-        img: "/after.png",
-        description: "After",
-    },
-    {
-        text: "Give your page a clean, professional upgrade. We'll optimize your bio, highlights and layout to match your brand and attract the right audience.",
-    },
-]
+export const RevampData = {
+
+    title: "Revamp Your Page for ₦15,000 only!",
+    image: [
+        {
+            id: 1,
+            img: "/before.png",
+            description: "Before",
+        },
+        {
+            id: 2,
+            img: "/after.png",
+            description: "After",
+        },
+
+    ],
+    text: "Give your page a clean, professional upgrade. We'll optimize your bio, highlights and layout to match your brand and attract the right audience.",
+}
 
 export const RevampProjects = [
     {
@@ -250,7 +249,7 @@ export const PricingData = [
             {
                 tier: "Basic",
                 tagline: "Stay active and consistent, perfect for building a steady presence.",
-                prepTime: "1 - 2 weeks",
+                prepTime: "1 - 3 weeks",
                 deliverables: [
                     "1 social media account (Instagram)",
                     "Page setup & bio optimization",
@@ -267,7 +266,7 @@ export const PricingData = [
             {
                 tier: "Beta",
                 tagline: "For growing brands ready to amplify their voice",
-                prepTime: "1 - 2 weeks",
+                prepTime: "1 - 3 weeks",
                 deliverables: [
                     "1 platform management (Instagram)",
                     "Audience + industry research",
@@ -286,7 +285,7 @@ export const PricingData = [
             {
                 tier: "Premium",
                 tagline: "Our Full-service management built for brands that want expert support, clarity and growth.",
-                prepTime: "3 weeks",
+                prepTime: "3 - 4 weeks",
                 deliverables: [
                     "2 platform management (Instagram + TikTok)",
                     "Full social media strategy + monthly content calendar",
@@ -312,7 +311,7 @@ export const PricingData = [
         packages: [
             {
                 tier: "Standard One-Off Campaign",
-                price: "₦60,000",
+                price: "₦ 60,000",
                 tagline: "Perfect for brands that already have content",
                 description: "We create and manage a full ad campaign from start to finish.",
                 deliverables: [
@@ -327,7 +326,7 @@ export const PricingData = [
             },
             {
                 tier: "Ad Launch+",
-                price: "₦130,000/month",
+                price: "₦ 130,000/month",
                 tagline: "",
                 description: "We come to you and shoot one strong, scroll-stopping ad asset for the campaign.",
                 deliverables: [
@@ -354,7 +353,7 @@ export const PricingData = [
                         tierPack: "UGC Style Video",
                         description:
                             "Authentic, review-style clean and professional video featuring your product or service.",
-                        price: "₦55,000",
+                        price: "₦ 55,000",
                         prepTime: "",
                         deliverables: [
                             "1 edited video (15 - 45 secs)",
@@ -372,7 +371,7 @@ export const PricingData = [
                     {
                         tierPack: "Half-Day Package",
                         description: "",
-                        price: "₦180,000",
+                        price: "₦ 180,000",
                         prepTime: "Up to 4 Hours",
                         deliverables: [
                             "2 Edited Videos (1 highlight + 1 trend/reel-style)",
@@ -384,7 +383,7 @@ export const PricingData = [
                     {
                         tierPack: "Full Day Package",
                         description: "",
-                        price: "₦250,000",
+                        price: "₦ 250,000",
                         prepTime: "Up to 8 Hours",
                         deliverables: [
                             "3 – 4 Edited Videos (1 highlight + 2 – 3 trend/reel-style) content",
@@ -402,7 +401,7 @@ export const PricingData = [
                     {
                         tierPack: "Half-Day Package",
                         description: "",
-                        price: "₦200,000",
+                        price: "₦ 200,000",
                         prepTime: "Up to 5 Hours",
                         deliverables: [
                             "Bride prep + Bride maids content",
@@ -415,7 +414,7 @@ export const PricingData = [
                     {
                         tierPack: "Full Day Package",
                         description: "",
-                        price: "₦350,000",
+                        price: "₦ 350,000",
                         prepTime: "Up to 9 Hours",
                         deliverables: [
                             "Everything from Half-Day",
@@ -823,7 +822,6 @@ export const frequentData = [
         ]
     }
 ];
-
 
 export const HomeOfferData = [
     {

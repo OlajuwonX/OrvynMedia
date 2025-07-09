@@ -25,10 +25,10 @@ const OneTimeOffer = () => {
           }) => (
             <ScrollReveal key={id} delay={0.7 * id * 0.1}>
               <div className="HomeOfferWrap" key={id}>
-                  <h2>{type}</h2>
+                <h2>{type}</h2>
                 <div className="HomeOfferCard">
                   <div className="HomeOfferImg">
-                    <img src={img} alt="offer-bg" />
+                    <img loading="lazy" src={img} alt="offer-bg" />
                   </div>
 
                   <div className="HomeOfferText">

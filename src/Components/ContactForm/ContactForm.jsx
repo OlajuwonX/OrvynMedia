@@ -47,7 +47,7 @@ const ContactForm = () => {
 
       <div className="ContactFormCard">
         <div className="ContactFormImg">
-          <img src="/business-new.png" alt="background" />
+          <img loading="lazy" src="/business-new.png" alt="background" />
         </div>
 
         <form onSubmit={handleSubmit} className="ContactForm">

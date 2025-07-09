@@ -28,7 +28,7 @@ const ADS = () => {
                 </p>
               </div>
               <p className="TabDataDescription">{pack.description}</p>
-              <ul className="TabDataDeliverables">
+              <ul className="TabDataDeliverables AboutList">
                 {pack.deliverables.map((item, i) => (
                   <li key={i}>
                     <span className="Check">

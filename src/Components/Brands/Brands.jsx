@@ -18,7 +18,13 @@ const Brands = () => {
     });
   }, [controls]);
 
-  const repeatedBrands = [...Brandlogo, ...Brandlogo];
+  const repeatedBrands = [
+    ...Brandlogo,
+    ...Brandlogo.map((item, index) => ({
+      ...item,
+      id: `${item.id}-dup-${index}`,
+    })),
+  ];
 
   return (
     <section className="BrandsSection">
@@ -34,14 +40,19 @@ const Brands = () => {
       >
         <div className="BrandsSliderContainer">
           <Motion.div className="BrandsSliderTrack" animate={controls}>
-            {repeatedBrands.map(({ id, img }, index) => (
+            {repeatedBrands.map(({ id, img }) => (
               <Motion.div
-                key={index}
+                key={`brand-${id}`}
                 className="BrandsSliderImage"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <img src={img} alt={`brand-${id}`} />
+                <img
+                  loading="lazy"
+                  src={img}
+                  alt={`brand-${id}`}
+                  draggable="false"
+                />
               </Motion.div>
             ))}
           </Motion.div>
