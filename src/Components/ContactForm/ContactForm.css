@@ -82,11 +82,32 @@
 
 .FormSelect {
   background: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   border: none;
   padding: 4px 6px;
+  font-weight: 500;
   border-radius: 4px;
   color: var(--text);
   font-size: var(--font-size-p);
+  outline: none;
+  cursor: pointer;
+}
+
+.SelectWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.SelectIcon {
+  pointer-events: none;
+  color: var(--text);
+  z-index: 2;
 }
 
 .ContactForm .Button {

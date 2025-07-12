@@ -73,6 +73,7 @@
   height: 120px;
   width: 130px;
   border-radius: 6px;
+  z-index: 10;
 }
 
 .AboutImgContainer p {
@@ -239,6 +240,7 @@
     height: 100px;
     width: 100px;
     border-radius: 6px;
+    z-index: 10;
   }
 
   .SmallImgContainer p {

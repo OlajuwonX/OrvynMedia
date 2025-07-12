@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./ContactForm.css";
+import { CiCircleChevDown } from "react-icons/ci";
 
 const ContactForm = () => {
+  const selectRef = useRef();
+
   const [selectedService, setSelectedService] = useState("");
   const [description, setDescription] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -63,25 +66,33 @@ const ContactForm = () => {
           <input type="tel" name="phone" placeholder="Phone Number:" required />
           <input type="text" name="location" placeholder="Location:" required />
 
-          <select
-            id="selectedService"
-            name="selectedService"
-            value={selectedService}
-            onChange={(e) => setSelectedService(e.target.value)}
-            className="FormSelect"
-            required
-          >
-            <option value="" disabled>
-              Select a service
-            </option>
-            <option value="Ads Management">Ads Management</option>
-            <option value="Social Media Management">
-              Social Media Management
-            </option>
-            <option value="Content Creation">Content Creation</option>
-            <option value="Website Development">Web Development</option>
-            <option value="Graphics Design">Graphics Design</option>
-          </select>
+          <div className="SelectWrapper">
+            <select
+              id="selectedService"
+              name="selectedService"
+              value={selectedService}
+              onChange={(e) => setSelectedService(e.target.value)}
+              required
+              className="FormSelect"
+            >
+              <option value="" disabled>
+                Select a service
+              </option>
+              <option value="Ads Management">Ads Management</option>
+              <option value="Social Media Management">
+                Social Media Management
+              </option>
+              <option value="Content Creation">Content Creation</option>
+              <option value="Website Development">Web Development</option>
+              <option value="Graphics Design">Graphics Design</option>
+            </select>
+            <span
+              onClick={() => selectRef.current?.focus()}
+              className="SelectIcon"
+            >
+              <CiCircleChevDown size={20} />
+            </span>
+          </div>
 
           <textarea
             value={description}

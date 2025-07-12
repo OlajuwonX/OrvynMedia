@@ -157,6 +157,7 @@
   .RevampImg {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     flex: 1.5;
     gap: 30px;

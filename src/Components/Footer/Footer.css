@@ -12,6 +12,8 @@
 
 .FooterContainer .Button:hover {
   padding: 0;
+  color: #fed3d3;
+  scale: 1.1;
 }
 
 .FooterSection {
@@ -65,11 +67,11 @@
   font-weight: 200;
   letter-spacing: 0.8px;
   text-decoration: none;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .FooterMenuLinks:hover {
-  color: #d8b788;
+  color: #fed3d3;
   scale: 1.1;
 }
 
@@ -98,7 +100,7 @@
 }
 
 .FooterContactLinks .ContactBtn:hover {
-  color: #d8b788;
+  color: #fed3d3;
 }
 
 .FooterContactLinks span {
@@ -122,12 +124,9 @@
 
 .FooterQuickLinks .Button:hover {
   background: none;
+  scale: 1.1;
+  color: #fed3d3;
 }
-
-.FooterQuickLinks .Button:hover {
-  scale: 1;
-}
-
 
 .FooterCopyright {
   display: flex;
@@ -151,7 +150,6 @@
   flex-direction: column;
   gap: 10px;
 }
-
 
 .ContactIcons {
   font-size: var(--font-size-p);
@@ -440,14 +438,13 @@
     height: 0.6px;
     background: #fed3d3;
     opacity: 0.9;
-    
   }
 
   .FooterCopyright {
     background: inherit;
   }
 
-  .FooterEnd{
+  .FooterEnd {
     width: 78vw;
     padding: 0 -40px;
   }
