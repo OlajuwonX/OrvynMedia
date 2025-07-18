@@ -76,7 +76,13 @@ const ContactForm = () => {
               className="FormSelect"
             >
               <option value="" disabled>
-                Select a service
+                Select a service{" "}
+                <span
+                  onClick={() => selectRef.current?.focus()}
+                  className="SelectIcon"
+                >
+                  <CiCircleChevDown size={20} />
+                </span>
               </option>
               <option value="Ads Management">Ads Management</option>
               <option value="Social Media Management">
