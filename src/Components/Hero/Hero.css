@@ -173,7 +173,7 @@
   .HeroContainer::before {
     opacity: 0.2;
     width: 100%;
-    min-height: 53vh;
+    min-height: 54vh;
   }
 
   .HeroText {
