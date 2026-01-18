@@ -15,15 +15,12 @@ const Service = () => {
   const pricingRef = useRef(null);
 
   const [activeTab, setActiveTab] = useState("SMM");
-  const [activeSubTab, setActiveSubTab] = useState("Website Design & Development"); // Updated to match actual tab name
+  const [activeSubTab, setActiveSubTab] = useState("Website Design & Development");
   const [openId, setOpenId] = useState(null);
   const [allTabs, setAllTabs] = useState([]); // All tabs from DB
   const [faqs, setFaqs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [tabData, setTabData] = useState({}); // Store card data for each tab
-  const [tabsLoaded, setTabsLoaded] = useState(false);
-  const [cardsLoaded, setCardsLoaded] = useState(false);
-  const [faqsLoaded, setFaqsLoaded] = useState(false);
 
   const toggleAccordion = (id) => {
     setOpenId((prevId) => (prevId === id ? null : id));
@@ -37,12 +34,10 @@ const Service = () => {
         // Fetch all tabs
         const tabsData = await tabsApi.getAll();
         setAllTabs(tabsData);
-        setTabsLoaded(true);
 
         // Fetch all FAQs
         const faqsData = await faqsApi.getAll();
         setFaqs(faqsData);
-        setFaqsLoaded(true);
 
         // Fetch cards for each tab
         const tabCards = {};
@@ -51,35 +46,15 @@ const Service = () => {
           tabCards[tab.title] = cards;
         }
         setTabData(tabCards);
-        setCardsLoaded(true);
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
-        // Only set loading to false when all data is loaded
-        if (tabsLoaded && cardsLoaded && faqsLoaded) {
-          setLoading(false);
-        } else {
-          // Set loading to false after all promises resolve
-          setLoading(false);
-        }
+        setLoading(false);
       }
     };
 
     fetchData();
   }, []);
-
-  // Update the activeSubTab when tabs are loaded to ensure it matches an actual sub-tab
-  useEffect(() => {
-    if (allTabs.length > 0 && !activeSubTab) {
-      const othersTab = allTabs.find(t => t.title === "Others+");
-      if (othersTab) {
-        const subTabs = allTabs.filter(t => t.parent_id === othersTab.id);
-        if (subTabs.length > 0) {
-          setActiveSubTab(subTabs[0].title); // Set to first sub-tab
-        }
-      }
-    }
-  }, [allTabs]);
 
   useEffect(() => {
     const hash = location.hash.replace("#", "");
@@ -181,22 +156,21 @@ const Service = () => {
 
     switch (activeTab) {
       case "SMM":
-        return <SMM tabData={getTabData("SMM")} loading={!cardsLoaded} />;
+        return <SMM tabData={getTabData("SMM")} />;
       case "ADS":
-        return <ADS tabData={getTabData("ADS")} loading={!cardsLoaded} />;
+        return <ADS tabData={getTabData("ADS")} />;
       case "Content":
-        return <Content tabData={getTabData("Content")} loading={!cardsLoaded} />;
+        return <Content tabData={getTabData("Content")} />;
       case "Others+":
         return (
           <Others
-            tabData={{
-              Web: getSubTabData("Web"),
-              Graphics: getSubTabData("Graphics")
-            }}
+            tabData={getOthersSubTabs().reduce((acc, subTab) => {
+              acc[subTab.title] = getSubTabData(subTab.title);
+              return acc;
+            }, {})}
             currentSubTab={activeSubTab}
             setCurrentSubTab={setActiveSubTab}
             subTabs={getOthersSubTabs()}
-            loading={!cardsLoaded}
           />
         );
       default:
