@@ -15,7 +15,7 @@ const Service = () => {
   const pricingRef = useRef(null);
 
   const [activeTab, setActiveTab] = useState("SMM");
-  const [activeSubTab, setActiveSubTab] = useState("Website Design & Development");
+  const [activeSubTab, setActiveSubTab] = useState(""); // Initialize as empty
   const [openId, setOpenId] = useState(null);
   const [allTabs, setAllTabs] = useState([]); // All tabs from DB
   const [faqs, setFaqs] = useState([]);
@@ -56,6 +56,20 @@ const Service = () => {
     fetchData();
   }, []);
 
+  // Update the activeSubTab when tabs are loaded to ensure it defaults to the first available sub-tab
+  useEffect(() => {
+    if (allTabs.length > 0 && activeTab === "Others+") {
+      const othersTab = allTabs.find(t => t.title === "Others+");
+      if (othersTab) {
+        const subTabs = allTabs.filter(t => t.parent_id === othersTab.id);
+        if (subTabs.length > 0 && !activeSubTab) {
+          // Set to the first available sub-tab
+          setActiveSubTab(subTabs[0].title);
+        }
+      }
+    }
+  }, [allTabs, activeTab]);
+
   useEffect(() => {
     const hash = location.hash.replace("#", "");
     if (hash) {
@@ -75,7 +89,12 @@ const Service = () => {
             "Graphics": "Graphics Design"
           };
           setActiveTab("Others+");
-          setActiveSubTab(nameMap[hash] || subTabNames[0]);
+          const mappedName = nameMap[hash];
+          if (mappedName && subTabNames.includes(mappedName)) {
+            setActiveSubTab(mappedName);
+          } else if (subTabNames.length > 0) {
+            setActiveSubTab(subTabNames[0]); // Default to first available
+          }
         } else {
           setActiveTab(hash);
         }
@@ -162,15 +181,31 @@ const Service = () => {
       case "Content":
         return <Content tabData={getTabData("Content")} />;
       case "Others+":
+        // Get available sub-tabs for Others+
+        const availableSubTabs = getOthersSubTabs();
+        
+        // If no sub-tabs exist under Others+, show a message
+        if (availableSubTabs.length === 0) {
+          return (
+            <div className="no-subtabs-message">
+              <h3>No services available</h3>
+              <p>There are no sub-services under this category yet.</p>
+            </div>
+          );
+        }
+        
+        // If activeSubTab is not set, default to the first available
+        const currentSubTabToDisplay = activeSubTab || availableSubTabs[0].title;
+        
         return (
           <Others
-            tabData={getOthersSubTabs().reduce((acc, subTab) => {
+            tabData={availableSubTabs.reduce((acc, subTab) => {
               acc[subTab.title] = getSubTabData(subTab.title);
               return acc;
             }, {})}
-            currentSubTab={activeSubTab}
+            currentSubTab={currentSubTabToDisplay}
             setCurrentSubTab={setActiveSubTab}
-            subTabs={getOthersSubTabs()}
+            subTabs={availableSubTabs}
           />
         );
       default:
@@ -221,7 +256,18 @@ const Service = () => {
                   <button
                     key={tab}
                     className={`Button ${activeTab === tab ? "active" : ""}`}
-                    onClick={() => setActiveTab(tab)}
+                    onClick={() => {
+                      setActiveTab(tab);
+                      if (tab === "Others+") {
+                        const othersTab = allTabs.find(t => t.title === "Others+");
+                        if (othersTab) {
+                          const subTabs = allTabs.filter(t => t.parent_id === othersTab.id);
+                          if (subTabs.length > 0) {
+                            setActiveSubTab(subTabs[0].title); // Default to first sub-tab
+                          }
+                        }
+                      }
+                    }}
                   >
                     {tab === "Others+" ? "Others+" : tab}
                   </button>

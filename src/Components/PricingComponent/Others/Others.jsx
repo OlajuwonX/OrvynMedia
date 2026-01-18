@@ -6,21 +6,9 @@ const Others = ({ tabData, currentSubTab, setCurrentSubTab, subTabs = [], loadin
   const renderContent = () => {
     if (loading) {
       return (
-        <div className="loading-skeleton">
-          <div className="skeleton-packages">
-            {[...Array(2)].map((_, i) => (
-              <div key={i} className="skeleton-package">
-                <div className="skeleton-title"></div>
-                <div className="skeleton-subtitle"></div>
-                <div className="skeleton-list">
-                  <div className="skeleton-list-item"></div>
-                  <div className="skeleton-list-item"></div>
-                  <div className="skeleton-list-item"></div>
-                </div>
-                <div className="skeleton-button"></div>
-              </div>
-            ))}
-          </div>
+        <div className="loading-spinner-others">
+          <div className="spinner"></div>
+          <p>Loading content...</p>
         </div>
       );
     }
