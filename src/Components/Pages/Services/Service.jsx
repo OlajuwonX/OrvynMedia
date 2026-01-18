@@ -189,10 +189,10 @@ const Service = () => {
       case "Others+":
         return (
           <Others
-            tabData={getOthersSubTabs().reduce((acc, subTab) => {
-              acc[subTab.title] = getSubTabData(subTab.title);
-              return acc;
-            }, {})}
+            tabData={{
+              Web: getSubTabData("Web"),
+              Graphics: getSubTabData("Graphics")
+            }}
             currentSubTab={activeSubTab}
             setCurrentSubTab={setActiveSubTab}
             subTabs={getOthersSubTabs()}
@@ -207,7 +207,10 @@ const Service = () => {
   if (loading && Object.keys(tabData).length === 0) {
     return (
       <div className="loading-container">
-        <div className="loading-spinner">Loading services...</div>
+        <div className="loading-spinner">
+          <div className="spinner"></div>
+          <p>Loading services...</p>
+        </div>
       </div>
     );
   }
