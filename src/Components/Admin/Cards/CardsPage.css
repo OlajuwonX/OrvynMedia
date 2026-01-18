@@ -1,0 +1,247 @@
+/* Tab filter */
+.tab-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.filter-btn:hover {
+  border-color: #d1d5db;
+  color: #374151;
+}
+
+.filter-btn.active {
+  background: #a63509;
+  border-color: #a63509;
+  color: #fff;
+}
+
+/* Cards grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+.card-item {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.card-item:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.card-tab-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(166, 53, 9, 0.1);
+  color: #a63509;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.375rem;
+}
+
+.card-tier {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.card-tagline {
+  margin: 0 0 0.75rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.card-prep {
+  display: inline-block;
+  padding: 0.25rem 0.625rem;
+  background: #f3f4f6;
+  color: #6b7280;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.card-deliverables {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.card-deliverables li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.375rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.card-deliverables li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 6px;
+  height: 6px;
+  background: #a63509;
+  border-radius: 50%;
+}
+
+.card-deliverables li.more {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.card-deliverables li.more::before {
+  display: none;
+}
+
+.card-button-preview {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #f9fafb;
+  border: 1px dashed #d1d5db;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  color: #6b7280;
+}
+
+/* Form styles for cards */
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.deliverables-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.deliverable-item {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.deliverable-item input {
+  flex: 1;
+}
+
+.remove-deliverable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  background: #fef2f2;
+  border: none;
+  border-radius: 8px;
+  color: #f87171;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.remove-deliverable:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.remove-deliverable svg {
+  width: 20px;
+  height: 20px;
+}
+
+.add-deliverable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: transparent;
+  border: 1px dashed #d1d5db;
+  border-radius: 8px;
+  color: #6b7280;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.add-deliverable:hover {
+  border-color: #a63509;
+  color: #a63509;
+  background: rgba(166, 53, 9, 0.02);
+}
+
+.add-deliverable svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-filter {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .filter-btn {
+    flex-shrink: 0;
+  }
+
+  .cards-grid {
+    padding: 1rem;
+  }
+}
